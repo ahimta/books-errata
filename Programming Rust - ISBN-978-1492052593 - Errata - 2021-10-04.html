@@ -1,0 +1,2078 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Programming Rust: Fast, Safe Systems Development
+</div>
+<div class="authors">
+Blandy, Jim; Orendorff, Jason; Tindall, Leonora F. S.
+</div>
+<div class="citation">
+Citation (Chicago Style): Blandy, Jim, Jason Orendorff, and Leonora F. S. Tindall. <i>Programming Rust: Fast, Safe Systems Development</i>. O'Reilly Media, 2021. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+Preface
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Acknowledgments >  Location 128
+</div>
+<div class="noteText">
+Mozilla was extremely accommodating of Jim’s and Jason’s work on this project, even though it fell outside our official responsibilities and competed with them for our attention.
+</div>
+<div class="noteHeading">
+Note - Acknowledgments >  Location 129
+</div>
+<div class="noteText">
+Do you mean "fell outside their official responsibilities"?
+</div>
+<div class="sectionHeading">
+1. Systems Programmers Can Have Nice Things
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Acknowledgments >  Page 2
+</div>
+<div class="noteText">
+The responsibility for avoiding undefined behavior falls entirely on you, the programmer.
+</div>
+<div class="noteHeading">
+Note - Acknowledgments >  Page 2
+</div>
+<div class="noteText">
+Strictest diagnostics (e.g: compiler flags) help greatly. But they are, of course, no match for Rust.
+</div>
+<div class="sectionHeading">
+2. A Tour of Rust
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Writing and Running Unit Tests >  Page 10
+</div>
+<div class="noteText">
+Attributes are an open- ended system for marking functions and other declarations with extra information, like attributes in C + + and C#, or annotations in Java.
+</div>
+<div class="noteHeading">
+Note - Writing and Running Unit Tests >  Page 10
+</div>
+<div class="noteText">
+And C (like cleanup functions).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Concurrency >  Page 22
+</div>
+<div class="noteText">
+If you don’t get it right, the effects can depend on what happens to be in the processor’s cache and how many writes to memory you’ve done recently. Not that we’re bitter.
+</div>
+<div class="noteHeading">
+Note - Concurrency >  Page 22
+</div>
+<div class="noteText">
+"Not that we're bitter" seems out-of-place and not clear how it is related to the rest of the paragraph.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Filesystems and Command-Line Tools >  Page 42
+</div>
+<div class="noteText">
+So if we test our program against version 1.2 of some crate, it should still work with versions 1.3, 1.4, and so on;
+</div>
+<div class="noteHeading">
+Note - Filesystems and Command-Line Tools >  Page 42
+</div>
+<div class="noteText">
+Is this enforced by Cargo?
+
+More specifically, would cargo allow downloading and using a new minor release with a breaking change in its API. Or would it prevent this like Elm.
+</div>
+<div class="sectionHeading">
+3. Fundamental Types
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Filesystems and Command-Line Tools >  Page 52
+</div>
+<div class="noteText">
+Result < u64, Error >
+</div>
+<div class="noteHeading">
+Note - Filesystems and Command-Line Tools >  Page 52
+</div>
+<div class="noteText">
+Is it required for the second type to inherit from `std::Error` or is it just a convention and it's really an `Either` type?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Fixed-Width Numeric Types >  Page 53
+</div>
+<div class="noteText">
+Rust’s signed integer types use the two’s complement representation, using the same bit patterns as the corresponding unsigned type to cover a range of positive and negative values
+</div>
+<div class="noteHeading">
+Note - Fixed-Width Numeric Types >  Page 53
+</div>
+<div class="noteText">
+Confusing statement. Probably more accurate to say that they use the same bit patterns as unsigned types for positive values.
+
+And, as an aside, negative values for signed types and large unsigned values relationship is, naturally, more subtle.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Fixed-Width Numeric Types >  Page 55
+</div>
+<div class="noteText">
+// Conversions that are out of range for the destination // produce values that are equivalent to the original modulo 2 ^ N, // where N is the width of the destination in bits. This // is sometimes called "truncation." assert_eq!( 1000_i16 as u8, 232_u8);
+</div>
+<div class="noteHeading">
+Note - Fixed-Width Numeric Types >  Page 55
+</div>
+<div class="noteText">
+Shouldn't such truncations cause compiler errors/warnings, by default. And only not do so when its explicitly stated that this is the intention (e.g: as! instead of as).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Fixed-Width Numeric Types >  Page 56
+</div>
+<div class="noteText">
+println!("{}", (- 4). abs()); Rust complains: error: can't call method ` abs ` on ambiguous numeric type `{ integer} ` This can be a little bewildering: all the signed integer types have an abs method, so what’s the problem? For technical reasons, Rust wants to know exactly which integer type a value has before it will call the type’s own methods.
+</div>
+<div class="noteHeading">
+Note - Fixed-Width Numeric Types >  Page 56
+</div>
+<div class="noteText">
+Better wording needed here. One intuitive idea is that the compiler simply tries to infer the type of `-4` but, since there's no code that pins it down to a single type, it can't know which type to give it or have a default type for integers either.
+
+Maybe provide the same example by adding a bit of code that would make the compiler be able to infer `-1` type and then explain by contrasting the two examples.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Fixed-Width Numeric Types >  Page 56
+</div>
+<div class="noteText">
+Without the parentheses around -4_i32 in the first statement, -4_i32. abs() would apply the abs method to the positive value 4, producing positive 4, and then negate that, producing -4.
+</div>
+<div class="noteHeading">
+Note - Fixed-Width Numeric Types >  Page 56
+</div>
+<div class="noteText">
+The compiler should probably produce an error/warning when sign and function call are combined without the number in parenthesis. Otherwise, we're back to similarly confusing C's operator precedence rules.
+
+It's always better for knowledge to be in the world (compiler) than in the head.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Fixed-Width Numeric Types >  Page 56
+</div>
+<div class="noteText">
+When an integer arithmetic operation overflows, Rust panics, in a debug build. In a release build, the operation wraps around: it produces the value equivalent to the mathematically correct result modulo the range of the value. (In neither case is overflow undefined behavior, as it is in C and C + +.)
+</div>
+<div class="noteHeading">
+Note - Fixed-Width Numeric Types >  Page 56
+</div>
+<div class="noteText">
+This is inaccurate as, for example, unsigned types in C (in many architectures) have similar behavior to Rust.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Fixed-Width Numeric Types >  Page 58
+</div>
+<div class="noteText">
+overflowing_shl and overflowing_shr deviate from the pattern a bit: they return true for overflowed only if the shift distance was as large or larger than the bit width of the type itself. The actual shift applied is the requested shift modulo the bit width of the type:
+</div>
+<div class="noteHeading">
+Note - Fixed-Width Numeric Types >  Page 58
+</div>
+<div class="noteText">
+A rationale (which seems to relate to the implementation and is quite intuitive) should at least be provided as this violates the principle of least surprise.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Fixed-Width Numeric Types >  Page 60
+</div>
+<div class="noteText">
+When searching the documentation, remember that there are pages for both the types themselves, named “f32 (primitive type)” and “f64 (primitive type)”, and the modules for each type, std:: f32 and std:: f64.
+</div>
+<div class="noteHeading">
+Note - Fixed-Width Numeric Types >  Page 60
+</div>
+<div class="noteText">
+Why is this confusing approach of having 2 separate documentation pages for something that is conceptually the same to the end-developer. This is especially bad if it only applies to the standard library itself and not crates.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Pointer Types >  Page 65
+</div>
+<div class="noteText">
+so pointers are much easier to use correctly in Rust than in C + +.
+</div>
+<div class="noteHeading">
+Note - Pointer Types >  Page 65
+</div>
+<div class="noteText">
+Should mention that C++ references (and constructors/destructors) are relatively safe when used correctly but not as much as Rust.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Pointer Types >  Page 65
+</div>
+<div class="noteText">
+Unlike C pointers, however, Rust references are never null: there is simply no way to produce a null reference in safe Rust.
+</div>
+<div class="noteHeading">
+Note - Pointer Types >  Page 65
+</div>
+<div class="noteText">
+Probably the same applies to C++ references but not as much as Rust.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Pointer Types >  Page 65
+</div>
+<div class="noteText">
+const T* in C.
+</div>
+<div class="noteHeading">
+Note - Pointer Types >  Page 65
+</div>
+<div class="noteText">
+Which isn't even really enforced. There are even legitimate cases for modifying `const T*` in C (e.g: the module owning a struct).
+
+And this is a big part of C that's not covered by the book: compiler diagnostics/flags used in a project have a huge impact.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Pointer Types >  Page 66
+</div>
+<div class="noteText">
+Rust also has the raw pointer types *mut T and *const T.
+</div>
+<div class="noteHeading">
+Note - Pointer Types >  Page 66
+</div>
+<div class="noteText">
+Is write-protection not enforced for `*const T` like in C?
+</div>
+<div class="sectionHeading">
+4. Ownership and Moves
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Pointer Types >  Page 79
+</div>
+<div class="noteText">
+The “Control First” camp leaves you in charge of freeing memory. Your program’s memory consumption is entirely in your hands, but avoiding dangling pointers also becomes entirely your concern. C and C + + are the only mainstream languages in this camp.
+</div>
+<div class="noteHeading">
+Note - Pointer Types >  Page 80
+</div>
+<div class="noteText">
+Should mention custom scopes in combination with cleanup attributes/functions in C and RAII in C++.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Ownership >  Page 82
+</div>
+<div class="noteText">
+giving you the control over its lifetime that a systems language should provide.
+</div>
+<div class="noteHeading">
+Note - Ownership >  Page 82
+</div>
+<div class="noteText">
+Confusing wording. Probably a typo.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Ownership >  Page 83
+</div>
+<div class="noteText">
+When the variable padovan goes out of scope at the end of the function, the program drops the vector.
+</div>
+<div class="noteHeading">
+Note - Ownership >  Page 83
+</div>
+<div class="noteText">
+Just like using C cleanup functions and C++ auto pointers. Should also mention C++ smart-pointers somewhere in the book.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Ownership >  Page 85
+</div>
+<div class="noteText">
+Rust programs don’t usually explicitly drop values at all, in the way C and C + + programs would use free and delete.
+</div>
+<div class="noteHeading">
+Note - Ownership >  Page 85
+</div>
+<div class="noteText">
+Or cleanup functions and auto pointers.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Moves >  Page 88
+</div>
+<div class="noteText">
+In a sense, C + + and Python have chosen opposite trade- offs: Python makes assignment cheap, at the expense of requiring reference counting (and in the general case, garbage collection). C + + keeps the ownership of all the memory clear, at the expense of making assignment carry out a deep copy of the object. C + + programmers are often less than enthusiastic about this choice: deep copies can be expensive, and there are usually more practical alternatives.
+</div>
+<div class="noteHeading">
+Note - Moves >  Page 88
+</div>
+<div class="noteText">
+Should mention C++ references or plain pointers. Especially when used as immutable values.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Moves >  Page 90
+</div>
+<div class="noteText">
+Consider the consequences of Rust’s use of a move here.
+</div>
+<div class="noteHeading">
+Note - Moves >  Page 90
+</div>
+<div class="noteText">
+Should mention aliasing briefly focusing on how it can be a source of complexity and bugs.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Moves >  Page 91
+</div>
+<div class="noteText">
+First, the moves always apply to the value proper, not the heap storage they own.
+</div>
+<div class="noteHeading">
+Note - Moves >  Page 91
+</div>
+<div class="noteText">
+Maybe not using proper in this book is more proper.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Rc and Arc: Shared Ownership >  Page 100
+</div>
+<div class="noteText">
+You can sometimes avoid creating cycles of Rc pointers by using weak pointers, std:: rc:: Weak, for some of the links instead. However, we won’t cover those in this book; see the standard library’s documentation for details.
+</div>
+<div class="noteHeading">
+Note - Rc and Arc: Shared Ownership >  Page 100
+</div>
+<div class="noteText">
+Could be nice to cover them for completeness sake or just give brief rationale for why not.
+
+For example, they may be rarely needed in practice or often an indicator of a design issue.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Rc and Arc: Shared Ownership >  Page 100
+</div>
+<div class="noteText">
+Moves and reference- counted pointers are two ways to relax the rigidity of the ownership tree. In the next chapter, we’ll look at a third way: borrowing references to values. Once you have become comfortable with both ownership and borrowing, you will have climbed the steepest part of Rust’s learning curve, and you’ll be ready to take advantage of Rust’s unique strengths.
+</div>
+<div class="noteHeading">
+Note - Rc and Arc: Shared Ownership >  Page 100
+</div>
+<div class="noteText">
+Should mention how references/borrowing can simplify using Rust as opposed to only relying on moving semantics in this chapter.
+</div>
+<div class="sectionHeading">
+5. References
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - References to Values >  Page 105
+</div>
+<div class="noteText">
+When we pass a value to a function in a way that moves ownership of the value to the function, we say that we have passed it by value. If we instead pass the function a reference to the value, we say that we have passed the value by reference. For example, we fixed our show function by changing it to accept the table by reference, rather than by value. Many languages draw this distinction, but it’s especially important in Rust, because it spells out how ownership is affected.
+</div>
+<div class="noteHeading">
+Note - References to Values >  Page 105
+</div>
+<div class="noteText">
+Maybe briefly mention what reference vs value means in other languages.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Working with References >  Page 105
+</div>
+<div class="noteText">
+If you’re familiar with references in C + +, they do have something in common with Rust references.
+</div>
+<div class="noteHeading">
+Note - Working with References >  Page 105
+</div>
+<div class="noteText">
+Should have mentioned that way earlier.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Working with References >  Page 106
+</div>
+<div class="noteText">
+struct
+</div>
+<div class="noteHeading">
+Note - Working with References >  Page 106
+</div>
+<div class="noteText">
+There doesn't seem for the reader to understand `&'static` here as it hasn't been introduced before or explained soon after.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Working with References >  Page 106
+</div>
+<div class="noteText">
+In a nutshell, whereas C + + converts implicitly between references and lvalues (that is, expressions referring to locations in memory),
+</div>
+<div class="noteHeading">
+Note - Working with References >  Page 106
+</div>
+<div class="noteText">
+`lvalue`s of pointers/addresses maybe more accurate as `lvalue`s is a much more broader topic.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Reference Safety >  Page 111
+</div>
+<div class="noteText">
+Rust’s complaint is that x lives only until the end of the inner block, whereas the reference remains alive until the end of the outer block, making it a dangling pointer, which is verboten.
+</div>
+<div class="noteHeading">
+Note - Reference Safety >  Page 111
+</div>
+<div class="noteText">
+Maybe just use "forbidden" instead of "verboten" (seems one, at least, of the authors is German).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Reference Safety >  Page 113
+</div>
+<div class="noteText">
+This is not so different from the process C and C + + programmers impose on themselves; the difference is that Rust knows the rules and enforces them.
+</div>
+<div class="noteHeading">
+Note - Reference Safety >  Page 113
+</div>
+<div class="noteText">
+Preferably emphasize this point as early as possible in the book.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Reference Safety >  Page 120
+</div>
+<div class="noteText">
+But a type like Vec <&' a i32 > has a lifetime that must be enclosed by 'a: it must be dropped while its referents are still alive.
+</div>
+<div class="noteHeading">
+Note - Reference Safety >  Page 120
+</div>
+<div class="noteText">
+Surely you mean "it must not be dropped while its referents are still alive".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Sharing Versus Mutation >  Page 129
+</div>
+<div class="noteText">
+The immiscibility of shared and mutable references really demonstrates its value when writing concurrent code.
+</div>
+<div class="noteHeading">
+Note - Sharing Versus Mutation >  Page 129
+</div>
+<div class="noteText">
+Less esoteric word than "immiscibility" maybe more accessible.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Taking Arms Against a Sea of Objects >  Page 130
+</div>
+<div class="noteText">
+This architecture has many advantages that don’t show up in the diagram: initial progress is rapid, it’s easy to hack stuff in, and a few years down the road, you’ll have no difficulty justifying a complete rewrite. (Cue AC/ DC’s “Highway to Hell.”)
+</div>
+<div class="noteHeading">
+Note - Taking Arms Against a Sea of Objects >  Page 130
+</div>
+<div class="noteText">
+Maybe mention that such issues are only symptoms for failure to manage complexity properly and uncontrolled change/evolution and no programming language can solve these kinds of issues. But they may mitigate it and give designers a different perspective.
+</div>
+<div class="sectionHeading">
+6. Expressions
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Blocks and Semicolons >  Page 138
+</div>
+<div class="noteText">
+If you made this mistake in a C or Java program, the compiler would simply point out that you’re missing a semicolon.
+</div>
+<div class="noteHeading">
+Note - Blocks and Semicolons >  Page 138
+</div>
+<div class="noteText">
+Followed by many errors that will make it harder to notice that it's just a missing semicolon. So the Rust error message is much clearer.
+</div>
+<div class="sectionHeading">
+8. Crates and Modules
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Modules >  Page 179
+</div>
+<div class="noteText">
+One function is marked pub( crate), meaning that it is available anywhere inside this crate, but isn’t exposed as part of the external interface. It can’t be used by other crates, and it won’t show up in this crate’s documentation.
+</div>
+<div class="noteHeading">
+Note - Modules >  Page 179
+</div>
+<div class="noteText">
+Shouldn't private be the default. And the most verbose and noticeable (`pub(crate)`) be to expose to crate clients.
+
+To encourage minimal APIs and, more importantly, to make it less likely to accidentally expose an API to the outside word and only being able to fix it by breaking existing clients.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Modules >  Page 180
+</div>
+<div class="noteText">
+It’s also possible to specify pub( super), making an item visible to the parent module only, and pub( in < path >), which makes it visible in a specific parent module and its descendants. This is especially useful with deeply nested modules:
+</div>
+<div class="noteHeading">
+Note - Modules >  Page 180
+</div>
+<div class="noteText">
+Maybe provide a rationale for this complexity of the module system that can lead to convoluted and non-obvious dependencies (hello C++ friend classes) which may point to serious design flaws. Especially if `pub(in <path>)` can expose an item to a non-parent module.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Modules >  Page 187
+</div>
+<div class="noteText">
+It turns out that enforcing access control by module, rather than by class as in Java or C + +, is surprisingly helpful for software design. It cuts down on boilerplate “getter” and “setter” methods, and it largely eliminates the need for anything like C + + friend declarations. A single module can define several types that work closely together, such as perhaps frond:: LeafMap and frond:: LeafMapIter, accessing each other’s private fields as needed, while still hiding those implementation details from the rest of your program.
+</div>
+<div class="noteHeading">
+Note - Modules >  Page 187
+</div>
+<div class="noteText">
+Having some struct fields public is certainly useful but having them public can make it always easy to reach for them instead of enforcing internal implementation details (even among components in the same module). And Rust is always about make the wrong thing uncompileable or at least hard.
+
+One neat trick for structs that make sense to have all their fields accessible outside is to add a `PhantomData` field for preventing the construction which can violate the initial valid states of the struct. This also allows to do other functionality like accepting `&str` instead of `String`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Attributes >  Page 191
+</div>
+<div class="noteText">
+But you chose this name for a reason, and you wish Rust would shut up about it. You can disable the warning by adding an #[ allow] attribute on the type: #[ allow( non_camel_case_types)] pub struct git_revspec { ... }
+</div>
+<div class="noteHeading">
+Note - Attributes >  Page 191
+</div>
+<div class="noteText">
+Does it also complain when a non-existing warning is suppressed?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Attributes >  Page 193
+</div>
+<div class="noteText">
+#![ feature( trace_macros)] fn main() { // I wonder what actual Rust code this use of assert_eq! // gets replaced with! trace_macros!( true); assert_eq!( 10* 10* 10 + 9* 9* 9, 12* 12* 12 + 1* 1* 1); trace_macros!( false); }
+</div>
+<div class="noteHeading">
+Note - Attributes >  Page 193
+</div>
+<div class="noteText">
+Can a crate use `#![feature]` for custom feature-flags: is it exclusive to the language implementation?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Specifying Dependencies >  Page 203
+</div>
+<div class="noteText">
+Another version specification you’ll occasionally see is the wildcard *. This tells Cargo that any version will do. Unless some other Cargo.toml file contains a more specific constraint, Cargo will use the latest available version. The Cargo documentation at doc.crates.io covers version specifications in even more detail.
+</div>
+<div class="noteHeading">
+Note - Specifying Dependencies >  Page 203
+</div>
+<div class="noteText">
+Does cargo issue no warnings about this and, in any case, it may be appropriate to talk about this a bit. Especially build reproducibility.
+
+There's also a strong argument for rejecting this lax behavior behavior (`*`) outright. And another important point is whether different dependencies can use crates of different versions.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Specifying Dependencies >  Page 203
+</div>
+<div class="noteText">
+Note that the compatibility rules mean that version numbers can’t be chosen purely for marketing reasons. They actually mean something. They’re a contract between a crate’s maintainers and its users. If you maintain a crate that’s at version 1.7 and you decide to remove a function or make any other change that isn’t fully backward compatible, you must bump your version number to 2.0. If you were to call it 1.8, you’d be claiming that the new version is compatible with 1.7, and your users might find themselves with broken builds.
+</div>
+<div class="noteHeading">
+Note - Specifying Dependencies >  Page 204
+</div>
+<div class="noteText">
+Does cargo enforce this? For example, not updating to a patch release that breaks the API.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Specifying Dependencies >  Page 204
+</div>
+<div class="noteText">
+But cargo update will pull from master so that our next build uses the latest revision.
+</div>
+<div class="noteHeading">
+Note - Specifying Dependencies >  Page 204
+</div>
+<div class="noteText">
+Maybe warn about this because even if it only could break the build when the user runs `cargo update` (a routine occurrence), this makes it too easy to do the wrong thing.
+
+Using `master` or a `*` branch isn't always the wrong thing to do but doing this requires commitment from all parties involved that they will always produce working, tested code.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Specifying Dependencies >  Page 204
+</div>
+<div class="noteText">
+If your project is an ordinary Rust library, don’t bother committing Cargo.lock.
+</div>
+<div class="noteHeading">
+Note - Specifying Dependencies >  Page 204
+</div>
+<div class="noteText">
+There's still many reasons for having a lock file (e.g: reproducible build) that apply to a library for maintainers.
+
+And even as documentation for users to know which  versions work with your library. This is something that's hard to achieve otherwise and it makes it easy to know whether the library actually works. In general, correctness should be proven (for many reasons) and not just assumed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Publishing Crates to crates.io >  Page 206
+</div>
+<div class="noteText">
+cargo login 5j0dV54BjlXBpUUbfIj7G9DvNl1vsWW1
+</div>
+<div class="noteHeading">
+Note - Publishing Crates to crates.io >  Page 206
+</div>
+<div class="noteText">
+Shouldn't there be MFA and be enforced as developer accounts are a prime target for supply-chain attacks. And the token should probably be pasted as an input to `cargo login` instead of in the command where it will be saved in the shell history.
+</div>
+<div class="sectionHeading">
+9. Structs
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Named-Field Structs >  Page 210
+</div>
+<div class="noteText">
+This declares a type GrayscaleMap with two fields named pixels and size, of the given types. The convention in Rust is for all types, structs included, to have names that capitalize the first letter of each word, like GrayscaleMap, a convention called CamelCase (or PascalCase).
+</div>
+<div class="noteHeading">
+Note - Named-Field Structs >  Page 210
+</div>
+<div class="noteText">
+Camel-case is probably more like "camelCase" and pascal-case is like "PascalCase."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Named-Field Structs >  Page 210
+</div>
+<div class="noteText">
+GrayscaleMap { pixels: vec![ 0; width * height], size: (width, height) };
+</div>
+<div class="noteHeading">
+Note - Named-Field Structs >  Page 210
+</div>
+<div class="noteText">
+Back to public struct fields in nested modules, how can width/height with pixels be guaranteed to always be correct like in other languages (e.g: C with opaque structs)?
+
+One big issue with fields access outside struct `impl` is that it's very tempting (and what happens in the majority of cases) to just use or change a value that breaks the `impl` invariant instead of adding a method that can ensure that the invariant of the type is always (or at least more likely) enforced.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Tuple-Like Structs >  Page 213
+</div>
+<div class="noteText">
+Using this type for your ASCII strings is much better than simply passing around Vec < u8 > buffers and explaining what they are in the comments.
+</div>
+<div class="noteHeading">
+Note - Tuple-Like Structs >  Page 213
+</div>
+<div class="noteText">
+Excellent for validation to produce a result similar to taint analysis. And even opaque structs in C can provide similar benefits.
+</div>
+<div class="sectionHeading">
+10. Enums and Patterns
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Patterns >  Page 250
+</div>
+<div class="noteText">
+Rust also permits range patterns like x.., which match any value from x up to the maximum value of the type. However, the other varieties of end- exclusive ranges, like 0.. 100 or .. 100, and unbounded ranges like .. aren’t allowed in patterns yet.
+</div>
+<div class="noteHeading">
+Note - Patterns >  Page 250
+</div>
+<div class="noteText">
+Seems very strange and a rationale would be nice.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - The Big Picture >  Page 254
+</div>
+<div class="noteText">
+It’s unclear why so few other languages in the C tradition have ever had them.
+</div>
+<div class="noteHeading">
+Note - The Big Picture >  Page 254
+</div>
+<div class="noteText">
+Typo: You probably mean "have never had them" and not "have ever had them".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - The Big Picture >  Page 254
+</div>
+<div class="noteText">
+For example, when an enum is used in a compiler to represent the various operators of a programming language, adding a new operator should involve touching all code that handles operators.
+</div>
+<div class="noteHeading">
+Note - The Big Picture >  Page 254
+</div>
+<div class="noteText">
+Maybe mention the "expression problem".
+</div>
+<div class="sectionHeading">
+11. Traits and Generics
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Using Traits >  Page 259
+</div>
+<div class="noteText">
+The fact that it’s a reference goes without saying.
+</div>
+<div class="noteHeading">
+Note - Using Traits >  Page 259
+</div>
+<div class="noteText">
+Should probably mention that references have the same size, for clarity's sake.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Fully Qualified Method Calls >  Page 274
+</div>
+<div class="noteText">
+The second form looks exactly like a associated function call.
+</div>
+<div class="noteHeading">
+Note - Fully Qualified Method Calls >  Page 274
+</div>
+<div class="noteText">
+Typo: You probably mean "like the associated function call" or "like an associated function call" (very unlikely) but definitely not "like a associated function call".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Traits That Define Relationships Between Types >  Page 276
+</div>
+<div class="noteText">
+pub trait Iterator { type Item; fn next(& mut self) -> Option < Self:: Item >; ... }
+</div>
+<div class="noteHeading">
+Note - Traits That Define Relationships Between Types >  Page 276
+</div>
+<div class="noteText">
+Should mention why a mutable reference is used for a seemingly readonly operation (`next`): the iterator state changes.
+</div>
+<div class="sectionHeading">
+12. Operator Overloading
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Index and IndexMut >  Page 301
+</div>
+<div class="noteText">
+struct Image < P > { width: usize, pixels: Vec < P >, }
+</div>
+<div class="noteHeading">
+Note - Index and IndexMut >  Page 301
+</div>
+<div class="noteText">
+Is height member not included because it isn't used in this example? Even though it makes more sense to add it since it maybe necessary for other image operations.
+
+A simple comment maybe useful to explain the rationale for this as it may not be immediately obvious to the reader. For example, the comment can explain how the height can easily be inferred from the width and `pixels` length.
+</div>
+<div class="sectionHeading">
+13. Utility Traits
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Drop >  Page 305
+</div>
+<div class="noteText">
+An implementation of Drop is analogous to a destructor in C + +, or a finalizer in other languages.
+</div>
+<div class="noteHeading">
+Note - Drop >  Page 305
+</div>
+<div class="noteText">
+Or a C cleanup function.
+</div>
+<div class="sectionHeading">
+14. Closures
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Closures and Safety >  Page 339
+</div>
+<div class="noteText">
+FnMut and FnOnce are broader categories that include closures with usage restrictions.
+</div>
+<div class="noteHeading">
+Note - Closures and Safety >  Page 339
+</div>
+<div class="noteText">
+Wouldn't describing them as broader ("broader categories") and more restricted ("usage restrictions") at the same time be a logical contradiction?
+</div>
+<div class="sectionHeading">
+15. Iterators
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Closures and Safety >  Page 348
+</div>
+<div class="noteText">
+Finally, Rust examines the combined code and recognizes that there’s a simpler way to sum the numbers from one to n: the sum is always equal to n * (n + 1) / 2. Rust translates the entire body of triangle, loop, closure, and all, into a single multiplication instruction and a few other bits of arithmetic.
+</div>
+<div class="noteHeading">
+Note - Closures and Safety >  Page 348
+</div>
+<div class="noteText">
+Should explain how the closed form always produces the correct sum as it may seem for the reader that the closed form may overflow when the iterative sum wouldn't.
+
+One possible explanation (Rust may use a different implementation) is to divide the even number of `n` or `n+1` by `2` and then multiply the result with the odd number.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Iterator Adapters >  Page 364
+</div>
+<div class="noteText">
+fn to_uppercase(& self) -> String { self.chars() .map( char:: to_uppercase) .flatten() // there's a better way .collect() } The reason the flatten is necessary is that ch.to_uppercase()
+</div>
+<div class="noteHeading">
+Note - Iterator Adapters >  Page 364
+</div>
+<div class="noteText">
+Should probably mention why `to_uppercase()` may return multiple values.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Consuming Iterators >  Page 379
+</div>
+<div class="noteText">
+// max assert_eq!( a.iter(). cloned(). fold( i32:: min_value(), std:: cmp:: max), 10);
+</div>
+<div class="noteHeading">
+Note - Consuming Iterators >  Page 379
+</div>
+<div class="noteText">
+Should be contrasted to actual `max` because it has a different return type and there's an ambiguity between the case where the iterator produces no elements and the case where it has the smallest value for the type.
+
+Another option is to just implement this max like the original one by using None as the initial accumulator value.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Consuming Iterators >  Page 382
+</div>
+<div class="noteText">
+nth, nth_back
+</div>
+<div class="noteHeading">
+Note - Consuming Iterators >  Page 382
+</div>
+<div class="noteText">
+Maybe mention, at least, that `nth` is different than other approaches (e.g: take and next). Especially without fuse.
+</div>
+<div class="sectionHeading">
+16. Collections
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Overview >  Page 394
+</div>
+<div class="noteText">
+Table 16- 1 shows Rust’s eight standard collections. All of them are generic types.
+</div>
+<div class="noteHeading">
+Note - Overview >  Page 394
+</div>
+<div class="noteText">
+Why aren't there `List`, `Map`, `Set`, and `PriorityQueue` just like in Java for flexibility in many use-cases.
+
+One very strong argument against only using specific names tied to the implementation is that what would Rust do in the future if they want to change their `BTreeMap` to a better implementation that doesn't use BTrees. Change is the only constant and these situations will have only mitigations if type names are tied to implementations.
+
+It can be argued that in systems-programming it's better to be explicit in the performance characteristics of a collection. But having interfaces that can be swapped can, for example, give the system-programmer the ability to try out more efficient collection implementations without changing the code.
+
+One scheme is to have `List`, `IndexedList`, `SequentialList`, `Map`, `OrderedMap`, `UnorderedMap`, `Set`, `OrderedSet`, `UnorderedSet`, `PriorityQueue`, `AmortizedPriorityQueue`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Overview >  Page 395
+</div>
+<div class="noteText">
+BTreeMap < K, V > Like HashMap < K, V >, but it keeps the entries sorted by key. A BTreeMap < String, i32 > stores its entries in String comparison order. Unless you need the entries to stay sorted, a HashMap is faster.
+</div>
+<div class="noteHeading">
+Note - Overview >  Page 395
+</div>
+<div class="noteText">
+Should mention that the tree implementations have a more consistent upper-bound of time/space complexity.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Vec<T> >  Page 401
+</div>
+<div class="noteText">
+vec.dedup() Drops repeated elements. It’s like the Unix uniq shell utility. It scans vec for places where adjacent elements are equal and drops the extra equal values so that only one is left:
+</div>
+<div class="noteHeading">
+Note - Vec<T> >  Page 401
+</div>
+<div class="noteText">
+Can there be a better name? As otherwise it's easy to think that it removes all duplicates. Unix's `uniq` was created in a time when there was more tolerance for these surprises than nowadays and programming is better for this intolerance.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Vec<T> >  Page 401
+</div>
+<div class="noteText">
+let mut byte_vec = b" Misssssssissippi". to_vec(); let mut seen = HashSet:: new(); byte_vec.retain( | r | seen.insert(* r)); assert_eq!(& byte_vec, b" Misp"); This works because .insert() returns false when the set already contains the item we’re inserting.
+</div>
+<div class="noteHeading">
+Note - Vec<T> >  Page 401
+</div>
+<div class="noteText">
+This isn't very readable and should be discouraged. Because it relies on the knowledge that `insert` has this behavior (indicating whether an element already exists).
+
+A comment can be added to fix this. Or even better, just storing the value of `seen.insert` in a variable called `not_exists` (which also makes it clear whether the return value represents existence or non-existence) and making the comment (along with the paragraph explaining `insert` return value) redundant.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Vec<T> >  Page 402
+</div>
+<div class="noteText">
+For example, if errors is a Vec < Box < dyn Error > >, you can write: // Remove errors with redundant messages. errors.dedup_by_key( | err | err.to_string());
+</div>
+<div class="noteHeading">
+Note - Vec<T> >  Page 402
+</div>
+<div class="noteText">
+This is an excellent example of how `uniq`-like behavior is confusing. The code says dedup-by-key but the actual behavior is dedup-adjacents-by-key. These issues usually affect systems in unexpected ways and can waste weeks of debugging time.
+
+The real problem is that, for new programmers, this treachery becomes acceptable (even if unconsciously). And we end up with more of this. It's so contagious that it not only affects systems, but also people brains.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Vec<T> >  Page 405
+</div>
+<div class="noteText">
+slice.chunks_exact( n), slice.chunks_exact_mut( n) Return an iterator over nonoverlapping subslices of length n. If n doesn’t divide slice.len(), the last chunk (with less than n elements) is available in the result’s remainder() method.
+</div>
+<div class="noteHeading">
+Note - Vec<T> >  Page 405
+</div>
+<div class="noteText">
+Why not return a pair instead: (exact-chunks, option-of-remaining) and remove `remainder`?
+
+If chunks and remainder are tightly coupled anyway, why separate them. One counter-argument is that the `remainder` "implementation" can be shared but this is an "implementation" detail.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Vec<T> >  Page 407
+</div>
+<div class="noteText">
+For technical reasons, key( element) can’t return any references borrowed from the element. This won’t work: students.sort_by_key( | s | &s.last_name); // error: can't infer lifetime Rust can’t figure out the lifetimes. But in these cases, it’s easy enough to fall back on .sort_by().
+</div>
+<div class="noteHeading">
+Note - Vec<T> >  Page 407
+</div>
+<div class="noteText">
+`sort_by` doesn't seem to be mentioned. And in any case, it'd be nice to provide a code snippet for it that resolves the problem with `sort_by_key`. Or, at least, provide a rationale for not doing so.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - VecDeque<T> >  Page 411
+</div>
+<div class="noteText">
+Oftentimes, when you need a deque, .push_back() and .pop_front() are the only two methods that you’ll need.
+</div>
+<div class="noteHeading">
+Note - VecDeque<T> >  Page 411
+</div>
+<div class="noteText">
+Should at least briefly mention that it can be used for stacks, queues, and other custom logic/algorithms.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - BinaryHeap<T> >  Page 413
+</div>
+<div class="noteText">
+Note: BinaryHeap is iterable, and it has an .iter() method, but the iterators produce the heap’s elements in an arbitrary order, not from greatest to least.
+</div>
+<div class="noteHeading">
+Note - BinaryHeap<T> >  Page 413
+</div>
+<div class="noteText">
+1. Should be easy to implement a sorted iterator (depending on some implementation details) and avoid this surprising behavior. Having a note in the book for this is a sign that something is wrong and a rationale should be provided for any such traps.
+
+2. "greatest to least" could better be replaced by "highest priority to lowest priority".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - BinaryHeap<T> >  Page 413
+</div>
+<div class="noteText">
+To consume values from a BinaryHeap in order of priority, use a while loop: while let Some( task) = heap.pop() { handle( task); }
+</div>
+<div class="noteHeading">
+Note - BinaryHeap<T> >  Page 413
+</div>
+<div class="noteText">
+Maybe better to explicitly mention that a `BinaryHeap` can only be iterated in an arbitrary order and only consumed in a proper/sorted order.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - HashMap<K, V> and BTreeMap<K, V> >  Page 420
+</div>
+<div class="noteText">
+Like vectors, maps have .iter() and .iter_mut() methods that return by- reference iterators, just like iterating over &map or &mut map. In addition:
+</div>
+<div class="noteHeading">
+Note - HashMap<K, V> and BTreeMap<K, V> >  Page 420
+</div>
+<div class="noteText">
+Typo: Strange for a sentence to just be "In addition". Do you mean "in addition it has the following methods:".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - HashMap<K, V> and BTreeMap<K, V> >  Page 420
+</div>
+<div class="noteText">
+BTreeMap iterators visit them in order by key.
+</div>
+<div class="noteHeading">
+Note - HashMap<K, V> and BTreeMap<K, V> >  Page 420
+</div>
+<div class="noteText">
+This makes it even more important for priority-queue iterators to be ordered. At least for consistency.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Hashing >  Page 425
+</div>
+<div class="noteText">
+Since we compare artifacts purely on the basis of their ID, we must hash them the same way: use std:: hash::{ Hash, Hasher}; impl Hash for Artifact { fn hash < H: Hasher >(& self, hasher: &mut H) { // Delegate hashing to the MuseumNumber. self.id.hash( hasher); } } (Otherwise, HashSet < Artifact > would not work properly; like all hash tables, it requires that hash( a) = = hash( b) if a = = b.)
+</div>
+<div class="noteHeading">
+Note - Hashing >  Page 425
+</div>
+<div class="noteText">
+Maybe mention that the compiler will emit errors (thanks to type bounds) when missing a `hash` function.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Beyond the Standard Collections >  Page 428
+</div>
+<div class="noteText">
+If you’re used to implementing data structures in C + +, using raw pointers, manual memory management, placement new, and explicit destructor calls to get the best possible performance, you’ll undoubtedly find safe Rust rather limiting.
+</div>
+<div class="noteHeading">
+Note - Beyond the Standard Collections >  Page 428
+</div>
+<div class="noteText">
+Typo: Do you mean "new placement" and not "placement new"?
+</div>
+<div class="sectionHeading">
+17. Strings and Text
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Characters (char) >  Page 435
+</div>
+<div class="noteText">
+So, for example: assert_eq!(' F'. to_digit( 16), Some( 15)); assert_eq!( std:: char:: from_digit( 15, 16), Some(' f')); assert!( char:: is_digit(' f', 16));
+</div>
+<div class="noteHeading">
+Note - Characters (char) >  Page 435
+</div>
+<div class="noteText">
+Please explain why `std` (in `std::char::from_digit()`) is spelled out here. Especially that this is different from the second one (in `char::is_digit`).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - String and str >  Page 440
+</div>
+<div class="noteText">
+String has a few methods for removing text (these do not affect the string’s capacity; use shrink_to_fit if you need to free memory):
+</div>
+<div class="noteHeading">
+Note - String and str >  Page 440
+</div>
+<div class="noteText">
+Is it true that the capacity doesn't change in all cases (e.g: if all characters are popped)?
+
+This would also imply that `Vector` has support for removing elements without affecting capacity. Maybe this point should be mentioned.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - String and str >  Page 443
+</div>
+<div class="noteText">
+Because the replacement is done eagerly, .replace()’ s behavior on overlapping matches can be surprising.
+</div>
+<div class="noteHeading">
+Note - String and str >  Page 443
+</div>
+<div class="noteText">
+Should provide a rationale for this even though it isn't that hard to figure out.
+
+Explaining this behavior is a sign that something is wrong. The `replace` method should probably have the same behavior and the confusing replace should have a different name that can hint its treacherous nature.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - String and str >  Page 445
+</div>
+<div class="noteText">
+// The ':' characters are separators here. Note the final "". assert_eq!(" jimb: 1000: Jim Blandy:". split(':'). collect:: < Vec <_ > >(), vec![" jimb", "1000", "Jim Blandy", ""]); // The '\ n' characters are terminators here. assert_eq!(" 127.0.0.1 localhost\ n\ 127.0.0.1 www.reddit.com\ n" .split_terminator('\ n'). collect:: < Vec <_ > >(), vec![" 127.0.0.1 localhost", "127.0.0.1 www.reddit.com"]); // Note, no final ""!
+</div>
+<div class="noteHeading">
+Note - String and str >  Page 445
+</div>
+<div class="noteText">
+Maybe easier to understand the differences between regular-splits and terminator-splits functions were you to use the same input for both (probably the one with the newlines).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Formatting Values >  Page 454
+</div>
+<div class="noteText">
+println!("{:. 3} µs: relocated {} at {:# x} to {:# x}, {} bytes", 0.84391, "object", 140737488346304_usize, 6299664_usize, 64); That call produces the following output: 0.844µs: relocated object at 0x7fffffffdcc0 to 0x602010, 64 bytes The string literal serves as a template for the output: each {...} in the template gets replaced by the formatted form of one of the following arguments. The template string must be a constant so that Rust can check it against the types of the arguments at compile time. Each argument must be used; Rust reports a compile- time error otherwise.
+</div>
+<div class="noteHeading">
+Note - Formatting Values >  Page 454
+</div>
+<div class="noteText">
+So does C report compile-time error with proper compiler format function-attributes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Formatting Values >  Page 464
+</div>
+<div class="noteText">
+fn write_log_entry( entry: std:: fmt:: Arguments) { if logging_enabled() { // Keep things simple for now, and just // open the file every time. let mut log_file = OpenOptions:: new() .append( true) .create( true) .open(" log- file- name") .expect(" failed to open log file"); log_file.write_fmt( entry) .expect(" failed to write to log"); } }
+</div>
+<div class="noteHeading">
+Note - Formatting Values >  Page 465
+</div>
+<div class="noteText">
+Maybe use a guard instead (if not return) to reduce nesting. This applies to the whole book and would make the code much easier to read.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Regular Expressions >  Page 467
+</div>
+<div class="noteText">
+[dependencies] lazy_static = "1"
+</div>
+<div class="noteHeading">
+Note - Regular Expressions >  Page 467
+</div>
+<div class="noteText">
+What's with the non-semantic versioning (or confusing lax behavior)? Versioning is so important that it should be explicit (e.g: `1.0.0` instead of `1`).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Normalization >  Page 472
+</div>
+<div class="noteText">
+unicode- normalization = "0.1.17"
+</div>
+<div class="noteHeading">
+Note - Normalization >  Page 472
+</div>
+<div class="noteText">
+Why do many crates that seem to be production-grade have a major version of `0`? This is a bad sign for people who are new to Rust and is honestly a risk (e.g: the ecosystem may not be mature yet).
+</div>
+<div class="sectionHeading">
+18. Input and Output
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 475
+</div>
+<div class="noteText">
+pub fn copy < R: ?Sized, W: ?Sized >( reader: &mut R, writer: &mut W) -> io:: Result < u64 > where R: Read, W: Write
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 475
+</div>
+<div class="noteText">
+Maybe mention why `reader` is `&mut`: it drains, in a sense, the stream (which may not be seekable).
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 475
+</div>
+<div class="noteText">
+There are at least a couple of reasons why the regular reader doesn't include the methods of the buffered-reader. And it might be useful to list some of them or at least give a brief rationale.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 475
+</div>
+<div class="noteText">
+Readers
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 478
+</div>
+<div class="noteText">
+Figure 18- 2. A buffered file reader
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 478
+</div>
+<div class="noteText">
+Wording not clear. "is several" what?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 478
+</div>
+<div class="noteText">
+reader.read_line(& mut line) Reads a line of text and appends it to line, which is a String. The newline character '\ n' at the end of the line is included in line. If the input has Windows- style line endings, "\ r\ n", both characters are included in line.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 478
+</div>
+<div class="noteText">
+Is it possible for "\r\n" to be counted as a single character (like fread in some cases)?
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 478
+</div>
+<div class="noteText">
+Why the inconsistency (newline characters not included) as with `read_line`? A brief rationale, at least, would be useful but still insufficient as many programmers would fall in this trap (even if knew this caveat at some point in their life).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 478
+</div>
+<div class="noteText">
+reader.lines()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 478
+</div>
+<div class="noteText">
+reader.read_until( stop_byte, &mut byte_vec), reader.split( stop _byte) These are just like .read_line() and .lines(), but byte- oriented, producing Vec < u8 > s instead of Strings. You choose the delimiter stop_byte.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 478
+</div>
+<div class="noteText">
+Could be useful to explain why text-oriented versions don't exist and mention them if they do exist.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 480
+</div>
+<div class="noteText">
+In Rust, File and BufReader are two separate library features, because sometimes you want files without buffering, and sometimes you want buffering without files (for example, you may want to buffer input from the network).
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 480
+</div>
+<div class="noteText">
+Does this mean that `File` is unbuffered by default? There's an argument for not doing things implicitly (buffering). But the argument for the default being the most common (buffered) may be stronger. And the use of unbuffered `File` is probably only practical in special-cases.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 482
+</div>
+<div class="noteText">
+The print macros don’t return a Result; they simply panic if the write fails. Since they write to the terminal, this is rare.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 482
+</div>
+<div class="noteText">
+Maybe mention how `print` might fail: closing stdout/stderr without re-opening them again.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 483
+</div>
+<div class="noteText">
+Note that while the println! and eprintln! macros automatically flush the stdout and stderr stream, the print! and eprint! macros do not. You may have to call flush() manually when using them.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 483
+</div>
+<div class="noteText">
+Maybe talk a bit more on flushing behavior. For example, a terminal stream may be flushed on new-line whereas a file stream would be flushed when the buffer is filled with a number of elements.
+
+Is this what you mean or does `println` and `eprintln` absolutely always flush the stream.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 484
+</div>
+<div class="noteText">
+Seeking within a file is slow. Whether you’re using a hard disk or a solid- state drive (SSD), a seek takes as long as reading several megabytes of data.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 484
+</div>
+<div class="noteText">
+Maybe add a meaningful tidbit of why this is the case: hardware/software is optimized more for read/write.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 485
+</div>
+<div class="noteText">
+Cursors implement Read, BufRead, and Seek. If the type of buf is &mut [u8] or Vec < u8 >, then the Cursor also implements Write.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 485
+</div>
+<div class="noteText">
+Shouldn't cursors `Write` for things other than `[u8]` and `Vec<u8`. For example, files.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 485
+</div>
+<div class="noteText">
+If you try to write past the end of a &mut [u8], you’ll get a partial write or an io:: Error.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 485
+</div>
+<div class="noteText">
+Probably be better to explain the exact behavior: an error when the whole data to be written is past the end and a partial write otherwise.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 485
+</div>
+<div class="noteText">
+Cursor <& mut [u8] > and Cursor < Vec < u8 > > thus implement all four of the std:: io:: prelude traits.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 485
+</div>
+<div class="noteText">
+What are the four `std::io::prelude` traits?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 486
+</div>
+<div class="noteText">
+TcpStream:: connect((" hostname", PORT))
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 486
+</div>
+<div class="noteText">
+Would be nice to talk about the possible advantages of using a single pair parameter as the type for connect instead of the intuitive 2 parameters.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Readers and Writers >  Page 486
+</div>
+<div class="noteText">
+The type of child.stdin is Option < std:: process:: ChildStdin >; here we’ve used .stdin( Stdio:: piped()) when setting up the child process, so child.stdin is definitely populated when .spawn() succeeds. If we hadn’t, child.stdin would be None.
+</div>
+<div class="noteHeading">
+Note - Readers and Writers >  Page 486
+</div>
+<div class="noteText">
+1. Seems to be missing a title here as `child.stdin` is probably not directly related to `std::net::TcpStream`.
+2. Can't see `.stdin(Stdio::piped())` anywhere close.
+3. Please explain the exact behavior when `child.stdin` is `None`.  For example, would the standard library use `io::sink` or would `stdin` be closed and the child panic when trying to read from it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Files and Directories >  Page 490
+</div>
+<div class="noteText">
+In the typical case, where path consists of a directory, then a slash, and then a filename, this returns the filename:
+</div>
+<div class="noteHeading">
+Note - Files and Directories >  Page 490
+</div>
+<div class="noteText">
+Would be nice to provide a simpe example where None is returned.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Files and Directories >  Page 490
+</div>
+<div class="noteText">
+If path2 is an absolute path, this just returns a copy of path2, so this method can be used to convert any path to an absolute path:
+</div>
+<div class="noteHeading">
+Note - Files and Directories >  Page 491
+</div>
+<div class="noteText">
+Should provide a rationale for this lax behavior. Because it can lead to surprizing results and even security vulnerabilities.
+
+For example, a privileged process may join the second path assuming it can't be outside a particular directory. But there's also the issue of other tricks (e.g: joining `../`).
+
+Adding a simple note that this isn't for sensitive usecases may be appropriate.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Files and Directories >  Page 491
+</div>
+<div class="noteText">
+let file = Path:: new("/ home/ jimb/ calendars/ calendar- 18x18. pdf"); assert_eq!( file.ancestors(). collect:: < Vec <_ > >(), vec![ Path:: new("/ home/ jimb/ calendars/ calendar- 18x18. pdf"), Path:: new("/ home/ jimb/ calendars"), Path:: new("/ home/ jimb"), Path:: new("/ home"), Path:: new("/")]);
+</div>
+<div class="noteHeading">
+Note - Files and Directories >  Page 491
+</div>
+<div class="noteText">
+Maybe explain why `Vec<_>` is used and especially the `_` since this point may not be entirely obvious to the reader.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Files and Directories >  Page 492
+</div>
+<div class="noteText">
+cp -p
+</div>
+<div class="noteHeading">
+Note - Files and Directories >  Page 492
+</div>
+<div class="noteText">
+Maybe use the long option (`--preserve`) as it's more self-describing and memorable. This applies to the whole book.
+
+I've seen instructors teach a single letter option to be doing something different than it actually does but starts with the same letter.
+</div>
+<div class="noteHeading">
+Note - Networking >  Page 497
+</div>
+<div class="noteText">
+Maybe a typo and should explicitly mention that it isn't otherwise.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Networking >  Page 497
+</div>
+<div class="noteText">
+reqwest
+</div>
+<div class="sectionHeading">
+19. Concurrency
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Shared Mutable State >  Page 529
+</div>
+<div class="noteText">
+let mut guard = self.waiting_list.lock(). unwrap();
+</div>
+<div class="noteHeading">
+Note - Shared Mutable State >  Page 529
+</div>
+<div class="noteText">
+Would be helpful to explain what `unwrap` does with locks.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Shared Mutable State >  Page 531
+</div>
+<div class="noteText">
+let mut guard1 = self.waiting_list.lock(). unwrap(); let mut guard2 = self.waiting_list.lock(). unwrap(); // deadlock
+</div>
+<div class="noteHeading">
+Note - Shared Mutable State >  Page 531
+</div>
+<div class="noteText">
+Why is this the default behavior? For example, an error-checking `pthread` mutex would give an error for this (locking an already locked mutex) instead of deadlocking.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Shared Mutable State >  Page 534
+</div>
+<div class="noteText">
+During server shutdown, the main thread may need to wait until all other threads are finished exiting.
+</div>
+<div class="noteHeading">
+Note - Shared Mutable State >  Page 534
+</div>
+<div class="noteText">
+Maybe mention that join is insufficient as the main thread may not have references to all threads and even using a supervision tree just for this may be an overkill.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Shared Mutable State >  Page 536
+</div>
+<div class="noteText">
+atom.fetch_add( 1, Ordering:: SeqCst);
+</div>
+<div class="noteHeading">
+Note - Shared Mutable State >  Page 536
+</div>
+<div class="noteText">
+Is there a default, safe increment that uses the strictest ordering and this is only for advanced use? And, if there isn't, why not?
+
+This point, naturally, applies to other atomic operations. And having a correct default would save many days of painful debugging which can happen if some properties of a system aren't compatible with the selected ordering.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Shared Mutable State >  Page 536
+</div>
+<div class="noteText">
+use std:: sync:: Arc; use std:: sync:: atomic:: AtomicBool; let cancel_flag = Arc:: new( AtomicBool:: new( false)); let worker_cancel_flag = cancel_flag.clone();
+</div>
+<div class="noteHeading">
+Note - Shared Mutable State >  Page 536
+</div>
+<div class="noteText">
+Maybe mention why Arc is needed here: for referencing the atomic value from multiple threads as this is orthogonal from thread-safe modification.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - What Hacking Concurrent Code in Rust Is Like >  Page 540
+</div>
+<div class="noteText">
+What Hacking Concurrent Code in Rust Is Like
+</div>
+<div class="noteHeading">
+Note - What Hacking Concurrent Code in Rust Is Like >  Page 540
+</div>
+<div class="noteText">
+Why is "in" in all lowercase whereas "Is" isn't?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - What Hacking Concurrent Code in Rust Is Like >  Page 540
+</div>
+<div class="noteText">
+arguing with the compiler gets you up and running correctly a lot faster than debugging data races.
+</div>
+<div class="noteHeading">
+Note - What Hacking Concurrent Code in Rust Is Like >  Page 540
+</div>
+<div class="noteText">
+It also teach new programmers to avoid many subtle issues that the compiler can detect and focuses their learning experience toward system-level issues that may not even be entirely technical.
+</div>
+<div class="sectionHeading">
+20. Asynchronous Programming
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - From Synchronous to Asynchronous >  Page 547
+</div>
+<div class="noteText">
+socket.shutdown( net:: Shutdown:: Write)?;
+</div>
+<div class="noteHeading">
+Note - From Synchronous to Asynchronous >  Page 547
+</div>
+<div class="noteText">
+Is it safe for shutdown to be called synchronously? More specifically, is it a local operation (no networking) and does it use no IO (less relevant)?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - From Synchronous to Asynchronous >  Page 547
+</div>
+<div class="noteText">
+and the body of cheapo_request has not yet begun execution.
+</div>
+<div class="noteHeading">
+Note - From Synchronous to Asynchronous >  Page 547
+</div>
+<div class="noteText">
+Wouldn't it be more accurate to, and important to note, that the code for building returned future is the only thing executed?
+
+And even the asynchronous code could be executed before the function return, depending on OS scheduling and Rust implementation.
+</div>
+<div class="sectionHeading">
+21. Macros
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Built-In Macros >  Page 609
+</div>
+<div class="noteText">
+The Rust compiler supplies several macros that are helpful when you’re defining your own macros. None of these could be implemented using macro_rules! alone. They’re hardcoded in rustc:
+</div>
+<div class="noteHeading">
+Note - Built-In Macros >  Page 609
+</div>
+<div class="noteText">
+Maybe mention somewhere explicitly that `macro_rules` is itself a macro. And it's important to mention explicitly if it isn't and remove implicit hints that it is.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Built-In Macros >  Page 610
+</div>
+<div class="noteText">
+This would be fairly worthless except that Cargo sets several interesting environment variables when it compiles a crate. For example, to get your crate’s current version string, you can write:
+</div>
+<div class="noteHeading">
+Note - Built-In Macros >  Page 610
+</div>
+<div class="noteText">
+Another great usecase is for credentials needed for development. For example, for automated tests that connect to backend systems.
+
+On a broader scope, any configuration that's only used by developers (or even QA or other roles) who have access to the code.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Debugging Macros >  Page 612
+</div>
+<div class="noteText">
+$ rustup override set nightly
+</div>
+<div class="noteHeading">
+Note - Debugging Macros >  Page 612
+</div>
+<div class="noteText">
+It can be inferred that this is for using unstable features but it should be explained. Especially, whether for example, it only affects the terminal session (which is reasonable but should be mentioned explicitly too).
+</div>
+<div class="noteHeading">
+Note - Building the json! Macro >  Page 615
+</div>
+<div class="noteText">
+What's with the obsession with using the least. no. of characters in Rust? Just like in UNIX and command-line options which, in part, due to historical limitations (e.g: a max of 7 characters for exported symbols, 80-character lines).
+
+Among many consequences of this practice are having to look up references constantly and using them thinking they mean something different that's confusingly similar.
+
+Shouldn't Rust with its revolutionary practices break this vicious cycle!
+
+Giving credit where credit is due, Rust short names have sufficient word distance and not so easy to confuse with each other.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Building the json! Macro >  Page 615
+</div>
+<div class="noteText">
+ty
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Building the json! Macro >  Page 617
+</div>
+<div class="noteText">
+Json:: Object( Box:: new( vec![ $( ($ key.to_string(), json!( $ value)) ),* ]. into_iter(). collect()))
+</div>
+<div class="noteHeading">
+Note - Building the json! Macro >  Page 617
+</div>
+<div class="noteText">
+`Json::Object` expects a boxed `HashMap` and this wouldn't work unless collecting an iterator of pairs would produce a `HashMap`.
+
+So is this the case (collecting pairs produces a `HashMap`)? Or is type-inference alone at play here (probably not as only ML languages are this advanced)?
+
+Another possibility is that the `vec` macro does this but this would be unlikely.
+
+This probably makes the `From*` traits/types the winner here but how this works should be mentioned in at least a couple of words.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Building the json! Macro >  Page 618
+</div>
+<div class="noteText">
+impl From < String > for Json { fn from( s: String) -> Json { Json:: String( s) } } impl <' a > From <&' a str > for Json { fn from( s: &' a str) -> Json { Json:: String( s.to_string()) } }
+</div>
+<div class="noteHeading">
+Note - Building the json! Macro >  Page 618
+</div>
+<div class="noteText">
+Why are lifetimes spelled out? Isn't this the default? And this should be explained in either case briefly even if it has been already so the reader can understand this wholly without looking everywhere in the book or online.
+
+And similarly, why is `From<String>` not redundant here? Shouldn't `From<&str>` be sufficient?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Building the json! Macro >  Page 621
+</div>
+<div class="noteText">
+You may have noticed that many other identifiers were painted one or more colors as the macros were expanded: Box, HashMap, and Json,
+</div>
+<div class="noteHeading">
+Note - Building the json! Macro >  Page 621
+</div>
+<div class="noteText">
+Reading on a Kindle E-Reader, I can only see two colors for the whole snippet.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Building the json! Macro >  Page 621
+</div>
+<div class="noteText">
+First, we’ll consider a case where Rust’s strict hygiene gets in the way, and we need to work around it. Suppose we have many functions that contain this line of code: let req = ServerRequest:: new( server_socket.session());
+</div>
+<div class="noteHeading">
+Note - Building the json! Macro >  Page 621
+</div>
+<div class="noteText">
+It can be argued that the real issue here is that `ServerRequest` doesn't support a common usecase.
+
+For example, `ServerRequest::with_session(server_socket)` or `server_socket.request()` maybe more appropriate. This can be done to the types/traits directly or use types/traits extensions. Even more simply, it maybe possible to implement this using only a single function.
+
+It's possible that some Rust behavior (e.g: moves) make macros the best option. But this should be explained and only the simplest tool should be used to achieve a task.
+
+And this example would be vastly improved if it provides significant advantage that can't be gained without macros. Otherwise a reader could dismiss macros' benefits, or worse, another reader would learn to use them in the wrong place and we would produce a generation of macro-abusers.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Building the json! Macro >  Page 622
+</div>
+<div class="noteText">
+It would require the name server_socket in the macro to refer to the local server_socket declared in the function, and vice versa for the variable req.
+</div>
+<div class="noteHeading">
+Note - Building the json! Macro >  Page 622
+</div>
+<div class="noteText">
+Should emphasize how supporting this macro as is would break the hygiene which would result in the macro adventures similar to C/C++.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Building the json! Macro >  Page 623
+</div>
+<div class="noteText">
+Instead, the macro should use absolute paths to any names it uses. macro_rules! provides the special fragment $ crate to help with this. This is not the same as crate, which is a keyword that can be used in paths anywhere, not just in macros. $ crate acts like an absolute path to the root module of the crate where the macro was defined.
+</div>
+<div class="noteHeading">
+Note - Building the json! Macro >  Page 623
+</div>
+<div class="noteText">
+The `crate` keyword lacks proper explanation here. It can be inferred that it semi-evaluates to what `$crate` does (can't tell from the book). And even if this is explained extensively somewhere in the book, it should still be briefly explained here.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Beyond macro_rules! >  Page 626
+</div>
+<div class="noteText">
+Perhaps, having read all this, you’ve decided that you hate macros.
+</div>
+<div class="noteHeading">
+Note - Beyond macro_rules! >  Page 626
+</div>
+<div class="noteText">
+A serious warning against using macros when simpler mechanisms are sufficient missing in this chapter. Writers should lead by example and provide guidance for the next generation of programmers.
+</div>
+<div class="sectionHeading">
+22. Unsafe Code
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Undefined Behavior >  Page 637
+</div>
+<div class="noteText">
+Here, then, are Rust’s rules for well- behaved programs:
+</div>
+<div class="noteHeading">
+Note - Undefined Behavior >  Page 637
+</div>
+<div class="noteText">
+ What about OOM? Which doesn't seem to be mentioned anywhere. Although, it can be inferred that it would cause a panic that can be caught and handled (with the option to continue execution).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Undefined Behavior >  Page 637
+</div>
+<div class="noteText">
+Any
+</div>
+<div class="noteHeading">
+Note - Undefined Behavior >  Page 637
+</div>
+<div class="noteText">
+This doesn't seem to be explained anywhere (the `!` type) and it should be explained here briefly anyway.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Raw Pointers >  Page 652
+</div>
+<div class="noteText">
+std:: ptr:: copy_nonoverlapping( src, dst, count)
+</div>
+<div class="noteHeading">
+Note - Raw Pointers >  Page 652
+</div>
+<div class="noteText">
+Shouldn't non-overlapping copying be the default? To avoid unnecessary surprises and unexpected results. And just like where aligned reads are the default. A rationale should be provided or should warn against this landmine and possibly escalate to Rust to fix this in a future release.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Raw Pointers >  Page 656
+</div>
+<div class="noteText">
+if raw < self.capacity() { unsafe { // We just checked ` raw ` against self.capacity(), // and index_to_raw skips the gap, so this is safe. Some(&* self.space( raw)) } } else { None }
+</div>
+<div class="noteHeading">
+Note - Raw Pointers >  Page 656
+</div>
+<div class="noteText">
+A guard here (if raw > self.capacity { return None }) would greatly simplify code.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Raw Pointers >  Page 657
+</div>
+<div class="noteText">
+pub fn insert_iter < I >(& mut self, iterable: I) where I: IntoIterator < Item = T >
+</div>
+<div class="noteHeading">
+Note - Raw Pointers >  Page 657
+</div>
+<div class="noteText">
+This may not have been covered (but should) or even doesn't exist in Rust (and for very good reasons), but can't the insert function simply be overloaded?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Raw Pointers >  Page 658
+</div>
+<div class="noteText">
+let mut new_capacity = self.capacity() * 2; if new_capacity = = 0 { // The existing vector is empty. // Choose a reasonable starting capacity. new_capacity = 4; }
+</div>
+<div class="noteHeading">
+Note - Raw Pointers >  Page 658
+</div>
+<div class="noteText">
+A min function could be more appropriate here and it would remove the unnecessary nesting/if-condition.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Raw Pointers >  Page 660
+</div>
+<div class="noteText">
+It’s all but unavoidable for a type’s methods to momentarily relax the type’s invariants while they do their job and then put everything back to rights before they return.
+</div>
+<div class="noteHeading">
+Note - Raw Pointers >  Page 660
+</div>
+<div class="noteText">
+Is "rights" here even a word? And if so, maybe a more common one is more appropriate.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Reinterpreting Memory with Unions >  Page 661
+</div>
+<div class="noteText">
+unlike a struct, you must choose exactly one.
+</div>
+<div class="noteHeading">
+Note - Reinterpreting Memory with Unions >  Page 661
+</div>
+<div class="noteText">
+Typo: Do you mean "must" and not "much"?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Reinterpreting Memory with Unions >  Page 662
+</div>
+<div class="noteText">
+Here, the sign bit is the most significant bit of the most significant byte. Because x86 processors are little- endian, the order of those bytes is reversed; the most significant byte is not bytes[ 0], but bytes[ 7].
+</div>
+<div class="noteHeading">
+Note - Reinterpreting Memory with Unions >  Page 662
+</div>
+<div class="noteText">
+Maybe mention how to do this in an endian-independent manner: using bitwise operators.
+</div>
+<div class="sectionHeading">
+23. Foreign Functions
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Raw Interface to libgit2 >  Page 675
+</div>
+<div class="noteText">
+pub fn giterr_last() -> *const git_error;
+</div>
+<div class="noteHeading">
+Note - A Raw Interface to libgit2 >  Page 675
+</div>
+<div class="noteText">
+A multi-threading hazard. What would happen if another function was called by the time the client used this one to check for an error?
+
+This a big topic but it's harder to compete with the following approach:
+1. Have every function that may fail return a status-code and its result returned via an out parameter. The status-code should be 0 for success to comply with other code and make it easy to handle the happy path uniformly and positive for errors to prevent using them for in-band values which make a delicate concern, error handling, even more delicate and risky.
+2. Provide a function that returns an ASCII message for each error-code.
+
+There are also some subtleties. For example, a non-fallible  function may become fallible. In this case, having all functions return a status-code maybe reasonable. This works because the most important thing is to have as few API calls and otherwise both the library author and clients are in big trouble.
+
+There are, of course, rare cases where this isn't the right approach but, ironically, most projects would argue they deal with these rare cases (just like most drivers think their driving skills are above average).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Raw Interface to libgit2 >  Page 676
+</div>
+<div class="noteText">
+#[ repr( C)] pub struct git_error { pub message: *const c_char, pub klass: c_int }
+</div>
+<div class="noteHeading">
+Note - A Raw Interface to libgit2 >  Page 676
+</div>
+<div class="noteText">
+This is probably more about `libgit2`, but why isn't an enum used for klass?
+
+There are, of course, many reasonable explanations:
+1. `int` is the unifying status-code type in C. But this applies more to a return type for a function than for struct fields and C lax behavior with enums, which have many disadvantages, make them easier to replace regular `int`s.
+2. The headers wouldn't change every time an error is added. But the exposed errors should be very few, not change much, and the headers would be more self-documented.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Raw Interface to libgit2 >  Page 677
+</div>
+<div class="noteText">
+fn check( activity: &' static str, status: c_int) -> c_int
+</div>
+<div class="noteHeading">
+Note - A Raw Interface to libgit2 >  Page 677
+</div>
+<div class="noteText">
+Using `git_lasterr` doesn't seem thread-safe and its use not synchronized. Which isn't just about this function alone as synchronizing access to it alone would produce the incorrect behavior.
+
+Maybe just note, in not so many words, how libgit2 here may not be thread-safe (especially error-details).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Raw Interface to libgit2 >  Page 677
+</div>
+<div class="noteText">
+if status < 0 { unsafe { let error = &* raw:: giterr_last(); println!(" error while {}: {} ({})", activity, CStr:: from_ptr( error.message). to_string_lossy(), error.klass); std:: process:: exit( 1); } } status
+</div>
+<div class="noteHeading">
+Note - A Raw Interface to libgit2 >  Page 678
+</div>
+<div class="noteText">
+A guard here (`if status >= 0 { return status; }`) would greatly simplify code and reduce nesting.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Raw Interface to libgit2 >  Page 678
+</div>
+<div class="noteText">
+let author = raw:: git_commit_author( commit);
+</div>
+<div class="noteHeading">
+Note - A Raw Interface to libgit2 >  Page 678
+</div>
+<div class="noteText">
+Where is error-handling here and is it guaranteed that `NULL` is never returned?
+This applies to author fields too and assertions maybe appropriate here.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Raw Interface to libgit2 >  Page 680
+</div>
+<div class="noteText">
+But Rust won’t let us borrow a reference to an uninitialized variable. We could initialize oid with zeros, but this is a waste: any value stored there will simply be overwritten.
+</div>
+<div class="noteHeading">
+Note - A Raw Interface to libgit2 >  Page 680
+</div>
+<div class="noteText">
+Wouldn't describing zero-initialization here as a waste be quite the exaggeration?
+
+The real waste is the programmer time focusing on this where there are always many more critical tactical and strategic concerns. I've seen too many programmers give performance priority over boring but important error-handling.
+
+This isn't new and even "The Elements of Programming Style, 1st Edition 1977"  talked about this repeatedly. Some of our future still lives in the 70s.
+
+There's also a couple of strong arguments for in initialization here (0s or other default value).
+Some of these are the following:
+1. To guard against the case where `libgit2` doesn't initialize this in some edge-cases.
+2. To guard against the case where `git_reference_name_to_id` returns an error but the client handle it properly and end up using the uninitialized variable. I've seen in production-code where a reasonable complexity of the code made this bug hard to find by scanning the code.
+3. To ensure the code exhibits the same behavior in lieu of the first 2 points.
+
+These 3 points don't apply to many projects and it's reasonable to delegate initialization completely to `libgit2`. But, for some projects, initialization would be a reasonable decision.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Safe Interface to libgit2 >  Page 683
+</div>
+<div class="noteText">
+#[ derive( Debug)] pub struct Error { code: i32, message: String, class: i32 }
+</div>
+<div class="noteHeading">
+Note - A Safe Interface to libgit2 >  Page 683
+</div>
+<div class="noteText">
+Not having an enum with the possible errors in `libgit2` itself shouldn't prevent the crate from fixing this. In the same vein as the safe `libgit2` interface doesn't leak C's undefined behavior.
+
+It can be argued that the library user may benefit from the int error-code but the library user can easily have both (enum and error-code) at the same time.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Safe Interface to libgit2 >  Page 684
+</div>
+<div class="noteText">
+If the only way to create a Repository is to successfully open a fresh Git repository, that will ensure that each Repository points to a distinct git_repository object:
+</div>
+<div class="noteHeading">
+Note - A Safe Interface to libgit2 >  Page 684
+</div>
+<div class="noteText">
+This is probably a bit paranoid but, in the end, this is an implementation detail. For example, `libgit2` could have a reference-counted cache (right now or in a future version) of repos.
+
+This is more probable if `libgit2` is implemented in C++ as C++ folk like to do this sort of stuff.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Safe Interface to libgit2 >  Page 684
+</div>
+<div class="noteText">
+check( raw:: git_repository_open(& mut repo, path.as_ptr()))?;
+</div>
+<div class="noteHeading">
+Note - A Safe Interface to libgit2 >  Page 684
+</div>
+<div class="noteText">
+This maybe the only thread-safe use of check as it uses non thread-safe `git_lasterr` internally.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Safe Interface to libgit2 >  Page 687
+</div>
+<div class="noteText">
+// NulError is what ` CString:: new ` returns if a string // has embedded zero bytes. impl From < std:: ffi:: NulError > for Error { fn from( e: std:: ffi:: NulError) -> Error { Error { code: -1, message: e.to_string(), class: 0 } } }
+</div>
+<div class="noteHeading">
+Note - A Safe Interface to libgit2 >  Page 687
+</div>
+<div class="noteText">
+This isn't mentioned anywhere but would be useful: do you mean by a string-without-embedded-0s MUTF-8?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Safe Interface to libgit2 >  Page 691
+</div>
+<div class="noteText">
+In this chapter, we’ve gone from simplistic interfaces that don’t provide many safety guarantees to a safe API wrapping an inherently unsafe API by arranging for any violation of the latter’s contract to be a Rust type error. The result is an interface that Rust can ensure you use correctly. For the most part, the rules we’ve made Rust enforce are the sorts of rules that C and C + + programmers end up imposing on themselves anyway. What makes Rust feel so much stricter than C and C + + is not that the rules are so foreign, but that this enforcement is mechanical and comprehensive.
+</div>
+<div class="noteHeading">
+Note - A Safe Interface to libgit2 >  Page 713
+</div>
+<div class="noteText">
+Thread-safety never mentioned. Noting that the implementation may not be thread-safe should be sufficient.
+
+Omitting this fact can have many serious consequences. For example, budding programmers who read the text would miss on important subtleties of multi-threaded programming.
+</div>
+<div class="noteHeading">
+Note - Conclusion >  Page 713
+</div>
+<div class="noteText">
+Missing chapter or at least a section of why not to use Rust and some of its limitations (esp. in comparison with C/C++ and maybe golang). This would make the book more standalone and provide valuable insight that's hard to find. You can find Rust enthusiasts and hypists everywhere but devil's advocates are what we lack most.
+
+For example, as bad as C and C++ are, they are very well supported (esp. C for micro-controllers) and their quirks are very well known and understood. Rust is great but you may get to dead-end in a project with it and fall in the last 10% trap.
+
+It would also give great credibility to the book and reflections on Rust itself that give a unique perspective.
+
+This is much more important than the FFI chapter. As people will know when they need FFI and can easily look it up. But many may not appreciate something until they know it (that's maybe the greatest value of books in this age).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Conclusion >  Page 713
+</div>
+<div class="noteText">
+Conclusion
+</div>
+
+        </div>
+    </body>
+</html>

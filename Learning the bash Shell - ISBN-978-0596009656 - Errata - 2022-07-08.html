@@ -1,0 +1,2268 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Learning the bash Shell: Unix Shell Programming (In a Nutshell (O'Reilly))
+</div>
+<div class="authors">
+Newham, Cameron
+</div>
+<div class="citation">
+Citation (Chicago Style): Newham, Cameron. <i>Learning the bash Shell: Unix Shell Programming (In a Nutshell (O'Reilly))</i>. O'Reilly Media, 2005. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+Preface
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Conventions Used in This Handbook >  Page 8
+</div>
+<div class="noteText">
+$ pwd/ home/ cam/ adventure/ carrol $
+</div>
+<div class="noteHeading">
+Note - Conventions Used in This Handbook >  Page 8
+</div>
+<div class="noteText">
+1. Having the "$" first is unusual as it's usually last.
+2. "pwd" is a bit confusing here and removing it would probably make the path more realistic.
+3. The "$" last typically isn't preceded by a space.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Conventions Used in This Handbook >  Page 8
+</div>
+<div class="noteText">
+Used in Chapter 2 to show the position of the cursor on the command line being edited. For example:grep -l Alice < ~ cam/ book/[ a] iw
+</div>
+<div class="noteHeading">
+Note - Conventions Used in This Handbook >  Page 8
+</div>
+<div class="noteText">
+Not clear here whether the cursor is before or after "a" and maybe using the square brackets alone, or some other character, as the cursor would be more useful.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - We’d Like to Hear from You >  Page 8
+</div>
+<div class="noteText">
+http:// www.oreilly.com/ catalog/ bash3
+</div>
+<div class="noteHeading">
+Note - We’d Like to Hear from You >  Page 8
+</div>
+<div class="noteText">
+Using HTTPS links in the next edition would be nice.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Acknowledgments for the First Edition >  Page 10
+</div>
+<div class="noteText">
+(and my net.connection!);
+</div>
+<div class="noteHeading">
+Note - Acknowledgments for the First Edition >  Page 10
+</div>
+<div class="noteText">
+"net.connection" seems like a typo.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Acknowledgments for the First Edition >  Page 10
+</div>
+<div class="noteText">
+I’m grateful to Frank Willison for taking me up on my first piece of email to ORA:
+</div>
+<div class="noteHeading">
+Note - Acknowledgments for the First Edition >  Page 10
+</div>
+<div class="noteText">
+Not clear exactly what's "ORA?"
+</div>
+<div class="sectionHeading">
+1. bash Basics
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.6. Files >  Page 23
+</div>
+<div class="noteText">
+Actually, ls is more often used with options that tell it to list information about the files, like the -l (long) option, which tells ls to list the file’s owner, size, time of last modification, and other information, or -a (all),
+</div>
+<div class="noteHeading">
+Note - 1.6. Files >  Page 23
+</div>
+<div class="noteText">
+Should probably use long options by default as they're more memorable and self-explanatory.
+
+Short options shoud only be used for faster typing once they're used a lot. And for better portability (e.g: busybox, macOS).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.7. Input and Output >  Page 28
+</div>
+<div class="noteText">
+Input and Output
+</div>
+<div class="noteHeading">
+Note - 1.7. Input and Output >  Page 28
+</div>
+<div class="noteText">
+In the previous section about wildcards, a word of caution would be nice.
+
+One scenario is when `*` is used and some files start with `--`. This can even be a security risk.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.7. Input and Output >  Page 30
+</div>
+<div class="noteText">
+sort Sort lines in the input
+</div>
+<div class="noteHeading">
+Note - 1.7. Input and Output >  Page 30
+</div>
+<div class="noteText">
+I think `sort` by default only sorts, as expected, when combined with `uniq`.
+
+This is unfortunate and a landmine even if many are familiar with it.
+
+And authors should do better by, at least, just replacing `sort` description everywhere in the world with "almost sorts" instead of "sorts."
+
+Because changing the `sort` utility to do the expected thing probably does more harm than good but explaining its unexpected behavior should be the standard.
+
+I'm making a point here: problems/mistakes should be quarantined and not propagated.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.7. Input and Output >  Page 32
+</div>
+<div class="noteText">
+Here’s a more complicated example. The file /etc/ passwd stores information about users’ accounts on a UNIX system. Each line in the file contains a user’s login name, user ID number, encrypted password, home directory, login shell, and other information.
+</div>
+<div class="noteHeading">
+Note - 1.7. Input and Output >  Page 32
+</div>
+<div class="noteText">
+Not entirely sure and the date of book publication maybe relevant here, but the encrypted passwords are probably not in `/etc/passwd` but instead somewhere else like `/etc/shadow`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.8. Background Jobs >  Page 35
+</div>
+<div class="noteText">
+Background I/ O
+</div>
+<div class="noteHeading">
+Note - 1.8. Background Jobs >  Page 35
+</div>
+<div class="noteText">
+Could be useful to briefly explain in the previous background jobs section how to move a job to the background after you have already started it in the background.
+
+I think a way to do this is to stop the job using `Ctrl+Z` and then doing `bg` to move it to the background.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.9. Special Characters and Quoting >  Page 37
+</div>
+<div class="noteText">
+\ Quote next character Chapter 1
+</div>
+<div class="noteHeading">
+Note - 1.9. Special Characters and Quoting >  Page 37
+</div>
+<div class="noteText">
+Could be that "Escape" is more appropriate here than "Quote."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.9. Special Characters and Quoting >  Page 38
+</div>
+<div class="noteText">
+<" > Weak quote Chapter 1
+</div>
+<div class="noteHeading">
+Note - 1.9. Special Characters and Quoting >  Page 38
+</div>
+<div class="noteText">
+Not clear why `<">` is used here instead of just `"`. Is this even intentional?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.9. Special Characters and Quoting >  Page 38
+</div>
+<div class="noteText">
+Sometimes you will want to use special characters literally, i.e., without their special meanings. This is called quoting.
+</div>
+<div class="noteHeading">
+Note - 1.9. Special Characters and Quoting >  Page 38
+</div>
+<div class="noteText">
+The importance of quoting should have probably been mentioned very briefly with the section of wildcards.
+
+This is important for so many reasons. For example, when someone just reads the section of wildcards it'd be invaluable to also know the importance of quoting (e.g, otherwise the arguments would depend on more factors).
+
+Even people who read the book cover to cover would benefit greatly from this approach when they use it as a light-reference.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.9. Special Characters and Quoting >  Page 39
+</div>
+<div class="noteText">
+You needn’t quote the entire line, just the portion containing special characters (or characters you think might be special, if you just want to be sure): $ echo '2 * 3 > 5' is a valid inequality.
+</div>
+<div class="noteHeading">
+Note - 1.9. Special Characters and Quoting >  Page 39
+</div>
+<div class="noteText">
+This is a slippery slope, can be quite the landmine, and might unnecessarily require more detailed knowledge.
+
+Quoting should probably be the default advice for everything but the simplest of expressions. Even excellent knowledge of the shell's behavior doesn't make this any less important.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.9. Special Characters and Quoting >  Page 40
+</div>
+<div class="noteText">
+find . -name `*. c'
+</div>
+<div class="noteHeading">
+Note - 1.9. Special Characters and Quoting >  Page 40
+</div>
+<div class="noteText">
+The quoting seems to be off here: "`" used instead of "'."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 1.10. Help >  Page 47
+</div>
+<div class="noteText">
+You could use diff warandpeace* as a shorthand to save typing— as long as there are no other files with names of that form.
+</div>
+<div class="noteHeading">
+Note - 1.10. Help >  Page 47
+</div>
+<div class="noteText">
+This is probably one case where wildcards shouldn't be used even if it's mechanically correct.
+
+The most important reason is that, to my knowledge, there's a semantic difference between the first and second arguments of `diff`.
+
+And even if wildcards happen to capture the semantic difference and ignoring many other factors, it may obfuscate the intent or semantic difference.
+
+And books  should follow high standards as they shape the minds of both new and old practitioners.
+</div>
+<div class="sectionHeading">
+2. Command-Line Editing
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2.4. vi Editing Mode >  Page 76
+</div>
+<div class="noteText">
+[8] The line is also “executed” by the shell. However, # is the shell’s comment character, so the shell ignores it.
+</div>
+<div class="noteHeading">
+Note - 2.4. vi Editing Mode >  Page 76
+</div>
+<div class="noteText">
+The footnote here maybe redundant, at least in the Kindle edition.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2.7. readline >  Page 83
+</div>
+<div class="noteText">
+"\ C- t <" >:
+</div>
+<div class="noteHeading">
+Note - 2.7. readline >  Page 83
+</div>
+<div class="noteText">
+The second quote seems off and is probably intended to be `"` instead of `<">`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2.7. readline >  Page 83
+</div>
+<div class="noteText">
+CTRL- T; "\ C- t <" >: <" > Curiouser and curiouser! <" >.
+</div>
+<div class="noteHeading">
+Note - 2.7. readline >  Page 83
+</div>
+<div class="noteText">
+Suspicious quotes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2.7. readline >  Page 84
+</div>
+<div class="noteText">
+\<" > The double quote character (<" >)
+</div>
+<div class="noteHeading">
+Note - 2.7. readline >  Page 84
+</div>
+<div class="noteText">
+Suspicious quotes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2.7. readline >  Page 85
+</div>
+<div class="noteText">
+If set to On, converts characters with the eighth bit set to an ASCII key sequence by stripping the eighth bit and prepending an escape character. The default is On.
+</div>
+<div class="noteHeading">
+Note - 2.7. readline >  Page 85
+</div>
+<div class="noteText">
+Getting to the bit level here is probably uncalled and only causes confusion and ASCII is more than sufficient.
+
+This also leads to more subtleties. For example, using the most-significant-bit wording may make more sense than the 8th.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2.7. readline >  Page 85
+</div>
+<div class="noteText">
+horizontal- scroll- mode Set to On means that
+</div>
+<div class="noteHeading">
+Note - 2.7. readline >  Page 85
+</div>
+<div class="noteText">
+The "Set to On means that" wording doesn't seem right.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2.7. readline >  Page 87
+</div>
+<div class="noteText">
+`"\ C- t <" >: <" > Curiouser and curiouser!"'.
+</div>
+<div class="noteHeading">
+Note - 2.7. readline >  Page 87
+</div>
+<div class="noteText">
+Suspicious quotes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 2.7. readline >  Page 87
+</div>
+<div class="noteText">
+`"\ C- l”: ls'
+</div>
+<div class="noteHeading">
+Note - 2.7. readline >  Page 87
+</div>
+<div class="noteText">
+Suspicious first backtick which should probably be an opening single-quote.
+</div>
+<div class="sectionHeading">
+3. Customizing Your Environment
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.1. The .bash_profile, .bash_logout, and .bashrc Files >  Page 93
+</div>
+<div class="noteText">
+source executes the commands in the specified file,
+</div>
+<div class="noteHeading">
+Note - 3.1. The .bash_profile, .bash_logout, and .bashrc Files >  Page 93
+</div>
+<div class="noteText">
+The distinction between `source` and, at least, regular script/command execution should be explained briefly.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.2. Aliases >  Page 97
+</div>
+<div class="noteText">
+Chapter 4 shows the order of precedence when, for example, an alias and a function have the same name.
+</div>
+<div class="noteHeading">
+Note - 3.2. Aliases >  Page 98
+</div>
+<div class="noteText">
+While knowing the details and behavior of such cases is useful for diagnosing issues, this is often indicates an underlying issue as you shouldn't allow these cases to happen in the first place.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.3. Options >  Page 98
+</div>
+<div class="noteText">
+These abbreviations are carryovers from the Bourne shell. Like several other “extra” bash features, they exist to ensure upward compatibility;
+</div>
+<div class="noteHeading">
+Note - 3.3. Options >  Page 98
+</div>
+<div class="noteText">
+"Backward compatibility" is probably more appropriate than "Upward compatibility" which seems to mean forward-compatibility (a rare gem).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.3. Options >  Page 98
+</div>
+<div class="noteText">
+Table 3- 1 lists the options that are useful to general UNIX users. All of them are off by default except as noted.
+</div>
+<div class="noteHeading">
+Note - 3.3. Options >  Page 98
+</div>
+<div class="noteText">
+But some are crucial for sane behavior. For example, `errexit`, `nounset`, and`pipefail`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.3. Options >  Page 99
+</div>
+<div class="noteText">
+command. [6]
+</div>
+<div class="noteHeading">
+Note - 3.3. Options >  Page 99
+</div>
+<div class="noteText">
+For some reason, footnotes when shown in the GUI pane/sheet have a "[" appear in the end but not in their dedicated page.
+
+This may indicate that the markup for the book has some issues or that the Kindle GUI itself is the culprit (very unlikely).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.4. Shell Variables >  Page 105
+</div>
+<div class="noteText">
+[8] history_control is synonymous with HISTCONTROL in versions of bash prior to 2.0. Versions prior to 1.14 only define history_control. ignoreboth is not available in bash versions prior to 1.14. HISTCONTROL is a colon- separated list, and erasedups has been added in bash 3.0 and later. [9] This variable is not available in versions of bash prior to 2.0. [10] This variable is not available in versions of bash prior to 3.0.
+</div>
+<div class="noteHeading">
+Note - 3.4. Shell Variables >  Page 105
+</div>
+<div class="noteText">
+Having footnotes here is redundant in the Kindle edition as they are already at the end and can be displayed directly where they are referenced.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.4. Shell Variables >  Page 116
+</div>
+<div class="noteText">
+PATH = $ PATH":/ home/ you/ bin"
+</div>
+<div class="noteHeading">
+Note - 3.4. Shell Variables >  Page 116
+</div>
+<div class="noteText">
+This seems to be buggy due to not including `$PATH` in the quote.
+
+For exampe, if the existing "$PATH" contains a space this would break.
+
+Tools like ShellCheck catch this easily.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.4. Shell Variables >  Page 116
+</div>
+<div class="noteText">
+PATH ="/ home/ you/ bin:" $ PATH
+</div>
+<div class="noteHeading">
+Note - 3.4. Shell Variables >  Page 116
+</div>
+<div class="noteText">
+Same quoting bug as before.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.5. Customization and Subprocesses >  Page 121
+</div>
+<div class="noteText">
+It is also possible to define variables to be in the environment of a particular subprocess (command) only, by preceding the command with the variable assignment, like this: varname = value command
+</div>
+<div class="noteHeading">
+Note - 3.5. Customization and Subprocesses >  Page 121
+</div>
+<div class="noteText">
+The value of this technique can't be underestimated because otherwise exporting variables is a global operation that can affect everything and then the order of commands can affect their behavior.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.5. Customization and Subprocesses >  Page 122
+</div>
+<div class="noteText">
+TERM = trythisone emacs filename
+</div>
+<div class="noteHeading">
+Note - 3.5. Customization and Subprocesses >  Page 122
+</div>
+<div class="noteText">
+This snippet appears funny in the Kindle edition.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.5. Customization and Subprocesses >  Page 122
+</div>
+<div class="noteText">
+The number of columns your display has[ 22]
+</div>
+<div class="noteHeading">
+Note - 3.5. Customization and Subprocesses >  Page 122
+</div>
+<div class="noteText">
+The footnote here is broken in the Kindle edition.
+
+It's the only one missing from the end of the chapter. And when displayed by clicking on it, it includes a good chunk of the content after the embedded footnote in the table.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.5. Customization and Subprocesses >  Page 125
+</div>
+<div class="noteText">
+BASH is set to the pathname of the current shell, whether it is an interactive shell or not. SHELL, on the other hand, is set to the name of your login shell, which may be a completely different shell.
+</div>
+<div class="noteHeading">
+Note - 3.5. Customization and Subprocesses >  Page 125
+</div>
+<div class="noteText">
+`SHELL` is also not specific to BASH where `BASH` is. But this seems to already be implied by the wording used.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.5. Customization and Subprocesses >  Page 126
+</div>
+<div class="noteText">
+Because definitions add to rather than take away from an environment, there is little chance that they will cause something in a subprocess not to work properly. (An exception might be name clashes if you go overboard with aliases.)
+</div>
+<div class="noteHeading">
+Note - 3.5. Customization and Subprocesses >  Page 126
+</div>
+<div class="noteText">
+Any changes to the environment carry risks and unexpected consequences. Otherwise, it wouldn't be called "environment."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.6. Customization Hints >  Page 127
+</div>
+<div class="noteText">
+You can also use the synonymous command dot (.).
+</div>
+<div class="noteHeading">
+Note - 3.6. Customization Hints >  Page 127
+</div>
+<div class="noteText">
+Which can be a bit confusing especially since it's similar to executing a relative file.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3.6. Customization Hints >  Page 129
+</div>
+<div class="noteText">
+There is an obscure option, set -k, that lets you put this type of environment variable definition anywhere on the command line, not just at the beginning.
+</div>
+<div class="noteHeading">
+Note - 3.6. Customization Hints >  Page 129
+</div>
+<div class="noteText">
+Would be nice to mention the long-form (`set -o <long-form-value>`) as it's more memorable and much more readable.
+
+Short forms are still necessary as they are often more portable.
+</div>
+<div class="sectionHeading">
+4. Basic Shell Programming
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.1. Shell Scripts and Functions >  Page 131
+</div>
+<div class="noteText">
+$ chmod + x scriptname
+</div>
+<div class="noteHeading">
+Note - 4.1. Shell Scripts and Functions >  Page 131
+</div>
+<div class="noteText">
+This snippet looks funny in the Kindle edition.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 137
+</div>
+<div class="noteText">
+IFS (internal field separator), which is a space, TAB, and NEWLINE by default.
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 137
+</div>
+<div class="noteText">
+This statement is a bit confusing and seems to imply that `IFS` default value is " \t\n".
+
+Is this really the case? And if its three characters are each used for a different purpose, this should be explained at least to avoid confusion.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 137
+</div>
+<div class="noteText">
+On the other hand, "$@" is equal to "$ 1" "$ 2"... "$ N“, where N is the number of positional parameters.
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 137
+</div>
+<div class="noteText">
+The example next seems to contradict this one as otherwise it would probably include double quotes in the output.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 137
+</div>
+<div class="noteText">
+If there are no positional parameters, "$@" expands to nothing.
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 137
+</div>
+<div class="noteText">
+"$*" is probably the same but this should be mentioned explicitly.
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+The closing double-quote used here is different from the opening one.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+"$*“.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+Why are the elements of "$*" separated by the first character of IFS instead of just spaces? To give you output flexibility.
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+Flexibility isn't reason enough as there are always infinitely many aspects of flexibility that do more harm than good.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+Changing IFS in a script is risky,
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+And more so is using `export`. This highlights the fact that variables should be used carefully in BASH and especially environment variables.
+
+And `nounset` and a couple more strict options should be used.
+
+This is extremely important. For example, you could spend days and discover a variable is mispelled or a script might produce unexpected behavior because an important step fails (which its error may not exist when the script is finished) and `errexit` option not used.
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+Different closing quote.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+"$*“,
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+Different closing quote.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 142
+</div>
+<div class="noteText">
+"$@“,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.2. Shell Variables >  Page 143
+</div>
+<div class="noteText">
+The shell will try to use UID_ as the name of the variable. Unless, by chance, $ UID_ already exists, this won’t print anything (the value being null or the empty string, “”).
+</div>
+<div class="noteHeading">
+Note - 4.2. Shell Variables >  Page 143
+</div>
+<div class="noteText">
+Another reason to use safety features like `nounset`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.3. String Operators >  Page 145
+</div>
+<div class="noteText">
+Performs substring expansion.[ 5] It returns the substring of $ varname starting at offset and up to length characters. The first character in $ varname is position 0. If length is omitted, the substring starts at offset and continues to the end of $ varname. If offset is less than 0 then the position is taken from the end of $ varname. If varname is @, the length is the number of positional parameters starting at parameter offset. Purpose: Returning parts of a string (substrings or slices). Example: If count is set to frogfootman, ${ count: 4} returns footman. ${ count: 4: 4} returns foot.
+</div>
+<div class="noteHeading">
+Note - 4.3. String Operators >  Page 145
+</div>
+<div class="noteText">
+Not mentioned here what's the behavior when `length` is greater than the no. of characters after `offset`.
+
+It would probably produce up to the end of the string but mentioning this explicitly is important.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.3. String Operators >  Page 145
+</div>
+<div class="noteText">
+[5] The substring expansion operator is not available in versions of bash prior to 2.0.
+</div>
+<div class="noteHeading">
+Note - 4.3. String Operators >  Page 145
+</div>
+<div class="noteText">
+This footnote isn't listed at the end of the chapter, in the Kindle edition.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.3. String Operators >  Page 147
+</div>
+<div class="noteText">
+filename = $ 1
+</div>
+<div class="noteHeading">
+Note - 4.3. String Operators >  Page 147
+</div>
+<div class="noteText">
+There's probably an issue with globbing here that can happen when, for example, the filename contains a space.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.3. String Operators >  Page 149
+</div>
+<div class="noteText">
+howmany = $ 2
+</div>
+<div class="noteHeading">
+Note - 4.3. String Operators >  Page 149
+</div>
+<div class="noteText">
+There's probably a quoting issue that manifests when the value of`$1` contains a space and this would easily be resolved by using `"$1"` instead of `$1`.
+
+This same quoting issue is in many other snippets in the book and tools like `ShellCheck` can detect automatically.
+
+Another point, that's rarely mentioned is that arguments should probably be referenced like `${1}` instead of `$1` to avoid the 10+ landmine that even `set -o nounset` can't catch.
+
+In fact, referencing variables using `${X}` and quoting using double-quotes should be the default as not doing so provides little convenience and wastes tons of times when things go wrong with no clear rootcause.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.4. Command Substitution >  Page 157
+</div>
+<div class="noteText">
+$( < alice)
+</div>
+<div class="noteHeading">
+Note - 4.4. Command Substitution >  Page 157
+</div>
+<div class="noteText">
+The standalone `< <file-path>` not explained and compared to regular `cat <file-path>`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.4. Command Substitution >  Page 157
+</div>
+<div class="noteText">
+“When in doubt, use single quotes, unless the string contains variables or command substitutions, in which case use double quotes.”
+</div>
+<div class="noteHeading">
+Note - 4.4. Command Substitution >  Page 157
+</div>
+<div class="noteText">
+Should probably lead by example and do this in all the snippets in the book.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.4. Command Substitution >  Page 160
+</div>
+<div class="noteText">
+The ls command gives you pattern- matching capability with wildcards,
+</div>
+<div class="noteHeading">
+Note - 4.4. Command Substitution >  Page 160
+</div>
+<div class="noteText">
+Probably more accurate, and very important to explain, is that often pattern-matching/globbing is done by the shell and commands are agnostic to this.
+
+This also serves to make expansion consistent as otherwise different commands may interpret the same string differently.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.4. Command Substitution >  Page 160
+</div>
+<div class="noteText">
+Once again, we choose a function for speed reasons.
+</div>
+<div class="noteHeading">
+Note - 4.4. Command Substitution >  Page 160
+</div>
+<div class="noteText">
+Speed should be the last concern as it's often premature optimization and clarity and easy-to-understated behavior are many folds more important and they're often the problem (not performance).
+
+And focusing on speed will definitely lead to slower systems because things won't be clear and thus hard to do the most effective optimization (whether macro or micro).
+
+And even micro optimization that are supposed to be faster may become slower if the tool optimizes for the common, unoptimized case instead.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.4. Command Substitution >  Page 161
+</div>
+<div class="noteText">
+In particular, it depends on dates starting in column 42 and filenames starting in column 55.
+</div>
+<div class="noteHeading">
+Note - 4.4. Command Substitution >  Page 161
+</div>
+<div class="noteText">
+This is quite the landmine and options that produce consistent output should be used.
+
+In general, effort should be put into making things clear instead of unclear and explaining the unclarity.
+
+Books should be an example to be followed and explicitly recommend against subtle details that waste much debugging time.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 163
+</div>
+<div class="noteText">
+We will implement a stack as an environment variable containing a list of directories separated by spaces.[ 16]
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 163
+</div>
+<div class="noteText">
+Maybe colons are better here and, many throughout the book, would unnecessary fail when a path/string/substituted-command-output contains a whitespace.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 164
+</div>
+<div class="noteText">
+${ DIR_STACK:- $ PWD ` '}
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 164
+</div>
+<div class="noteText">
+Quotes use different characters.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 164
+</div>
+<div class="noteText">
+$ DIR_STACK if it is non- null or $ PWD''
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 164
+</div>
+<div class="noteText">
+What's with the dangling, non-matched double-quote at the end.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 164
+</div>
+<div class="noteText">
+The double quotes in the assignment ensure that all of this is packaged into a single string for assignment back to DIR_STACK.
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 164
+</div>
+<div class="noteText">
+This applies to almost all of the snippets in the book but, unfortunately, not done in them.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 164
+</div>
+<div class="noteText">
+(This is why we chose spaces to separate directories, rather than the more customary colons as in PATH and MAILPATH.)
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 165
+</div>
+<div class="noteText">
+This causes issues with paths that contain spaces and there would probably be easy solutions anyway. For example using ":" for the base/empty case.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 165
+</div>
+<div class="noteText">
+The fourth problem with the code is that it will not work if, for some reason, a directory name contains a space.
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 165
+</div>
+<div class="noteText">
+Again, the space/many-special-character issues is unnecessarily present in most snippets in the book.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 166
+</div>
+<div class="noteText">
+Some older BSD- derived versions of UNIX (without System V extensions) do not support the \{ N \} option. For this example, use 42 periods in a row instead of .\{ 42\}.
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 167
+</div>
+<div class="noteText">
+Should probably use features that are supported everywhere unless there's a very good reason not to do so.
+</div>
+<div class="sectionHeading">
+5. Flow Control
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 168
+</div>
+<div class="noteText">
+Execute a list of statements if a certain condition is/ is not true
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 168
+</div>
+<div class="noteText">
+Would probably be better to use here "isn't" instead of "is not".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 4.5. Advanced Examples: pushd and popd >  Page 169
+</div>
+<div class="noteText">
+case Execute one of several lists of statements depending on the value of a variable
+</div>
+<div class="noteHeading">
+Note - 4.5. Advanced Examples: pushd and popd >  Page 169
+</div>
+<div class="noteText">
+Probably depending on a result that may not necessarily be a variable.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.1. if/else >  Page 170
+</div>
+<div class="noteText">
+0 is usually the OK exit status, while anything else (1 to 255) usually denotes an error. [1]
+</div>
+<div class="noteHeading">
+Note - 5.1. if/else >  Page 170
+</div>
+<div class="noteText">
+This maybe a bit subtle/advanced but codes greater than `127` are probably reserved for things like signals.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.1. if/else >  Page 179
+</div>
+<div class="noteText">
+It is considered better programming style to enclose all of the code in the if- then- else, but such code can get confusing if you are writing a long script in which you need to check for errors and bail out at several points along the way.
+</div>
+<div class="noteHeading">
+Note - 5.1. if/else >  Page 179
+</div>
+<div class="noteText">
+Not really. It's best practice for theoreticians who talk about programming and is unfit for most scenarios.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.1. if/else >  Page 181
+</div>
+<div class="noteText">
+This script has a few problems. We’ll look at improving it later in this chapter.
+</div>
+<div class="noteHeading">
+Note - 5.1. if/else >  Page 181
+</div>
+<div class="noteText">
+Should also probably mention file magic numbers which are more accurate than extensions.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.1. if/else >  Page 186
+</div>
+<div class="noteText">
+Simply put, operator precedence is the order in which the shell processes the operators.
+</div>
+<div class="noteHeading">
+Note - 5.1. if/else >  Page 186
+</div>
+<div class="noteText">
+"execute" maybe more appropriate here than "process" as the latter may accidentally imply, for example, syntax checking.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.1. if/else >  Page 186
+</div>
+<div class="noteText">
+where multiply and divide are done before addition and subtraction.
+</div>
+<div class="noteHeading">
+Note - 5.1. if/else >  Page 186
+</div>
+<div class="noteText">
+Probably "multiplication and division" are more appropriate here than "multiply and divide".
+
+If for nothing else, to match "addition and subtraction".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.2. for >  Page 189
+</div>
+<div class="noteText">
+IFS =: for dir in $ PATH do ls -ld $ dir done
+</div>
+<div class="noteHeading">
+Note - 5.2. for >  Page 189
+</div>
+<div class="noteText">
+Should probably include setting "IFS" to its older value here.
+
+As otherwise it would be a landmine where were this snippet to be used as is, a script behavior would change and may lead to hard to find bugs.
+
+There's also the unnecessary risk that of changing behavior if the "$PATH" contains spaces.
+
+Honestly, the BASH quoting issues in the book are so serious that maybe alone warrant a new edition. Especially that someone who writes BASH for the first time and use ShellCheck can beat the author in this regard.
+
+There's probably other issues too as these issues usually come in 3s or 5s. Haha, half jokingly here.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.2. for >  Page 191
+</div>
+<div class="noteText">
+Next, we make the original script into a function called finfo:[
+</div>
+<div class="noteHeading">
+Note - 5.2. for >  Page 191
+</div>
+<div class="noteText">
+What's with the cryptic `fininfo` naming? Following the `creat` function lead!
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.2. for >  Page 191
+</div>
+<div class="noteText">
+Given a directory with the same files as the earlier example, typing fileinfo* would produce the following output:
+</div>
+<div class="noteHeading">
+Note - 5.2. for >  Page 191
+</div>
+<div class="noteText">
+Seems to be missing a space after the command and you would probably have to prefix it with `·/` (assuming the directory it's on isn't in `PATH`).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.2. for >  Page 196
+</div>
+<div class="noteText">
+Well come back to it in the next chapter when we look at arithmetic operations.
+</div>
+<div class="noteHeading">
+Note - 5.2. for >  Page 196
+</div>
+<div class="noteText">
+Typo: "Well come back to it in the next chapter".
+</div>
+<div class="noteHeading">
+Note - 5.4. select >  Page 201
+</div>
+<div class="noteText">
+Different closing quote than opening one.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4. select >  Page 201
+</div>
+<div class="noteText">
+"$@“,
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4. select >  Page 202
+</div>
+<div class="noteText">
+selectd ( ) { PS3 =' directory? ' select selection in $ DIR_STACK; do if [ $ selection ]; then #statements that manipulate the stack... break else echo 'invalid selection.' fi done }
+</div>
+<div class="noteHeading">
+Note - 5.4. select >  Page 202
+</div>
+<div class="noteText">
+Should probably check that the list is empty first and inform the user and exit the function if this is the case.
+
+This will both be more user-friendly and avoid the older BASH versions bug (and a comment in the code should describe the bug too).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4. select >  Page 203
+</div>
+<div class="noteText">
+We haven’t introduced break until now because it is considered bad coding style to use it to exit a loop.
+</div>
+<div class="noteHeading">
+Note - 5.4. select >  Page 203
+</div>
+<div class="noteText">
+This is mostly theoretical/academic and, in practice, it makes the code more readable and much simpler than the alternative.
+</div>
+<div class="sectionHeading">
+6. Command-Line Options and Typed Variables
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.1. Command-Line Options >  Page 209
+</div>
+<div class="noteText">
+Typical UNIX commands have the form command [- options] args,
+</div>
+<div class="noteHeading">
+Note - 6.1. Command-Line Options >  Page 209
+</div>
+<div class="noteText">
+This seems to imply that there's no whitespace between options and arguments.
+
+Using the usual manpages' syntax (some kind of grammar for command usage) would probably be useful here and make the reader familiar with an important syntax.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.1. Command-Line Options >  Page 209
+</div>
+<div class="noteText">
+then $ 1 is -o, $ 2 is “alice”, and $ 3 is “hatter”.
+</div>
+<div class="noteHeading">
+Note - 6.1. Command-Line Options >  Page 209
+</div>
+<div class="noteText">
+Why is `-o` not quoted like the other two arguments?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.1. Command-Line Options >  Page 211
+</div>
+<div class="noteText">
+shift by itself gives us enough power to implement the - N option to the highest script we saw in Chapter 4 (Task 4- 1).
+</div>
+<div class="noteHeading">
+Note - 6.1. Command-Line Options >  Page 211
+</div>
+<div class="noteText">
+You probably mean the "-N" and not "- N".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.1. Command-Line Options >  Page 214
+</div>
+<div class="noteText">
+shift $(( $ OPTIND - 1)) normal processing of arguments...
+</div>
+<div class="noteHeading">
+Note - 6.1. Command-Line Options >  Page 214
+</div>
+<div class="noteText">
+What would happen here if no options were passed?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.3. Integer Variables and Arithmetic >  Page 225
+</div>
+<div class="noteText">
+The shell also supports base N numbers, where N can be from 2 to 36. The notation B # N means "N base B“. Of course, if you omit the B #, the base defaults to 10.
+</div>
+<div class="noteHeading">
+Note - 6.3. Integer Variables and Arithmetic >  Page 225
+</div>
+<div class="noteText">
+Should probably provide at least a single example for this.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.3. Integer Variables and Arithmetic >  Page 228
+</div>
+<div class="noteText">
+Here is a small task that makes use of integer arithmetic. Write a script called ndu that prints a summary of the disk space usage for each directory argument (and any subdirectories), both in terms of bytes, and kilobytes or megabytes (whichever is appropriate).
+</div>
+<div class="noteHeading">
+Note - 6.3. Integer Variables and Arithmetic >  Page 228
+</div>
+<div class="noteText">
+Why not use a better name that's more descriptive than `ndu`?
+
+Such short names and single-letter options are excellent, if the goal is obfuscation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.3. Integer Variables and Arithmetic >  Page 228
+</div>
+<div class="noteText">
+for dir in ${*:-.}; do if [ -e $ dir ]; then result = $( du -s $ dir | cut -f 1) let total = $ result* 1024 echo -n "Total for $ dir = $ total bytes" if [ $ total -ge 1048576 ]; then echo " ($(( total/ 1048576)) Mb)" elif [ $ total -ge 1024 ]; then echo " ($(( total/ 1024)) Kb)" fi fi done
+</div>
+<div class="noteHeading">
+Note - 6.3. Integer Variables and Arithmetic >  Page 228
+</div>
+<div class="noteText">
+This snippet is a testament on how not exiting (e.g: using continue/break/return) can introduce unnecessary nesting and obscure the intent of the code.
+
+Having a single exit is a bit of a bogus best-practice and even its original source maybe unknown.
+
+This isn't an argument but Martin Fowler talks a bit in his book Refactoring, 1st edition about this point.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.3. Integer Variables and Arithmetic >  Page 229
+</div>
+<div class="noteText">
+Once we have the total, we can multiply it by the number of bytes in a block (1024 in this case) and print the result in terms of bytes.
+</div>
+<div class="noteHeading">
+Note - 6.3. Integer Variables and Arithmetic >  Page 229
+</div>
+<div class="noteText">
+Not mentioned here how you determined the block size (1024).
+
+And, anyway, the first option shoud probably use an option with `du` that makes knowing the exact block size redundant.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.3. Integer Variables and Arithmetic >  Page 230
+</div>
+<div class="noteText">
+.ps 8 pushd ( ) { dirname = $ 1
+</div>
+<div class="noteHeading">
+Note - 6.3. Integer Variables and Arithmetic >  Page 230
+</div>
+<div class="noteText">
+Not quoting arguments isn't just a special character issue. It's also a possible security issue if the input comes from an end-user and such input includes BASH code.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.3. Integer Variables and Arithmetic >  Page 236
+</div>
+<div class="noteText">
+for (( i = 1; i < = 12 ; i + + )) do for (( j = 1 ; j < = 12 ; j + + )) do echo -ne "$(( j * i ))\ t" done echo done
+</div>
+<div class="noteHeading">
+Note - 6.3. Integer Variables and Arithmetic >  Page 236
+</div>
+<div class="noteText">
+Would probably be better to print both multiplication operands too.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.4. Arrays >  Page 238
+</div>
+<div class="noteText">
+To explicitly create an empty array, you can use the -a option to declare.
+</div>
+<div class="noteHeading">
+Note - 6.4. Arrays >  Page 238
+</div>
+<div class="noteText">
+Not clear/mentioned whether `()` could be used to produce an empty array.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.4. Arrays >  Page 238
+</div>
+<div class="noteText">
+Every element of the array would be read- only.
+</div>
+<div class="noteHeading">
+Note - 6.4. Arrays >  Page 238
+</div>
+<div class="noteText">
+Not clear/mentioned whether can add/remove from array.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.4. Arrays >  Page 239
+</div>
+<div class="noteText">
+For example, if we reassigned names to be ([ 100] = tweedledee tweedledum), the values hatter, duchess, and alice would disappear.
+</div>
+<div class="noteHeading">
+Note - 6.4. Arrays >  Page 239
+</div>
+<div class="noteText">
+Would this still happen if a variable referenced the array before?
+
+More importantly, what's the aliasing behavior (both for arrays and strings) in BASH.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.4. Arrays >  Page 243
+</div>
+<div class="noteText">
+Actually, up to 599147937791. That’s almost six hundred billion, so yes, it’s pretty large.
+</div>
+<div class="noteHeading">
+Note - 6.4. Arrays >  Page 243
+</div>
+<div class="noteText">
+Would be nice/convenient to have how many bytes/bits that is.
+</div>
+<div class="sectionHeading">
+7. Input/Output and Command-Line Processing
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1. I/O Redirectors >  Page 245
+</div>
+<div class="noteText">
+n >& Duplicate standard output to file descriptor n.
+</div>
+<div class="noteHeading">
+Note - 7.1. I/O Redirectors >  Page 245
+</div>
+<div class="noteText">
+This seems like the opposite: redirecting file-descriptor `n` to `stdout/1`.
+
+And probably `cmd >`, `cmd >&`, and `cmd >&1`. Which means that `n>` would make more sense here than `n>&`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1. I/O Redirectors >  Page 246
+</div>
+<div class="noteText">
+n >& word If n is not specified, the standard output (file descriptor 1) is used.
+</div>
+<div class="noteHeading">
+Note - 7.1. I/O Redirectors >  Page 246
+</div>
+<div class="noteText">
+The note about stdout being the default applies to most elements in this table and should be explained more separately.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1. I/O Redirectors >  Page 246
+</div>
+<div class="noteText">
+A common use of > > is for adding a line to an initialization file (such as .bashrc or .mailrc) when you don’t want to bother with a text editor. For example: $ cat > > .bashrc alias cdmnt =' mount -t iso9660 /dev/ sbpcd /cdrom' ^ D
+</div>
+<div class="noteHeading">
+Note - 7.1. I/O Redirectors >  Page 247
+</div>
+<div class="noteText">
+`echo` is probably more used than `cat` for such usecases.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1. I/O Redirectors >  Page 251
+</div>
+<div class="noteText">
+A slight variation on this is provided by the here string. It takes the form < < < word; the word is expanded and supplied on the standard input.
+</div>
+<div class="noteHeading">
+Note - 7.1. I/O Redirectors >  Page 251
+</div>
+<div class="noteText">
+Would be nice to have a here-string example.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1. I/O Redirectors >  Page 251
+</div>
+<div class="noteText">
+look at the entries for read( ), write( ), fcntl( ), and others in Section 2 of the UNIX manual.
+</div>
+<div class="noteHeading">
+Note - 7.1. I/O Redirectors >  Page 251
+</div>
+<div class="noteText">
+Should probably mention how to read these manpages (e.g: `man 2 read`) instead of unnecessarily having the user looking for how to do it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.2. String I/O >  Page 254
+</div>
+<div class="noteText">
+Table 7- 3. echo escape sequences
+</div>
+<div class="noteHeading">
+Note - 7.2. String I/O >  Page 254
+</div>
+<div class="noteText">
+Should probably add an example column, where appropriate, for each table in the book. As this simple addition would be very useful for readers.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.2. String I/O >  Page 261
+</div>
+<div class="noteText">
+This type of script is usually much slower than a pipeline; furthermore, it has the same form as a program someone might write in C (or some similar language) that does the same thing much faster. In other words, if you are going to write it in this line- by- line way, there is little point in writing a shell script.
+</div>
+<div class="noteHeading">
+Note - 7.2. String I/O >  Page 261
+</div>
+<div class="noteText">
+There's still a point for using a shell script. Using programming languages is much more expensive and error prone and requires building code and additional environment requirements beyond BASH.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.2. String I/O >  Page 262
+</div>
+<div class="noteText">
+One is when you are reading data from a file small enough so that efficiency isn’t a concern (say a few hundred lines or less), and it’s really necessary to get bits of input into shell variables.
+</div>
+<div class="noteHeading">
+Note - 7.2. String I/O >  Page 262
+</div>
+<div class="noteText">
+There's also the trade off of development/debugging time against runtime.
+
+And in the vast majority of cases, development/debugging time is far more expensive than runtime.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.2. String I/O >  Page 269
+</div>
+<div class="noteText">
+A delimiter can be specified with the -d option. This will read a line up until the first character of the delimiter is reached. For example: $ read -s stop aline alice duches $ $ echo $ aline alice duche $
+</div>
+<div class="noteHeading">
+Note - 7.2. String I/O >  Page 269
+</div>
+<div class="noteText">
+The `-d` is explained but the example uses `-s` which isn't explained.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.2. String I/O >  Page 269
+</div>
+<div class="noteText">
+` directory?'
+</div>
+<div class="noteHeading">
+Note - 7.2. String I/O >  Page 269
+</div>
+<div class="noteText">
+Different opening and closing quotes.
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 271
+</div>
+<div class="noteText">
+Different opening and closing quotes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 271
+</div>
+<div class="noteText">
+(`'),
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 271
+</div>
+<div class="noteText">
+The double opening and closing quotes are different.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 271
+</div>
+<div class="noteText">
+(“”),
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 273
+</div>
+<div class="noteText">
+Performs brace expansion. For example, a{ b, c} becomes ab ac.
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 273
+</div>
+<div class="noteText">
+Not really sure but evaluating/expanding globs maybe more accurate here.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 273
+</div>
+<div class="noteText">
+Does command substitution for any expression of the form $( string).
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 273
+</div>
+<div class="noteText">
+What about backtick command substitution?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 273
+</div>
+<div class="noteText">
+Performs pathname expansion, a.k.a. wildcard expansion, for any occurrences of *, ?, and [/] pairs.
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 273
+</div>
+<div class="noteText">
+Isn't this globbing just like step 4.
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 275
+</div>
+<div class="noteText">
+Different opening and closing quotes.
+
+I will stop pointing to individual ones as there seem to be too many and I don't want to burry the lead.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 275
+</div>
+<div class="noteText">
+(`')
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 276
+</div>
+<div class="noteText">
+command removes alias and function lookup.[
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 276
+</div>
+<div class="noteText">
+I think prefixing a command with `\` also escapes aliases and may have the same effect as `command`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 282
+</div>
+<div class="noteText">
+You tell make which files to check by building a file called makefile that has constructs like this:
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 282
+</div>
+<div class="noteText">
+The file is usually called "Makefile" and I'm not sure whether "makefile" works.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 289
+</div>
+<div class="noteText">
+so that make always runs the commands to make them.
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 289
+</div>
+<div class="noteText">
+This isn't the first time where the `make` utility isn't formatted probably to distinguish it from the "make" word.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 290
+</div>
+<div class="noteText">
+The latest version of bash has this built in in the form of ${! varname},
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 290
+</div>
+<div class="noteText">
+"built in" here should probably be replaced with "built-in" to avoid the confusing "built in in".
+</div>
+<div class="sectionHeading">
+8. Process Handling
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3. Command-Line Processing >  Page 294
+</div>
+<div class="noteText">
+If you are interested in finding out more about these areas, refer to your UNIX Programmer’s Manual or a book on UNIX internals that pertains to your version of UNIX. You might also find UNIX Power Tools of value.
+</div>
+<div class="noteHeading">
+Note - 7.3. Command-Line Processing >  Page 294
+</div>
+<div class="noteText">
+"The Linux Programming Interface" is an excellent book for both Linux and UNIX/POSIX systems.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.1. Process IDs and Job Numbers >  Page 295
+</div>
+<div class="noteText">
+You will notice that when you run a command in the background by appending & to it, the shell responds with a line that looks like this: $ alice &[ 1] 93
+</div>
+<div class="noteHeading">
+Note - 8.1. Process IDs and Job Numbers >  Page 295
+</div>
+<div class="noteText">
+The snippet seems broken here as, in reality, everything after `&` is on its own line.
+
+This is also the case with the following similar snippets.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.2. Job Control >  Page 299
+</div>
+<div class="noteText">
+you can do the following: $ vi myfileedit the file... CTRL- ZStopped [1] vi $ troff myfiletroff reports an error $ fgvi comes back up in the same place in your file
+</div>
+<div class="noteHeading">
+Note - 8.2. Job Control >  Page 299
+</div>
+<div class="noteText">
+Snippet seems broken and missing new lines.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.3. Signals >  Page 300
+</div>
+<div class="noteText">
+Bear in mind, when you write shell code involving signals, that signal names are more portable to other versions of UNIX than signal numbers.
+</div>
+<div class="noteHeading">
+Note - 8.3. Signals >  Page 300
+</div>
+<div class="noteText">
+Names are also more readable and less confusing/cryptic.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.3. Signals >  Page 300
+</div>
+<div class="noteText">
+You can also send the current job a QUIT signal by typing CTRL-\ (control- backslash); this is sort of like a “stronger” version of CTRL- C.[
+</div>
+<div class="noteHeading">
+Note - 8.3. Signals >  Page 300
+</div>
+<div class="noteText">
+The quit signal is also different than interrupt in the sense that the process can't handle it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.3. Signals >  Page 302
+</div>
+<div class="noteText">
+For example, a text editor would do well to save the file being edited before terminating when it receives a signal such as INT, TERM, or QUIT.
+</div>
+<div class="noteHeading">
+Note - 8.3. Signals >  Page 302
+</div>
+<div class="noteText">
+Processes probably can't handle the `QUIT` (just like `KILL`) signal.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.3. Signals >  Page 303
+</div>
+<div class="noteText">
+It is impossible for a process to Section 8.4 a KILL signal
+</div>
+<div class="noteHeading">
+Note - 8.3. Signals >  Page 303
+</div>
+<div class="noteText">
+Very strange wording.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.3. Signals >  Page 303
+</div>
+<div class="noteText">
+You may be tempted to use the KILL signal immediately, instead of trying TERM (the default) and QUIT first. Don’t do this. TERM and QUIT are designed to give a process the chance to “clean up” before exiting, whereas KILL will stop the process, wherever it may be in its computation. Use KILL only as a last resort!
+</div>
+<div class="noteHeading">
+Note - 8.3. Signals >  Page 303
+</div>
+<div class="noteText">
+Should probably also recommend the interrupt signal as command-line programs are likely to support it even more than `TERM`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.3. Signals >  Page 304
+</div>
+<div class="noteText">
+ps is a complex command. It takes several options, some of which differ from one version of UNIX to another.
+</div>
+<div class="noteHeading">
+Note - 8.3. Signals >  Page 304
+</div>
+<div class="noteText">
+Should probably provide some commands that are most portable.
+
+This would be relatively easy if, for example, the `ps` command has a POSIX option (e.g., `ps --posix`).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.3. Signals >  Page 304
+</div>
+<div class="noteText">
+We will use options available on the two major types of UNIX systems, those derived from System V (such as many of the versions for Intel Pentium PCs, as well as IBM’s AIX and Hewlett- Packard’s HP/ UX) and BSD (Mac OS X, SunOS, BSD/ OS).
+</div>
+<div class="noteHeading">
+Note - 8.3. Signals >  Page 304
+</div>
+<div class="noteText">
+Why isn't Linux mentioned at all?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.4. trap >  Page 308
+</div>
+<div class="noteText">
+We mentioned above that programs in general can be set up to Section 8.4 specific signals and process them in their own way.
+</div>
+<div class="noteHeading">
+Note - 8.4. trap >  Page 308
+</div>
+<div class="noteText">
+Very strange wording.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.4. trap >  Page 309
+</div>
+<div class="noteText">
+Hit CTRL- Z to get it to stop and then type kill %1. Next, run the script in the background by typing loop &. Type kill %loop (i.e., send it the TERM signal); the script will terminate. Add TERM to the trap command, so that it looks like this: trap "echo 'You hit control- C!'" INT TERM Now repeat the process: run it in the background and type kill %loop. As before, you will see the message and the process will keep on running. Type kill -KILL %loop to stop it.
+</div>
+<div class="noteHeading">
+Note - 8.4. trap >  Page 309
+</div>
+<div class="noteText">
+Why the first `kill` deosn't sepcify a signal (`TERM`) while the second one specifies `KILL`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.4. trap >  Page 311
+</div>
+<div class="noteText">
+Once again, the trap is redefined in the function; this is the definition used once the loop is entered.
+</div>
+<div class="noteHeading">
+Note - 8.4. trap >  Page 311
+</div>
+<div class="noteText">
+This is a very poor practice: dealing with global concerns like traps locally in functions.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.4. trap >  Page 315
+</div>
+<div class="noteText">
+trap - INT TERM The last line of this code resets the handlers for the INT and TERM signals.
+</div>
+<div class="noteHeading">
+Note - 8.4. trap >  Page 315
+</div>
+<div class="noteText">
+Not clear whether `trap -` would reset all traps.
+</div>
+<div class="noteHeading">
+Note - 8.5. Coroutines >  Page 316
+</div>
+<div class="noteText">
+Would be nice to provide a reference for the `Coroutine` terminology here as the term is often used with green-threads.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.5. Coroutines >  Page 316
+</div>
+<div class="noteText">
+Coroutines
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.5. Coroutines >  Page 317
+</div>
+<div class="noteText">
+Wait for both processes to finish (wait).
+</div>
+<div class="noteHeading">
+Note - 8.5. Coroutines >  Page 317
+</div>
+<div class="noteText">
+Probably `waitpid` rather than `wait`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.5. Coroutines >  Page 319
+</div>
+<div class="noteText">
+If you have a computer with multiple CPUs you should be less concerned about thrashing.
+</div>
+<div class="noteHeading">
+Note - 8.5. Coroutines >  Page 319
+</div>
+<div class="noteText">
+Should probably note that thrashing can happen with any resource (e.g: CPU, memory, I/O, internal OS bottlenicks) contention.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.6. Subshells >  Page 322
+</div>
+<div class="noteText">
+For example, here is the calculator program from the last chapter, with a subshell instead of a command block: ( while read line; do echo "$( alg2rpn $ line)" done ) | dc
+</div>
+<div class="noteHeading">
+Note - 8.6. Subshells >  Page 322
+</div>
+<div class="noteText">
+Why use such a complex example when the simpler more useful `(cd / && ls)` exists?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.7. Process Substitution >  Page 325
+</div>
+<div class="noteText">
+Be warned, however, that not all commands are “well- behaved” when you do this. Be especially careful with commands that run over a network on a remote machine; you may end up confusing the remote program.
+</div>
+<div class="noteHeading">
+Note - 8.7. Process Substitution >  Page 325
+</div>
+<div class="noteText">
+I think it's also possible for some programs to fail with a "broken pipe" error if they try to read from `stdin` while they're in the background.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.7. Process Substitution >  Page 326
+</div>
+<div class="noteText">
+Other signals leave these “core dumps” as well; unless you require them, or someone else does, just delete them.
+</div>
+<div class="noteHeading">
+Note - 8.7. Process Substitution >  Page 326
+</div>
+<div class="noteText">
+Strange wording: "unless you require them."
+</div>
+<div class="sectionHeading">
+9. Debugging Shell Programs
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.1. Basic Debugging Aids >  Page 328
+</div>
+<div class="noteText">
+It is useful for finding the exact point at which a script is bombing. For example, assume your script looks like this: alice hatter march teatime treacle well
+</div>
+<div class="noteHeading">
+Note - 9.1. Basic Debugging Aids >  Page 329
+</div>
+<div class="noteText">
+This is a great example for the cargo-cult rediculousness of not always using safe options like `errexit`, `nounset`, and `pipefail`.
+
+For example, the script won't exit/fail here as soon as a command fails which goes against all scripting/prgramming mental models and even common sense.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.1. Basic Debugging Aids >  Page 332
+</div>
+<div class="noteText">
+EXIT The EXIT trap, when set, will run its code whenever the script within which it was set exits.[
+</div>
+<div class="noteHeading">
+Note - 9.1. Basic Debugging Aids >  Page 332
+</div>
+<div class="noteText">
+Not mentioned how the executed trap code can override the exit status which may advertently cause a failing script to succeed.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.1. Basic Debugging Aids >  Page 338
+</div>
+<div class="noteText">
+Bash 3.0 added some useful environment variables to aid in writing a debugger. These include BASH_SOURCE, which contains an array of filenames that correspond to what is currently executing; BASH_LINENO, which is an array of line numbers that correspond to function calls that have been made; BASH_ARGC and BASH_ARGV array variables, the first holding the number of parameters in each frame and the second the parameters themselves.
+</div>
+<div class="noteHeading">
+Note - 9.1. Basic Debugging Aids >  Page 339
+</div>
+<div class="noteText">
+You should probably mention that you can build a stacktrace using these variables.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.2. A bash Debugger >  Page 340
+</div>
+<div class="noteText">
+# bashdb - a bash debugger # Driver Script: concatenates the preamble and the target script # and then executes the new script. echo 'bash Debugger version 1.0' _dbname= ${ 0##*/} if (( $# < 1 )) ; then echo "$_dbname: Usage: $_dbname filename" >& 2 exit 1 fi _guineapig= $ 1 if [ ! -r $ 1 ]; then echo "$_dbname: Cannot read file '$_guineapig'." >& 2 exit 1 fi shift _tmpdir=/ tmp _libdir=. _debugfile= $_tmpdir/ bashdb. $ $ # temporary file for script that is being debugged cat $_libdir/ bashdb.pre $_guineapig > $_debugfile exec bash $_debugfile $_guineapig $_tmpdir $_libdir "$@"
+</div>
+<div class="noteHeading">
+Note - 9.2. A bash Debugger >  Page 341
+</div>
+<div class="noteText">
+Should probably use a prefix/namespace for definitions/variables instead of simply prefixing them with `_`.
+
+In addition, you can make it clear which functionality is public and which functionality is private. For example, `_bashdb_initialize` and `bashdb_print_stacktrace`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.2. A bash Debugger >  Page 341
+</div>
+<div class="noteText">
+a shell that runs exec will terminate immediately and be replaced by exec’s arguments.[
+</div>
+<div class="noteHeading">
+Note - 9.2. A bash Debugger >  Page 341
+</div>
+<div class="noteText">
+`exec` can be useful in systems-programming to avoid additional processes and their complications.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.2. A bash Debugger >  Page 343
+</div>
+<div class="noteText">
+However, if we just used LINENO as is, we’d get line numbers above 30 because LINENO would be including the lines in the preamble. To get around this, we can pass LINENO minus the number of lines in the preamble to the trap.[
+</div>
+<div class="noteHeading">
+Note - 9.2. A bash Debugger >  Page 343
+</div>
+<div class="noteText">
+These details should be clear in the script first by code readability (e.g, name that indicates the purpose). And by commenting code where it can't be done in code.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.2. A bash Debugger >  Page 346
+</div>
+<div class="noteText">
+Table 9- 3 summarizes the debugger commands. Table 9- 3. bashdb commands Command Action bp N Set breakpoint at line N bp List breakpoints and break condition bc string Set break condition to string bc Clear break condition cb N Clear breakpoint at line N cb Clear all breakpoints ds Display the test script and breakpoints g Start/ resume execution s [N] Execute N statements (default 1) x Toggle execution trace on/ off h, ? Print the help menu ! string Pass string to a shell q Quit
+</div>
+<div class="noteHeading">
+Note - 9.2. A bash Debugger >  Page 347
+</div>
+<div class="noteText">
+What's with the cryptic naming that forces the user to always have to lookup these commands.
+
+Should probably use full word commands and prefix them with `bashdb_` and only provide single-letter commands as a workflow optimization but still prefix them with `bdb_`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.2. A bash Debugger >  Page 354
+</div>
+<div class="noteText">
+Now we’ll show a transcript of an actual session with bashdb, in which the guinea pig is the solution to Task 6- 1, the script ndu.
+</div>
+<div class="noteHeading">
+Note - 9.2. A bash Debugger >  Page 354
+</div>
+<div class="noteText">
+Here's an example of the trap of short cryptic names. What does `ndu` do?
+
+A meaningful name would make it redundant for the script/book reader to have to look this up or require them to be familiar with `du` and infer `ndu` is related to it. But even then the `n` prefix would still be mysterious and doesn't convey what the command does.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 9.2. A bash Debugger >  Page 354
+</div>
+<div class="noteText">
+bashdb > ds 1: for dir in ${*:-.}; do 2: if [ -e $ dir ]; then 3: result = $( du -s $ dir | cut -f 1) 4: let total = $ result* 1024 5: 6: echo -n "Total for $ dir = $ total bytes" 7: 8: if [ $ total -ge 1048576 ]; then 9: echo " ($(( total/ 1048576)) Mb)" 10: elif [ $ total -ge 1024 ]; then 11: echo " ($(( total/ 1024)) Kb)" 12: fi 13: fi 14: done
+</div>
+<div class="noteHeading">
+Note - 9.2. A bash Debugger >  Page 355
+</div>
+<div class="noteText">
+Here's an example of how not using `continue` in a loop can make it much less readable.
+
+The reader has to scan the whole `for` body to know that it only runs an iteration if a path exists and an additional level of nesting is introduced.
+</div>
+<div class="sectionHeading">
+10. bash Administration
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 10.2. Environment Customization >  Page 374
+</div>
+<div class="noteText">
+-c Core file size (1 Kb blocks)
+</div>
+<div class="noteHeading">
+Note - 10.2. Environment Customization >  Page 374
+</div>
+<div class="noteText">
+You probably mean coredumps here.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 10.2. Environment Customization >  Page 375
+</div>
+<div class="noteText">
+or you wish just wish to stop
+</div>
+<div class="noteHeading">
+Note - 10.2. Environment Customization >  Page 375
+</div>
+<div class="noteText">
+Typo
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 10.3. System Security Features >  Page 377
+</div>
+<div class="noteText">
+You can make a user’s login shell restricted by putting rbash in the user’s /etc/ passwd entry.[
+</div>
+<div class="noteHeading">
+Note - 10.3. System Security Features >  Page 377
+</div>
+<div class="noteText">
+Do you mean adding the user to the `rbash` group? This should probably be mentioned explicitly.
+</div>
+<div class="sectionHeading">
+12. bash for Your System
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 12.3. What’s in the Archive >  Page 392
+</div>
+<div class="noteText">
+To compile bash “straight out of the box” is easy;[ 2] you just type configure and then make!
+</div>
+<div class="noteHeading">
+Note - 12.3. What’s in the Archive >  Page 392
+</div>
+<div class="noteText">
+Many projects are as "easy" until it turns out that you need direct or transitive dependencies that aren't easily installable in your system.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 12.3. What’s in the Archive >  Page 395
+</div>
+<div class="noteText">
+this option has no effect .
+</div>
+<div class="noteHeading">
+Note - 12.3. What’s in the Archive >  Page 395
+</div>
+<div class="noteText">
+There's a redundant space before the period.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 12.4. Who Do I Turn to? >  Page 401
+</div>
+<div class="noteText">
+For further information, refer to the INSTALL instructions that came with your version of bash.
+</div>
+<div class="noteHeading">
+Note - 12.4. Who Do I Turn to? >  Page 401
+</div>
+<div class="noteText">
+The `INSTALL` file isn't explained earlier where the rest of the files are explained.
+</div>
+<div class="sectionHeading">
+A. Related Shells
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A.1. The Bourne Shell >  Page 406
+</div>
+<div class="noteText">
+The Bourne shell’s restrictive counterpart, rsh, only inhibits assignment to PATH.
+</div>
+<div class="noteHeading">
+Note - A.1. The Bourne Shell >  Page 406
+</div>
+<div class="noteText">
+This seems to talk about the restricted mode and should mention this explicitly.
+
+And it would probably be less restrictive (since it prevents less functionality) and more lightweight is what seems to be the case.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A.2. The IEEE 1003.2 POSIX Shell Standard >  Page 408
+</div>
+<div class="noteText">
+: (do nothing), continue, .( source),
+</div>
+<div class="noteHeading">
+Note - A.2. The IEEE 1003.2 POSIX Shell Standard >  Page 408
+</div>
+<div class="noteText">
+`:` followed by space while `.` isn't.
+</div>
+<div class="sectionHeading">
+B. Reference Lists
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.1. Invocation >  Page 416
+</div>
+<div class="noteText">
+-s Reads commands from the standard input. If an argument is given to bash, this flag takes precedence (i.e., the argument won’t be treated as a script name and standard input will be read).
+</div>
+<div class="noteHeading">
+Note - B.1. Invocation >  Page 416
+</div>
+<div class="noteText">
+Should probably produce an error instead of silently ignoring the error which the user may assume it runs and wastes much time debugging this.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.1. Invocation >  Page 416
+</div>
+<div class="noteText">
+— login
+</div>
+<div class="noteHeading">
+Note - B.1. Invocation >  Page 416
+</div>
+<div class="noteText">
+In the whole book and especially in tables, it seems that `--option` is written as `-- option`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.4. Built-In Shell Variables >  Page 425
+</div>
+<div class="noteText">
+Note that the variables beginning BASH_, beginning COMP,
+</div>
+<div class="noteHeading">
+Note - B.4. Built-In Shell Variables >  Page 425
+</div>
+<div class="noteText">
+You probably intend here to have a single "beginning with".
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.4. Built-In Shell Variables >  Page 426
+</div>
+<div class="noteText">
+R Last argument to the previous command.
+</div>
+<div class="noteHeading">
+Note - B.4. Built-In Shell Variables >  Page 426
+</div>
+<div class="noteText">
+The variable column here is empty.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.6. set Options >  Page 437
+</div>
+<div class="noteText">
+-h hashall Disable the hashing of commands.
+</div>
+<div class="noteHeading">
+Note - B.6. set Options >  Page 437
+</div>
+<div class="noteText">
+This explanation focuses on the mechanics/implementation and obfuscates the actual side-effect: commands' are resolved only once on first use.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.9. emacs Mode Commands >  Page 444
+</div>
+<div class="noteText">
+Table B- 10. emacs mode commands
+</div>
+<div class="noteHeading">
+Note - B.9. emacs Mode Commands >  Page 444
+</div>
+<div class="noteText">
+The letters used with commands should probably be lowercase.
+</div>
+<div class="sectionHeading">
+C. Loadable Built-Ins
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.9. emacs Mode Commands >  Page 454
+</div>
+<div class="noteText">
+This field should always be set to BUILTIN_ENABLED.
+</div>
+<div class="noteHeading">
+Note - B.9. emacs Mode Commands >  Page 454
+</div>
+<div class="noteText">
+Is this indeed the case? And the option is in the API just for backward compatibility.
+
+Or does it just save the user the extra step of enabling the bultin in their script?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.9. emacs Mode Commands >  Page 456
+</div>
+<div class="noteText">
+tty_builtin (list) WORD_LIST *list; {
+</div>
+<div class="noteHeading">
+Note - B.9. emacs Mode Commands >  Page 456
+</div>
+<div class="noteText">
+Why ancient pre-C90 used?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.9. emacs Mode Commands >  Page 458
+</div>
+<div class="noteText">
+After you have compiled and linked the program, you should have a shared object called tty.
+</div>
+<div class="noteHeading">
+Note - B.9. emacs Mode Commands >  Page 458
+</div>
+<div class="noteText">
+Why isn't the name `libtty.so` instead?
+</div>
+<div class="sectionHeading">
+D. Programmable Completion
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.9. emacs Mode Commands >  Page 462
+</div>
+<div class="noteText">
+_kill( ) { local cur local sign
+</div>
+<div class="noteHeading">
+Note - B.9. emacs Mode Commands >  Page 462
+</div>
+<div class="noteText">
+What's with the weird indentation of the second `local`? And the rest of the file too.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.9. emacs Mode Commands >  Page 464
+</div>
+<div class="noteText">
+COMPREPLY[ i] = $ sign ${ COMPREPLY[ i]# SIG}
+</div>
+<div class="noteHeading">
+Note - B.9. emacs Mode Commands >  Page 464
+</div>
+<div class="noteText">
+Where does the `sign` environment variable come from?
+</div>
+<div class="sectionHeading">
+Colophon
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.9. emacs Mode Commands >  Page 528
+</div>
+<div class="noteText">
+the s\ ilver bass is attracted to bright,
+</div>
+<div class="noteHeading">
+Note - B.9. emacs Mode Commands >  Page 528
+</div>
+<div class="noteText">
+What's with the backslash?
+</div>
+<div class="sectionHeading">
+Copyright
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - B.9. emacs Mode Commands >  Page 532
+</div>
+<div class="noteText">
+Table of Contents
+</div>
+<div class="noteHeading">
+Note - B.9. emacs Mode Commands >  Page 532
+</div>
+<div class="noteText">
+The table of contents is typically at the start of a book.
+</div>
+
+        </div>
+    </body>
+</html>

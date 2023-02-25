@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Writing Solid Code: Development Philosophies for Writing Bug-Free Programs
+</div>
+<div class="authors">
+Maguire, Steve
+</div>
+<div class="citation">
+Citation (Chicago Style): Maguire, Steve. <i>Writing Solid Code: Development Philosophies for Writing Bug-Free Programs</i>. Torch Lake Press, 2021. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+Foreword
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 7
+</div>
+<div class="noteText">
+The OEM focus had allowed Microsoft to travel light.
+</div>
+<div class="noteHeading">
+Note -  Page 7
+</div>
+<div class="noteText">
+Do you mean to "travel at light-speed?"
+</div>
+<div class="sectionHeading">
+Introduction
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - What Are Those Gobbledygook Names? >  Page 22
+</div>
+<div class="noteText">
+Although I’ve left a lot unsaid about the Hungarian naming convention, the basic outline here should be enough for you to follow the code in this book.
+</div>
+<div class="noteHeading">
+Note - What Are Those Gobbledygook Names? >  Page 22
+</div>
+<div class="noteText">
+The Hungarian notation makes much less sense nowadays. Some reasons are the following:
+1. If you use strict compiler diagnostics and make warinings errors, most benefits of the Hungarian notation would be incorporated at compile-time. And if you don't have strict diagnostics you're in big trouble anyway. It's fine to use the Hungarian notation when it's impossible for the compiler to know.
+2. If clarity is the goal, the variable name should include the type (e.g., DER, PEM, ASCII) that is very hard to know unless incorporated into the variable name.
+3. It represents types in more than one place and introduces risk of inconsistency.
+4. It produces weird names.
+5. Doesn't typically use important conventions/prefixes (e.g., `g_` prefix for global variables).
+</div>
+<div class="sectionHeading">
+Automatic Bug Detection
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - lint—It’s Not That Bad >  Page 32
+</div>
+<div class="noteText">
+For the curious, smart IDE’s that do check for problematic code simply run lint in the background as you type code and they report lint’s findings. No magic happening here. That’s why the IDE for the language you program in probably has lint- type code checking “built in” to it.
+</div>
+<div class="noteHeading">
+Note - lint—It’s Not That Bad >  Page 32
+</div>
+<div class="noteText">
+I expected the advantages of command-line as compared to IDEs to be mentioned.
+
+IDEs have serious disadvantages that are rarely considered/mentioned. Some of them are the following:
+1. Can miss errors not in current file or submodule/project.
+2. Can miss new errors when they are added to the tool.
+3. Can't pin checks to project VCS revision.
+4. And much, much more.
+
+The best combination is probably an IDE that uses checks that can be run from the command line on the whole project and preferably on pre-commit checks. Microsoft probably did something similar with Windows 2000 which may ony included building the code.
+
+Another point is that lint is nowadays mostly part of the compiler and you can disable building the code with flags. I think that the "Expert C Programming" book talked about how unfortunate it was that lint was separated from the compiler back in the 1990s.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - But My Changes Were Trivial >  Page 33
+</div>
+<div class="noteText">
+The story reminded me of a programmer who once didn’t even try to compile one of his changes before merging the code into the master sources. I found out about it, of course, because I couldn’t compile the project without getting an error.
+</div>
+<div class="noteHeading">
+Note - But My Changes Were Trivial >  Page 33
+</div>
+<div class="noteText">
+This is probably a process issue and can easily be resolved by having automatic pre-commit checks that make it very hard to commit code that doesn't compile/pass-tests. And even more comprehensive tests on the VCS server and checks to prevent merging guilty code.
+
+And tools like Docker/Podman (and many others) make it possible for consistent environments for this both in local pre-commit and VCS server-side checks.
+
+And all such concerns (e.g., code formatting) should as much as possible be checked automatically (e.g., using clang-format) and only involve humans in non-automated tasks.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - No More Egg Rolls >  Page 34
+</div>
+<div class="noteText">
+How many programmers do you know who prefer to spend their time tracking down and fixing bugs instead of writing new code? I’m sure there are such programmers, but I’ve never met one. The programmers I know would give up takeout Chinese food for life if you promised them that they’d never have to track down another bug.
+</div>
+<div class="noteHeading">
+Note - No More Egg Rolls >  Page 34
+</div>
+<div class="noteText">
+This is, in many places, a non-technical issue where the management wants to fully utilize programmers' time in new-feature efforts even when it's even better for new-feature work to work on improvements/bug-fixing.
+
+There are valuable lessons in TPS (Toyota Production System), JIT (Just In Time), and lean, though far from perfect, have mechanisms that are very useful to fix this like JIT where the effort is focused on the end result and global efficiency (as opposed to mostly harmful local efficiencies).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - No More Egg Rolls >  Page 35
+</div>
+<div class="noteText">
+Strive to reduce the amount of programmer skill necessary to catch bugs.
+</div>
+<div class="noteHeading">
+Note - No More Egg Rolls >  Page 35
+</div>
+<div class="noteText">
+This is a general principle: make problems easiest/weakest and attack them at that point.
+
+Unfortunately, many incredibly smart people attack problems without weakining them. Or even after making them stronger.
+
+And so approaching problems/issues is much more important than skill/intelligence because they're limited and don't scale to large problems.
+</div>
+<div class="sectionHeading">
+Assert Yourself
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - No More Egg Rolls >  Page 39
+</div>
+<div class="noteText">
+In this example, your IDE can’t automatically detect this particular bug or any bug like it. Nor can it catch bugs in your algorithms, verify your assumptions, or in general check the validity of data being passed around.
+</div>
+<div class="noteHeading">
+Note - No More Egg Rolls >  Page 39
+</div>
+<div class="noteText">
+Would be better provide a different example where it's almost impossible for a tool to detect the issue.
+
+A tool can detect the issue in this example if it marks the argument as non-nullable and `malloc` return value as nullable. And tools indeed do and even the Clang compiler with its nullability extension.
+
+One example for an almost impossible case is post-conditions for padding lenghts that must be, divisible by block-length, >= to the original length, and not greater than a block length than the original length. An even easier example is that padded length must be divisible by block length on unpadding and an error-code is returned otherwise.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Introducing Assert >  Page 44
+</div>
+<div class="noteText">
+#ifdef DEBUG void _Assert( char *, unsigned); /* prototype */ #define ASSERT( f) if (f) {} else _Assert(__FILE__, __LINE__) #else #define ASSERT( f) #endif
+</div>
+<div class="noteHeading">
+Note - Introducing Assert >  Page 44
+</div>
+<div class="noteText">
+I remember this book being famous for advocating leaving in assertions in release/production code.
+
+Enabling assertions only in debug code can hide bugs and cause the system to run in undefined-state which is many times more harmful than a crash in most systems. And even many systems that aren't acceptable to crash can restart with little unavailability or full availability with some redundancy.
+
+And excellent programmers who write near-zero defect code almost always welcome crashes as the biggest concern are bugs that are correct from the programming-language perspective (e.g., pointing to incorrect allocated memory on the heap).
+
+I remember thinking about sending to a Rust book author that Rust should enforce assertions in release builds and I was glad that Rust indeed does so.
+
+There are assertions that should only run in debug builds like the expensive assertions used in GHC (the Haskell compiler) but most projects don't even do this.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - “Undefined” Means “Steer Clear” >  Page 47
+</div>
+<div class="noteText">
+The consequences really show up with you release a new and improved library.
+</div>
+<div class="noteHeading">
+Note - “Undefined” Means “Steer Clear” >  Page 47
+</div>
+<div class="noteText">
+Typo: "with you release." You probably mean "when you release."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - The Code That Cried “Danger” >  Page 49
+</div>
+<div class="noteText">
+That’s not all. Programmers do,
+</div>
+<div class="noteHeading">
+Note - The Code That Cried “Danger” >  Page 49
+</div>
+<div class="noteText">
+Formatting issue where "That's not all" seems intended to be first in the next line.
+
+Such formatting issue in a book rarely happen once.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You Making Assumptions Again? >  Page 55
+</div>
+<div class="noteText">
+void *memset( void *pv, byte b, size_t size) { byte *pb = (byte *) pv; #ifdef FourByteLongs if (size > = sizeThreshold) { unsigned long l; ASSERT( sizeof( long) = = 4 && CHAR_BIT = = 8); ASSERT( sizeThreshold > = 3); /* byte- fill until long aligned. */ while ((( unsigned long) pb & 3) != Ø) { *pb + + = b; size--; } /* Now pack a long and long- fill the rest. */ l = (b < < 8) | b; l = (l < < 16) | l; pb = (byte *) longfill(( long *) pb, l, size / sizeof( long)); size = size % sizeof( long); } #endif /* FourByteLongs */ while (size-- > Ø) *pb + + = b; return (pv); }
+</div>
+<div class="noteHeading">
+Note - Are You Making Assumptions Again? >  Page 55
+</div>
+<div class="noteText">
+Name not very clear. Something like `FourBytesWord` maybe much better.
+</div>
+<div class="noteHeading">
+Note - Are You Making Assumptions Again? >  Page 56
+</div>
+<div class="noteText">
+Why isn't an assertion included as post-condition that all bytes are set correctly? This is especially useful to ensure the optimized version correct.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You Making Assumptions Again? >  Page 56
+</div>
+<div class="noteText">
+I’ve also added a straightforward assertion to verify that longs use 4 bytes of memory, and that bytes are 8‑bits wide.
+</div>
+<div class="noteHeading">
+Note - Are You Making Assumptions Again? >  Page 56
+</div>
+<div class="noteText">
+Would be better to use or at least mention compile-time assertions using `#if` or `static_assert()` for C11+.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Can the Impossible Happen? >  Page 57
+</div>
+<div class="noteText">
+byte *pbExpand( byte *pbFrom, byte *pbTo, size_t sizeFrom)
+</div>
+<div class="noteHeading">
+Note - Can the Impossible Happen? >  Page 57
+</div>
+<div class="noteText">
+Would probably be much better to avoid putting parameters with same type adjacent to make it harder to flip them. This will also make it clear from the function call what the `size_t` parameter is more related to.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Can the Impossible Happen? >  Page 57
+</div>
+<div class="noteText">
+/* Store "size" copies of "b" at pbTo. */ b = *pbFrom + +; size = (size_t)* pbFrom + +;
+</div>
+<div class="noteHeading">
+Note - Can the Impossible Happen? >  Page 57
+</div>
+<div class="noteText">
+Multiple possible buffer-overflows like the following:
+1. Derefrencing `b` when `pbFrom == pbTo - 1` at the start of the outer while loop.
+2. Derefrencing `size` when `pbFrom == pbTo - 2` at the start of the outer while loop.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Can the Impossible Happen? >  Page 58
+</div>
+<div class="noteText">
+while (size-- > Ø) *pbTo + + = b;
+</div>
+<div class="noteHeading">
+Note - Can the Impossible Happen? >  Page 58
+</div>
+<div class="noteText">
+Would probably be much more readable to use `memset` but using pointer-arithmetic makes the contrast with the `else` body more clear.
+
+There's also a possible buffer-overflow when `pbFrom + size >= pbEnd`. In addition to the possibly undefined-behavior of using pointers greater than the end of a buffer (even if not derefrenced).
+
+Simple fuzzing (i.e. generating simple random buffers) in combination with AddressSanitizer should make this clear. And the assertion in the coming pages isn't enough to guard against this.
+
+All my notes here (and in the whole book) are done offline and without any research or running the code so they may well be wrong.
+
+
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - The Silent Treatment >  Page 63
+</div>
+<div class="noteText">
+This new assertion simply verifies that the code terminated correctly. In the ship version, the defensive code helps protect the user if anything goes wrong, but in the debug version, the bug is still reported. If that’s not having your espresso and drinking it too, I don’t know what is. Still, you don’t need to be obsessive about this. If pbFrom were always bumped by 1 each time through the loop, it would take a stray cosmic ray to knock it beyond pbEnd and cause problems. In such cases, assertions don’t buy you anything. Look at your code and use your common sense.
+</div>
+<div class="noteHeading">
+Note - The Silent Treatment >  Page 63
+</div>
+<div class="noteText">
+All the `pbEexpand` function versions are buggy and include multiple possible buffer-overflows. Which must be prevented or strange undefined-behavior like modifying accidentally an unexpected variable can happen and cause weird bugs.
+
+It's true that defensive-programming can be dangerous by dealing with issues silently and not reporting them. The solution is to either report the error or abort the system iff appropriate or it's designed to not lose data (e.g., idempotence). There are scenarios when this isn't possible and write code should be treated especially (maybe somewhat like resource-releasing code).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Two Algorithms Are Better Than One >  Page 66
+</div>
+<div class="noteText">
+idInst[] = { /* mask, pat, function */
+</div>
+<div class="noteHeading">
+Note - Two Algorithms Are Better Than One >  Page 66
+</div>
+<div class="noteText">
+Why the very short names like`idInst` and `pat`? Especially `idInst` which is a global variable.
+
+There are constraints in older linkers where the max is 7 characters, but even then, this applied only to exported symbols.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Assertions Are Forever >  Page 74
+</div>
+<div class="noteText">
+Assertions Are Forever
+</div>
+<div class="noteHeading">
+Note - Assertions Are Forever >  Page 74
+</div>
+<div class="noteText">
+Delaying the forever bit and separating from the original assertions section is misleading. It also gives the wrong guideline for anyone who only reads the first assertion section.
+
+This is related to two guidelines of my own which are the following:
+1. Local correctness whenever possible because there are no clean solutions otherwise.
+2. It's always better for things to be complete/correct as early as possible rather than later or due to macro reasoning (e.g., book sections only correct unnecessarily later when future sections read).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Assertions Are Forever >  Page 74
+</div>
+<div class="noteText">
+I know that if I were an astronaut about to board a rocket into space, I would be silently praying that the programmers who wrote the rocket’s software had taken every opportunity to use assertions and defensive programming.
+</div>
+<div class="noteHeading">
+Note - Assertions Are Forever >  Page 74
+</div>
+<div class="noteText">
+One thing they do, according to Peter Norvig in "Coders at Work", is write very simple systems and put the onus on the astronauts to use them correctly.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Assertions Are Forever >  Page 75
+</div>
+<div class="noteText">
+They’re moving away from the idea of building both a DEBUG and ship version of their projects. DEBUG and ship versions are one and the same.
+</div>
+<div class="noteHeading">
+Note - Assertions Are Forever >  Page 75
+</div>
+<div class="noteText">
+There's always a case for a debug version but it has to be minimized and eliminated if possible. And, if necessary, make sure that all the release code runs and builds/test performed continuously on both debug and release.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Assertions Are Forever >  Page 76
+</div>
+<div class="noteText">
+Once you’ve written a function, review it and ask yourself, “What am I assuming?” If you find an assumption, either assert that your assumption is always valid, or rewrite the code to remove the assumption.
+</div>
+<div class="noteHeading">
+Note - Assertions Are Forever >  Page 76
+</div>
+<div class="noteText">
+It maybe intuitive but other assumptions that can be violated should be validated and callers/system notified (e.g., using status-codes, exceptions, or other mechanisms).
+
+And this validation should be very consistent as using more than a single way (e.g., status-codes and zero/NULL values) can make it too easy to handle errors incorrectly.
+</div>
+<div class="sectionHeading">
+Fortify Your Subsystems
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Assertions Are Forever >  Page 80
+</div>
+<div class="noteText">
+In general, a subsystem hides its implementation details, which can be quite complex, and instead provides a few key entry points that programmers use to communicate with the subsystem.
+</div>
+<div class="noteHeading">
+Note - Assertions Are Forever >  Page 80
+</div>
+<div class="noteText">
+One good representation of this is the recommendation of deep interfaces (as opposed to wide interfaces) in "A Philosophy of Software Design, 1st edition."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Subsystem Checks >  Page 82
+</div>
+<div class="noteText">
+flag fNewMemory( void ** ppv, size_t size)
+</div>
+<div class="noteHeading">
+Note - Subsystem Checks >  Page 82
+</div>
+<div class="noteText">
+Why the unnecessary friction and increased risk of change of introducing a different API? Using the same prototype as `malloc()`. Especially that the return value for the new function doesn't introduce any additional benefit (e.g., a status-code for accurate errors).
+
+And using a boolean for success/failure can dramatically increase the chances of handling errors correctly since, typically, there will be zero-value/boolean/status-code/inband-status-code error-reporting and can't know this easily from callers side.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Subsystem Checks >  Page 83
+</div>
+<div class="noteText">
+cases, pbBlock
+</div>
+<div class="noteHeading">
+Note - Subsystem Checks >  Page 83
+</div>
+<div class="noteText">
+Missing space after comma.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Subsystem Checks >  Page 84
+</div>
+<div class="noteText">
+Handling a request to allocate a zero- length block is simple; you check for it with an assertion to automatically alert you to undefined behavior
+</div>
+<div class="noteHeading">
+Note - Subsystem Checks >  Page 84
+</div>
+<div class="noteText">
+Another approach is to save the API users the special case and internally allocate a single byte. Just like how `memset` accepts zero count/length.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Subsystem Checks >  Page 84
+</div>
+<div class="noteText">
+The obvious approach is to have fNewMemory zero- fill blocks the moment it allocates them. That would work, but in a correct program, the contents of a newly allocated block shouldn’t matter. Burdening your ship program with unnecessary fills is something you should avoid. Unnecessary fills can also hide bugs.
+</div>
+<div class="noteHeading">
+Note - Subsystem Checks >  Page 84
+</div>
+<div class="noteText">
+This is a strange recommendation and with a stranger argument. Correct programs wouldn't need assertions either and probably this book.
+
+Initializing memory (whether to zero or something else) is instrumental in turning uninitialized memory scenarios into determistic (as opposed to non-deterministic) bugs.
+
+This can easily be observed in languages like Java where, when fields/variables aren't initialized explicitly, a system would still behave deterministically/consistenly.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Shred Your Garbage >  Page 89
+</div>
+<div class="noteText">
+The reason I included the assertion shouldn’t be too surprising: I don’t believe in passing arguments to functions where it has no meaning but those conjured up for convenience. Why would you ever try to free an unallocated block? That makes no sense. In my mind, that’s clearly bug in the calling routine. The assertion simply validates this philosophy.
+</div>
+<div class="noteHeading">
+Note - Shred Your Garbage >  Page 89
+</div>
+<div class="noteText">
+This is generally true but can make API users' lives very hard. For example, when releasing resources clients would have to check that a pointer isn't `NULL` and this is very typically when using `goto` for releasing all resources or using cool cleanup functions.
+
+"A Philosophy of Software Design, 2nd edition" explains this well with the Tcl `unset` function.
+
+And the stranger thing is that you don't take advantage of this strict validation by changing the `FreeMemory` parameter to a double-pointer and then setting it to `NULL`. Which would have easy but very good detection of double-frees.
+
+And arbitrary APIs names without prefixes shouldn't probably be used for most new code. And most old code that does this is very well known (or even standardized) and even new standardized code (like pthreads) does use prefixes and excellent other practices like `restrict` pointers, treating types as opaque, and consistently returning status-codes. And we should follow such new excellent APIs and not older ones that are unchanged due to negative consequences of change rather than their quality.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Shred Your Garbage >  Page 90
+</div>
+<div class="noteText">
+You should note that, unlike realloc, fResizeMemory does not return a null pointer if the operation fails; it returns the original pointer, which still points to the allocated, though unchanged, block.
+</div>
+<div class="noteHeading">
+Note - Shred Your Garbage >  Page 90
+</div>
+<div class="noteText">
+This trick maybe useful but still doesn't remove complexities arising from using `realloc()`. But, in all fairness, it's ultimately up to the programmer to decide when to use tricky APIs and I understand why this isn't covered here. Though it maybe better to err to the safe side and add a note.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Shred Your Garbage >  Page 96
+</div>
+<div class="noteText">
+Always doing something would be as bad as never doing it if it were true for both the ship version and the debug version of your program. In this example, though, the ship version of fResizeMemory is practically catatonic while the debug version moves blocks with such zeal that you’d think it was on amphetamines.
+</div>
+<div class="noteHeading">
+Note - Shred Your Garbage >  Page 97
+</div>
+<div class="noteText">
+I've been waiting for a note on always building/testing release as much as debug and expected to find it here.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Keep A Journal to Jog Your Memory >  Page 98
+</div>
+<div class="noteText">
+void FillMemory( void *pv, byte b, size_t size) { ASSERT( fValidPointer( pv, size)); memset( pv, b, size); }
+</div>
+<div class="noteHeading">
+Note - Keep A Journal to Jog Your Memory >  Page 98
+</div>
+<div class="noteText">
+This would break with memory allocated on the stack. And I can't think of a reason why this important point is left out.when they say fit or inside the memory subsystem for assertions.
+
+One important point, that doesn't make all this self-checking redundant, is to point out safety mechanisms like Valgrind. And even faster and more usable tools, even in release builds, like AddressSanitizer (and its faster sibling HWASAN). I've been waiting all this time for them to be introduced and they should've been at the start of the book with automatic checking.
+
+And randomized testing too since it can expose bugs that are extremely hard to expose any other way. And can make regressions much less likely.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Don’t Wait for Bugs to Call >  Page 103
+</div>
+<div class="noteText">
+Bugs such as this one differ from the bugs I talked about earlier in that nothing illegal ever happens.
+</div>
+<div class="noteHeading">
+Note - Don’t Wait for Bugs to Call >  Page 103
+</div>
+<div class="noteText">
+"Bugs of omission" (as opposed to "bugs of commision") would probably be very useful phrasing for easier understanding.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Don’t Wait for Bugs to Call >  Page 104
+</div>
+<div class="noteText">
+/* Mark all blocks as "unreferenced." */ void ClearMemoryRefs( void); /* Note that the block pointed to by "pv" has a reference. */ void NoteMemoryRef( void *pv); /* Scan the reference flags looking for lost blocks */ void CheckMemoryRefs( void);
+</div>
+<div class="noteHeading">
+Note - Don’t Wait for Bugs to Call >  Page 104
+</div>
+<div class="noteText">
+You're getting closer to reference-counting and it may make snse to go the whole way (either in this section or a subsequent one).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Don’t Wait for Bugs to Call >  Page 105
+</div>
+<div class="noteText">
+void NoteSymbolRefs( symbol *psym) { if (psym != NULL) { /* Validate current node before going deeper */ NoteMemoryRef( psym); NoteMemoryRef( psym- > strName); /* Now do the sub- trees, using recursion */ NoteSymbolRefs( psym- > psymRight); NoteSymbolRefs( psym- > psymLeft); } }
+</div>
+<div class="noteHeading">
+Note - Don’t Wait for Bugs to Call >  Page 105
+</div>
+<div class="noteText">
+The code would be much simpler and a nesting level would be eliminated if a guard (returning on `NULL`) is used instead.
+
+This applies to the whole book.
+</div>
+<div class="sectionHeading">
+Candy-Machine Interfaces
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - The Devil Is in the Details >  Page 160
+</div>
+<div class="noteText">
+What might be an even better interface for getchar?
+</div>
+<div class="noteHeading">
+Note - The Devil Is in the Details >  Page 160
+</div>
+<div class="noteText">
+This seems to be intended as a standalone item?
+</div>
+<div class="sectionHeading">
+Risky Business
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Slap on the Risk >  Page 195
+</div>
+<div class="noteText">
+if (f) while (expression) { A; B; D; } else while (expression) { A; C; D; }
+</div>
+<div class="noteHeading">
+Note - A Slap on the Risk >  Page 196
+</div>
+<div class="noteText">
+The book is quite thorough in covering unusual error-prone but doesn't code-styling ones.
+
+Especially using conditionals without braces which is used in the book itself. This can make it much easier to confuse conditional body with surrounding code.
+
+What makes this even worse is that the book was written in a period where automatic code-formatters aren't that common or exhuastive (e.g. formatting the whole project from the command line on pre-commit).
+</div>
+<div class="sectionHeading">
+Treacheries of the Trade
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Slap on the Risk >  Page 199
+</div>
+<div class="noteText">
+If your code has to have a someone walk up
+</div>
+<div class="noteHeading">
+Note - A Slap on the Risk >  Page 199
+</div>
+<div class="noteText">
+Do you mean "have someone walk up?"
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - The Need for Speed >  Page 200
+</div>
+<div class="noteText">
+It may seem impossible to rChapter 7emove any of those steps,
+</div>
+<div class="noteHeading">
+Note - The Need for Speed >  Page 200
+</div>
+<div class="noteText">
+Broken sentence.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Take Only What You Need >  Page 205
+</div>
+<div class="noteText">
+implementation of UnsToStr , but
+</div>
+<div class="noteHeading">
+Note - Take Only What You Need >  Page 205
+</div>
+<div class="noteText">
+Redundant space before comma.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Take Only What You Need >  Page 207
+</div>
+<div class="noteText">
+void UnsToStr( unsigned u, char *str) { char strDigits[ 6]; /* Conversion buffer */
+</div>
+<div class="noteHeading">
+Note - Take Only What You Need >  Page 207
+</div>
+<div class="noteText">
+The maximum size should be part of the interface either by documenting this, changing the parameter to `char str[SOME_MAX_CONSTANT]`, or adding a `str_size` parameter.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - The Old Paint-Stirrer Trick >  Page 215
+</div>
+<div class="noteText">
+while (isspace(* str)) str + +;
+</div>
+<div class="noteHeading">
+Note - The Old Paint-Stirrer Trick >  Page 215
+</div>
+<div class="noteText">
+The guideline applies to this code too where it can easily cause a an illegal memory-access or a code that uses the same style.
+
+As an illustration. One of these two snippets is buggy:
+1. `while (ispace(*str)) str++;`.
+2. `while (!isspace(*str)) str++;`.
+
+What makes this even more dangerous is that the actual illegal access happens in later innocent code.
+</div>
+<div class="sectionHeading">
+The Rest is Attitude
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - A Fix in Time Saves Nine >  Page 230
+</div>
+<div class="noteText">
+they would spends months
+</div>
+<div class="noteHeading">
+Note - A Fix in Time Saves Nine >  Page 230
+</div>
+<div class="noteText">
+You probably mean "they would spend months."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You A Code Meddler? >  Page 234
+</div>
+<div class="noteText">
+I once tracked a bug to a function which had a local variable named hPrint that was conflicting with a global variable of the same name. Since the function had worked until
+</div>
+<div class="noteHeading">
+Note - Are You A Code Meddler? >  Page 234
+</div>
+<div class="noteText">
+This instance seems related to missing preventive measures. For example, either using a prefix for global variables or preventing shadowing variables.
+</div>
+<div class="sectionHeading">
+Memory Logging Routines
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You A Code Meddler? >  Page 266
+</div>
+<div class="noteText">
+byte *pb; /* Start of block */
+</div>
+<div class="noteHeading">
+Note - Are You A Code Meddler? >  Page 266
+</div>
+<div class="noteText">
+Why the mysterious `pb` name with explaining comment `Start of block`. It'd probably be much better and safer to rename it to `pbStartOfBlock`. This will make the comment redundant and the code clearer everywhere. This applies to all fields.
+
+This is one of my concerns about the Hungarian notation: Naming focuses on the obvious and compiled-checked types as opposed to semantics that no tool can detect/verify.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You A Code Meddler? >  Page 267
+</div>
+<div class="noteText">
+flag fValidPointer( void *pv, size_t size);
+</div>
+<div class="noteHeading">
+Note - Are You A Code Meddler? >  Page 267
+</div>
+<div class="noteText">
+Why isn't `const` used here with the input pointer? I don't remember seeing `const` anywhere in the book. This is probably due to "const poisining" which mostly happens when the programmer doesn't understand how `const`, and qualifiers in general, work.
+
+`const` can provide both documentation and error-detection at compile-time.
+</div>
+<div class="sectionHeading">
+Answers
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You A Code Meddler? >  Page 280
+</div>
+<div class="noteText">
+A good rule of thumb for writing rock- solid, bug- free code is to always use braces for your if and else clauses, even when they’re not needed.
+</div>
+<div class="noteHeading">
+Note - Are You A Code Meddler? >  Page 280
+</div>
+<div class="noteText">
+And for all other statements (e.g., `for`, `while`). Unfortunately, the book doesn't follow this very simplle and very effective guideline.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You A Code Meddler? >  Page 280
+</div>
+<div class="noteText">
+If, on the other hand, you use the optional warning switch in your development environment, your development environment would alert you to every possible assignment bug.
+</div>
+<div class="noteHeading">
+Note - Are You A Code Meddler? >  Page 280
+</div>
+<div class="noteText">
+Warnings aren't enough especially that they disappear for files that have already been compiled. Warnings should be treated as errors (i.e.: using `-Werror`) and the biggest issue should be fixed (programmers not understanding how these diagnostics can break the system due to changes either local or global).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You A Code Meddler? >  Page 281
+</div>
+<div class="noteText">
+#define ASSERTMSG( f, str) if (f) {} else _AssertMsg( str)
+</div>
+<div class="noteHeading">
+Note - Are You A Code Meddler? >  Page 281
+</div>
+<div class="noteText">
+You're missing a lot here and should use `__LINE__` (and friends) to mimic `assert`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You A Code Meddler? >  Page 282
+</div>
+<div class="noteText">
+The simplest way to detect bugs in switch statements that have not been updated is to include assertions in the default cases to alert you to unexpected cases that pop up. In some instances the default case should never be invoked because all of the possible cases are explicitly handled. When all cases are handled explicitly, use ⋮ default: ASSERT( FALSE); /* We should never get here. */ break; }
+</div>
+<div class="noteHeading">
+Note - Are You A Code Meddler? >  Page 282
+</div>
+<div class="noteText">
+Unfortunately, this makes it impossible for the compiler to detect unhandled cases or newly added cases/values.
+
+An alternative is to initialize a boolean variable and assert it after the switch.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - Are You A Code Meddler? >  Page 305
+</div>
+<div class="noteText">
+char *strcpy( char *pchTo, char *pchFrom)
+</div>
+<div class="noteHeading">
+Note - Are You A Code Meddler? >  Page 305
+</div>
+<div class="noteText">
+This is an example of the dangers of not using `const`: There's an unnecessary risk that `strFrom` (not the pointer that's passed by value) is modified.
+</div>
+
+        </div>
+    </body>
+</html>

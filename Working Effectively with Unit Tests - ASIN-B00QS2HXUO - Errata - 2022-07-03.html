@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Working Effectively with Unit Tests
+</div>
+<div class="authors">
+Fields, Jay
+</div>
+<div class="citation">
+Citation (Chicago Style): Fields, Jay. <i>Working Effectively with Unit Tests</i>. , 2014. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+Preface
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Location 72
+</div>
+<div class="noteText">
+you’ll likely want to pick up an intro to unit testing book as well.
+</div>
+<div class="noteHeading">
+Note -  Location 72
+</div>
+<div class="noteText">
+Probably mean "to a unit testing book."
+</div>
+<div class="sectionHeading">
+Unit Testing, a First Example
+</div>
+<div class="noteHeading">
+Note -  Page 4
+</div>
+<div class="noteText">
+Why the short mysterious name?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 4
+</div>
+<div class="noteText">
+expStatement(
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 9
+</div>
+<div class="noteText">
+DRY is an acronym for Don’t Repeat Yourself, and is defined as: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+</div>
+<div class="noteHeading">
+Note -  Page 9
+</div>
+<div class="noteText">
+Should also explain further DRY as its inventors intended as it's mostly confused with code duplication.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 10
+</div>
+<div class="noteText">
+recognize that the actual value is a call to the domain object, who’s source I haven’t supplied (yet).
+</div>
+<div class="noteHeading">
+Note -  Page 10
+</div>
+<div class="noteText">
+Probably mean "whose source."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 13
+</div>
+<div class="noteText">
+public class Customer { private String name; private List < Rental > rentals = new ArrayList < Rental >();
+</div>
+<div class="noteHeading">
+Note -  Page 13
+</div>
+<div class="noteText">
+Why aren't `name` and `rentals` `final`?
+
+This probably applies to other parts of the book.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 41
+</div>
+<div class="noteText">
+public CustomerBuilder w(
+</div>
+<div class="noteHeading">
+Note -  Page 41
+</div>
+<div class="noteText">
+Very short and mysterious name. "with" would still be short and much more descriptive.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 62
+</div>
+<div class="noteText">
+the only consequence will be making a change to the build method for the associated *Builder class.
+</div>
+<div class="noteHeading">
+Note -  Page 62
+</div>
+<div class="noteText">
+What's with the asterisk in "*Builder?"
+</div>
+<div class="sectionHeading">
+Types of Tests
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 85
+</div>
+<div class="noteText">
+”… a database, a queue, another system…“.
+</div>
+<div class="noteHeading">
+Note -  Page 85
+</div>
+<div class="noteText">
+Quotes reversed. This issue is repeated throughout the book.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 85
+</div>
+<div class="noteText">
+The advice to avoid crossing these types of boundaries is grounded in performance concerns:
+</div>
+<div class="noteHeading">
+Note -  Page 85
+</div>
+<div class="noteText">
+There's also flakiness and many edge-cases harder to test.
+</div>
+<div class="sectionHeading">
+Improving Assertions
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 157
+</div>
+<div class="noteText">
+[E] xperienced users of mocks
+</div>
+<div class="noteHeading">
+Note -  Page 157
+</div>
+<div class="noteText">
+What's with the "[E]?" I would instead expect "[Experienced]."
+</div>
+<div class="sectionHeading">
+Improving Test Cases
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 200
+</div>
+<div class="noteText">
+Tests methods should have very specific goals
+</div>
+<div class="noteHeading">
+Note -  Page 200
+</div>
+<div class="noteText">
+Do you mean "Tests' methods" or "Test methods?"
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 213
+</div>
+<div class="noteText">
+When I hear this argument I like to repeat the following quote. Where there’s smoke, pour gasoline–Scott Conley
+</div>
+<div class="noteHeading">
+Note -  Page 213
+</div>
+<div class="noteText">
+A colon probably makes more sense in "the following quote."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 228
+</div>
+<div class="noteText">
+Comments lead us to bad code that has all the rotten whiffs we’ve discussed in [Chapter 3 of Refactoring].
+</div>
+<div class="noteHeading">
+Note -  Page 228
+</div>
+<div class="noteText">
+"in" probably intended between "[]."
+
+This isn't the first time and the book seems to have an off-by-one error with "[]."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 229
+</div>
+<div class="noteText">
+While reviewing this book Graham Nash posed the following question. When a test or tests break, do you not find the list of broken names that JUnit outputs to be useful? What would be there instead if you could have anonymous methods?
+</div>
+<div class="noteHeading">
+Note -  Page 229
+</div>
+<div class="noteText">
+There seems to be mutiple instances in the book where "." used where ":" typically is.
+</div>
+<div class="sectionHeading">
+Improving Test Suites
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 235
+</div>
+<div class="noteText">
+or positives, e.g. If the
+</div>
+<div class="noteHeading">
+Note -  Page 235
+</div>
+<div class="noteText">
+First letter in "If" seems to be capitalized accidentally.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 291
+</div>
+<div class="noteText">
+but it’s not ugly enough that I’d bother doing anything else - if it were the only test in the codebase of that shape.
+</div>
+<div class="noteHeading">
+Note -  Page 291
+</div>
+<div class="noteText">
+Regular dash/minus used where long-dash typically used.
+
+Such issues rarely appear once in a book.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 296
+</div>
+<div class="noteText">
+@Test public void thrDecimalDownToDouble() { assertEquals( 1.12, a.money.w( 1.123). build(). toDouble(), 0); }
+</div>
+<div class="noteHeading">
+Note -  Page 296
+</div>
+<div class="noteText">
+Why the confusing "thr" name? Such were more acceptable in the far past where there's 7 letter limit on linkers or 80 column limit on punch-cards.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 301
+</div>
+<div class="noteText">
+note: If you prefer a more descriptive name such as assertMoneyToDouble, go for it. The descriptiveness of the name has no effect on whether or not to use a custom assertion.
+</div>
+<div class="noteHeading">
+Note -  Page 301
+</div>
+<div class="noteText">
+There's little value in this proposed name. However, `assertMoneyEquals` would make much more sense and be more consistent with other assertions.
+
+Especially that the `assertMoney` name implies general-purpose validation and unnecessariy leaves room for guesswork.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 312
+</div>
+<div class="noteText">
+Test Data Builders I find Test Data Builders to be a superior option. The guidelines for creating a Test Data Builder are found below. For each class you want to use in a test, create a Builder for that class that: Has an instance variable for each constructor parameter Initializes its instance variables to commonly used or safe values Has a build method that creates a new object using the values in its instance variables Has “chainable” public methods for overriding the values in its instance variables.–Nat Pryce, Test Data Builders Creating a test fixture can be both tedious and error prone.
+</div>
+<div class="noteHeading">
+Note -  Page 312
+</div>
+<div class="noteText">
+There's a strong bias for test data-builder so far that it implies a non-existing conflict with object-mother.
+
+Another important concern is breaking abstraction by introducing changing internal object state using `w` in production code. But I will assume the builders are only available in test code/builds.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 314
+</div>
+<div class="noteText">
+Nat explains his choice on his blog: de- emphasize the builders further by instantiating them in clearly named factory methods
+</div>
+<div class="noteHeading">
+Note -  Page 314
+</div>
+<div class="noteText">
+This is even more important in a book and there are many disadvantages for each advantage of using very short names.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 318
+</div>
+<div class="noteText">
+Following this change, the CustomerTest will need to become to what you see below.
+</div>
+<div class="noteHeading">
+Note -  Page 318
+</div>
+<div class="noteText">
+Do you mean "to become what you see below?"
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 327
+</div>
+<div class="noteText">
+public class MockitoExtensions { public static < T > T stub( Class < T > klass, Function < T, Object > f, Object returnVal) { try { T result = mock( klass); when( f.apply( result)) .thenReturn( returnVal); return result; } catch (Exception e) { throw new RuntimeException( e); } } }
+</div>
+<div class="noteHeading">
+Note -  Page 327
+</div>
+<div class="noteText">
+Probably better here to throw a custom exception to avoid breaking `assertThrows` accidentally in a subtle way.
+</div>
+<div class="sectionHeading">
+Closing Thoughts
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 330
+</div>
+<div class="noteText">
+or deliver out of process messages.
+</div>
+<div class="noteHeading">
+Note -  Page 330
+</div>
+<div class="noteText">
+"out-of-process" would probably be clearer.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 335
+</div>
+<div class="noteText">
+http:// review.wewut.com
+</div>
+<div class="noteHeading">
+Note -  Page 335
+</div>
+<div class="noteText">
+All URLs should use HTTPS.
+</div>
+
+        </div>
+    </body>
+</html>

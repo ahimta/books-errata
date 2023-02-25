@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Computer Networks (2-downloads)
+</div>
+<div class="authors">
+Tanenbaum, Andrew S.; Feamster, Nick; Wetherall, David J.
+</div>
+<div class="citation">
+Citation (Chicago Style): Tanenbaum, Andrew S., Nick Feamster, and David J. Wetherall. <i>Computer Networks (2-downloads)</i>. Pearson, 2020. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+6 The Transport Layer
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.4 The Internet Transport Protocols: UDP >  Page 551
+</div>
+<div class="noteText">
+Sometimes the parameters or results may be larger than the maximum UDP packet size, in which case some protocol is needed to deliver large messages in pieces and reassemble them correctly.
+</div>
+<div class="noteHeading">
+Note - 6.4 The Internet Transport Protocols: UDP >  Page 551
+</div>
+<div class="noteText">
+Depending on what's required (e.g., side-effects, many records), pagination or offsets may obviate the need for application-protocol support for segmentation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.4 The Internet Transport Protocols: UDP >  Page 551
+</div>
+<div class="noteText">
+RPC for these operations requires stronger semantics so that when the programmer calls a procedure it is not executed multiple times.
+</div>
+<div class="noteHeading">
+Note - 6.4 The Internet Transport Protocols: UDP >  Page 551
+</div>
+<div class="noteText">
+Having an ability to reset/start-over may be an alternative to individual operations being idempotent.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.4 The Internet Transport Protocols: UDP >  Page 554
+</div>
+<div class="noteText">
+The last padding byte tells how many bytes were added.
+</div>
+<div class="noteHeading">
+Note - 6.4 The Internet Transport Protocols: UDP >  Page 554
+</div>
+<div class="noteText">
+Is this PKCS7/PKCS5? And, if so, this should be mentioned explicitly.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.5 The Internet Transport Protocols: TCP >  Page 559
+</div>
+<div class="noteText">
+inetd (Internet daemon)
+</div>
+<div class="noteHeading">
+Note - 6.5 The Internet Transport Protocols: TCP >  Page 559
+</div>
+<div class="noteText">
+Almost legacy and maybe replaced by systemd sockets.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.5 The Internet Transport Protocols: TCP >  Page 561
+</div>
+<div class="noteText">
+is that every byte on a TCP connection has its own 32-bit sequence number.
+</div>
+<div class="noteHeading">
+Note - 6.5 The Internet Transport Protocols: TCP >  Page 561
+</div>
+<div class="noteText">
+Surely you mean every header/packet and not byte.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.5 The Internet Transport Protocols: TCP >  Page 561
+</div>
+<div class="noteText">
+We describedit in Sec.
+</div>
+<div class="noteHeading">
+Note - 6.5 The Internet Transport Protocols: TCP >  Page 561
+</div>
+<div class="noteText">
+Typo: "describedit."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.7 Performance Issues >  Page 590
+</div>
+<div class="noteText">
+‘‘Users are demanding more features’’ and ‘‘If it ain’t broke, don’t fix it’’ camps. 
+</div>
+<div class="noteHeading">
+Note - 6.7 Performance Issues >  Page 590
+</div>
+<div class="noteText">
+Important to mention how making some changes for applications can affect TCP negatively and it may turn out in the end that this doesn't make as much difference as application writers initially thought and it may even make it harder for everyone if new application changes require TCP changes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.7 Performance Issues >  Page 597
+</div>
+<div class="noteText">
+All these context switches on each packet are wasteful of CPU time and can have a devastating effect on network performance. 
+</div>
+<div class="noteHeading">
+Note - 6.7 Performance Issues >  Page 597
+</div>
+<div class="noteText">
+OS may colocate to reduce context switches.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6.7 Performance Issues >  Page 600
+</div>
+<div class="noteText">
+While it is copying, it also computes the checksum, eliminating an extra pass over the data.
+</div>
+<div class="noteHeading">
+Note - 6.7 Performance Issues >  Page 600
+</div>
+<div class="noteText">
+Important to mention that optimization is a moving target and optimized multiple passes may be much faster (e.g., SSE4).
+</div>
+<div class="sectionHeading">
+7 The Application Layer
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1 The Domain Name System (DNS) >  Page 619
+</div>
+<div class="noteText">
+The fact that DNS in case insensitive
+</div>
+<div class="noteHeading">
+Note - 7.1 The Domain Name System (DNS) >  Page 619
+</div>
+<div class="noteText">
+Typo: "in."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1 The Domain Name System (DNS) >  Page 622
+</div>
+<div class="noteText">
+EDNS0 CS solves this problem by including the IP subnet in the query from the local recursive,
+</div>
+<div class="noteHeading">
+Note - 7.1 The Domain Name System (DNS) >  Page 622
+</div>
+<div class="noteText">
+You probably mean "recursive resolver."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1 The Domain Name System (DNS) >  Page 623
+</div>
+<div class="noteText">
+The Type field tells what kind of record this is. There are many kinds of DNS records. The important types are listed in Fig. 7-4. Type Meaning Value SOA Star t of authority Parameters for this zone A IPv4 address of a host 32-Bit integer AAAA IPv6 address of a host 128-Bit integer MX Mail exchange Prior ity, domain willing to accept email NS Name ser ver Name of a server for this domain CNAME Canonical name Domain name PTR Pointer Alias for an IP address SPF Sender policy framework Text encoding of mail sending policy SRV Ser vice Host that provides it TXT Text Descr iptive ASCII text Figure 7-4. The principal DNS resource record types. 
+</div>
+<div class="noteHeading">
+Note - 7.1 The Domain Name System (DNS) >  Page 623
+</div>
+<div class="noteText">
+Why not mark as table instead of figure?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.1 The Domain Name System (DNS) >  Page 631
+</div>
+<div class="noteText">
+DoT and DoH
+</div>
+<div class="noteHeading">
+Note - 7.1 The Domain Name System (DNS) >  Page 631
+</div>
+<div class="noteText">
+Not clear where these acronyms are defined.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.2 Electronic Mail >  Page 632
+</div>
+<div class="noteText">
+to the point where the number of emails sent per day now is vastly more than the number of snail mail
+</div>
+<div class="noteHeading">
+Note - 7.2 Electronic Mail >  Page 632
+</div>
+<div class="noteText">
+Does this include spam?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.2 Electronic Mail >  Page 634
+</div>
+<div class="noteText">
+I guess the electronic subpoena just got lost somewhere’’). 
+</div>
+<div class="noteHeading">
+Note - 7.2 Electronic Mail >  Page 634
+</div>
+<div class="noteText">
+Probably better to use "got lost in the mail!"
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 653
+</div>
+<div class="noteText">
+In the browser contacts a number of servers to load the Web page.
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 653
+</div>
+<div class="noteText">
+Typo: "In the browser."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 656
+</div>
+<div class="noteText">
+Figure 7-20. Waterfall diagram for fcc.gov. 
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 656
+</div>
+<div class="noteText">
+Would be useful to include env. (e.g., OS, browser) and date.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 657
+</div>
+<div class="noteText">
+about Browser infor mation
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 657
+</div>
+<div class="noteText">
+More accurately, browser UI/pages as it may include all of its UI which is a neat trick for cross-platform GUIs.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 659
+</div>
+<div class="noteText">
+with a single-threaded server.
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 659
+</div>
+<div class="noteText">
+Important to mention the overhead of a thread and contrast it to a coroutine.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 663
+</div>
+<div class="noteText">
+Usually, servers identify Web pages containing PHP from the file extension php rather than html or htm. 
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 663
+</div>
+<div class="noteText">
+Emphasize that file extensions, paths, and much of the URL is up to the server how to interpret and it's even natural if the server doesn't use any files for serving traffic.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 664
+</div>
+<div class="noteText">
+PHP is used when interaction with a database on the server is needed. JavaScript (and other client-side languages) is used when the interaction is with the user at the client computer. It is certainly possible to combine them, as we will see shortly. 
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 664
+</div>
+<div class="noteText">
+Important to mention here that JS can't be relied on completely for security concerns (e.g., validation, pricing).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 665
+</div>
+<div class="noteText">
+Although HTTP was designed for use in the Web, it was intentionally made more general than necessary with an eye to future object-oriented uses.
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 665
+</div>
+<div class="noteText">
+This is almost certainly not the case and I'd be very much interested in seeing references that also make sense.
+
+OOP, FP, and other fads are always forced as considerations into all decisions in the world.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 666
+</div>
+<div class="noteText">
+The PUT method is the reverse of GET: instead of reading the page, it writes the page. This method makes it possible to build a collection of Web pages on a remote server. 
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 666
+</div>
+<div class="noteText">
+Maybe more accurate to describe it as sending data (including nothing) to the server and the server can do whatever it wants.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 675
+</div>
+<div class="noteText">
+Encryption was a sore point during the development of HTTP/2. Some people wanted it badly, and others opposed it equally badly. The opposition was mostly related to Internet-of-Things applications, in which the ‘‘thing’’ does not have a lot of computing power.
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 675
+</div>
+<div class="noteText">
+Another important reason mentioned by a let's-encrypt founder, who worked at Mozilla when this point was being discussed, is that issuing certificates was hard/expensive and that swayed him to the non-encrypted HTTP2 camp.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.3 The World Wide Web >  Page 676
+</div>
+<div class="noteText">
+For example, cookies are often used to preserve state across a Web ‘‘session.’’ They allow a Web site to track useful information about a user’s ongoing behavior on a Web site, such as whether they recently logged into the Web site, or what items they hav e placed in a shopping cart. 
+</div>
+<div class="noteHeading">
+Note - 7.3 The World Wide Web >  Page 676
+</div>
+<div class="noteText">
+Cookies are very crucial to this day for some functionalities. For example, they can implement login sessions securely where even if the Javascript code is compromised in the webpage, it can't exfiltrate the login session/token.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.4 Streaming Audio and Video >  Page 686
+</div>
+<div class="noteText">
+situation of a a camera
+</div>
+<div class="noteHeading">
+Note - 7.4 Streaming Audio and Video >  Page 686
+</div>
+<div class="noteText">
+Typo.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.4 Streaming Audio and Video >  Page 687
+</div>
+<div class="noteText">
+It’s successor (defined for resolutions up to 8K) is H.265.
+</div>
+<div class="noteHeading">
+Note - 7.4 Streaming Audio and Video >  Page 687
+</div>
+<div class="noteText">
+Typo: "it's."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.4 Streaming Audio and Video >  Page 693
+</div>
+<div class="noteText">
+Services whose goal is to avoid rebuffering events might requests a large number of segments
+</div>
+<div class="noteHeading">
+Note - 7.4 Streaming Audio and Video >  Page 693
+</div>
+<div class="noteText">
+Typo: "requests."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.5 Content Delivery >  Page 705
+</div>
+<div class="noteText">
+a content provider with popular content might pay a CDN such ask Akamai to distribute their content,
+</div>
+<div class="noteHeading">
+Note - 7.5 Content Delivery >  Page 705
+</div>
+<div class="noteText">
+Typo: "ask."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.5 Content Delivery >  Page 710
+</div>
+<div class="noteText">
+The proxy is only consulted after the a browser has tried to satisfy the request from its own cache.
+</div>
+<div class="noteHeading">
+Note - 7.5 Content Delivery >  Page 710
+</div>
+<div class="noteText">
+Typo: "the a browser."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.5 Content Delivery >  Page 711
+</div>
+<div class="noteText">
+In addition, the CDN node reduces latency to the content the ISP’s customers, Thus, the content provider, the ISP, and the customers all benefit and the CDN makes money.
+</div>
+<div class="noteHeading">
+Note - 7.5 Content Delivery >  Page 711
+</div>
+<div class="noteText">
+Typo: "the content the ISP's customers."
+
+Typo: ", Thus."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.5 Content Delivery >  Page 717
+</div>
+<div class="noteText">
+whereby a lookup is routed to the appropriate a peer-to-peer network
+</div>
+<div class="noteHeading">
+Note - 7.5 Content Delivery >  Page 717
+</div>
+<div class="noteText">
+Typo: "to the a peer-to-peer."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.5 Content Delivery >  Page 718
+</div>
+<div class="noteText">
+just as there are many browsers that speak the HTTP protocol to Web servers.
+</div>
+<div class="noteHeading">
+Note - 7.5 Content Delivery >  Page 718
+</div>
+<div class="noteText">
+There are even browsers that speak BitTorrent (e.g., Brave Browser using WebTorrent).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7.5 Content Delivery >  Page 721
+</div>
+<div class="noteText">
+What is easy to say, howev er, is that a huge amount has changed since the early days of the ARPANET and fledgling Internet, much of it do the widespread adoption of CDNs and cloud computing.
+</div>
+<div class="noteHeading">
+Note - 7.5 Content Delivery >  Page 721
+</div>
+<div class="noteText">
+Typo: "much of it do."
+</div>
+<div class="sectionHeading">
+8 Network Security
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.2 The Core Ingredients of an Attack >  Page 758
+</div>
+<div class="noteText">
+Protocol Byte amplification Packet amplification NTP 556.9 3.8 DNS 54.6 2.1 Bittorrent 3.8 1.6 Figure 8-7. Amplification factors for popular protocols 
+</div>
+<div class="noteHeading">
+Note - 8.2 The Core Ingredients of an Attack >  Page 758
+</div>
+<div class="noteText">
+Why are the mentioned DNSSEC and memcached figures not listed?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.4 Cryptography >  Page 766
+</div>
+<div class="noteText">
+Kahn’s (1995) book is recommended reading. For a comprehensive treatment of modern security and cryptographic algorithms, protocols, and applications, and related material, see Kaufman et al. (2002). For a more mathematical approach, see Kraft and Washington (2018). For a less mathematical approach, see Esposito (2018). 
+</div>
+<div class="noteHeading">
+Note - 8.4 Cryptography >  Page 766
+</div>
+<div class="noteText">
+Why not list titles? To make it easier for the readers who are certainly more than the writers/authors.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.4 Cryptography >  Page 770
+</div>
+<div class="noteText">
+This problem can be solved by the addition of redundancy to all messages. For example, if order messages are extended to 12 bytes, the first 9 of which must be zeros, this attack no longer works because the ex-employee can no longer generate a large stream of valid messages.
+</div>
+<div class="noteHeading">
+Note - 8.4 Cryptography >  Page 770
+</div>
+<div class="noteText">
+Any number of bytes with fixed values probably wouldn't add any redundancy.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.5 Symmetric-Key Algorithms >  Page 779
+</div>
+<div class="noteText">
+Product cipher (c) P-box Decoder: 3 to 8 Encoder: 8 to 3 (b) P-box (a) S9 S10 S11 S12 Figure 8-13. Basic elements of product ciphers. (a) P-box. (b) S-box. (c) Product. 
+</div>
+<div class="noteHeading">
+Note - 8.5 Symmetric-Key Algorithms >  Page 779
+</div>
+<div class="noteText">
+Incorrect title for the b/S-box diagram.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.5 Symmetric-Key Algorithms >  Page 779
+</div>
+<div class="noteText">
+The second stage is a P-box.
+</div>
+<div class="noteHeading">
+Note - 8.5 Symmetric-Key Algorithms >  Page 779
+</div>
+<div class="noteText">
+Isn't the second stage an S-box?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.5 Symmetric-Key Algorithms >  Page 780
+</div>
+<div class="noteText">
+In effect, it is a gigantic monoalphabetic substitution cipher on an alphabet with 64-bit characters (about which more shortly). 
+</div>
+<div class="noteHeading">
+Note - 8.5 Symmetric-Key Algorithms >  Page 780
+</div>
+<div class="noteText">
+Incomplete sentence: "about which more shortly."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.10 Communication Security >  Page 823
+</div>
+<div class="noteText">
+Since IPsec is based on symmetric-key cryptography and the sender and receiver negotiate a shared key before setting up an security association (SA),
+</div>
+<div class="noteHeading">
+Note - 8.10 Communication Security >  Page 823
+</div>
+<div class="noteText">
+Typo: "an security association (SA)." Probably wouldn't be if acronym and expansion traded places.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.11 Email Security >  Page 831
+</div>
+<div class="noteText">
+Alice starts out by invoking the PGP program on her computer. PGP first hashes her message, P, using SHA-2, and then encrypts the resulting hash using her private RSA key, DA. When Bob eventually gets the message, he can decrypt the hash with Alice’s public key and verify that the hash is correct.
+</div>
+<div class="noteHeading">
+Note - 8.11 Email Security >  Page 831
+</div>
+<div class="noteText">
+Intuitively, sign/verify instead of encrypt/decrypt would be used with the hash. Otherwise, this should be noted in all other cases to avoid confusion and, preferrably, provide a rationale if the non-intuitive encrypt/decrypt is indeed used.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.11 Email Security >  Page 832
+</div>
+<div class="noteText">
+The signature part contains a header, which will not concern us here. The header is followed by a timestamp, the identifier for the sender’s public key that can be used to decrypt the signature hash, some type information that identifies the algorithms used (to allow SHA-4 and RSA2 to be used when they are invented), and the encrypted hash itself. 
+</div>
+<div class="noteHeading">
+Note - 8.11 Email Security >  Page 832
+</div>
+<div class="noteText">
+More important than SHA4 and RSA2 is the support for any algorithm. Another option is to use protocol info instead of signature info and make it possible to not only change the algorithms but the whole protocol/format.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.11 Email Security >  Page 833
+</div>
+<div class="noteText">
+The problem being tackled here is the following. Suppose that public keys are maintained on Web sites.
+</div>
+<div class="noteHeading">
+Note - 8.11 Email Security >  Page 833
+</div>
+<div class="noteText">
+Probably should use "websites" instead of "Web sites" since it isn't the 90s anymore.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.12 Web Security >  Page 836
+</div>
+<div class="noteText">
+The public key is stored naked. X.509 certificates are not used due to their bulk.
+</div>
+<div class="noteHeading">
+Note - 8.12 Web Security >  Page 836
+</div>
+<div class="noteText">
+If size were a concern wouldn't ECC keys be used instead or at least recommended as an option.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.12 Web Security >  Page 837
+</div>
+<div class="noteText">
+If Alice now wants to visit Bob’s Web site, she can ask DNS for the RRSET of bob.com, which will contain his IP address and a DNSKEY record containing Bob’s public key.
+</div>
+<div class="noteHeading">
+Note - 8.12 Web Security >  Page 837
+</div>
+<div class="noteText">
+Do you mean "ask the DNS server?"
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.12 Web Security >  Page 837
+</div>
+<div class="noteText">
+If Trudy somehow or other manages to inject a false RRSET
+</div>
+<div class="noteHeading">
+Note - 8.12 Web Security >  Page 837
+</div>
+<div class="noteText">
+Typo: "if Trudy somehow or other manages to."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.12 Web Security >  Page 843
+</div>
+<div class="noteText">
+This is known as a CSS (cross-site scripting) attack.
+</div>
+<div class="noteHeading">
+Note - 8.12 Web Security >  Page 843
+</div>
+<div class="noteText">
+Could be better to use XSS instead of CSS to avoid confusion with HTML/CSS.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.13 Social Issues >  Page 844
+</div>
+<div class="noteText">
+Malware become a huge problem on the Internet and have caused billions of dollars’ worth of damage.
+</div>
+<div class="noteHeading">
+Note - 8.13 Social Issues >  Page 844
+</div>
+<div class="noteText">
+Typo: "become."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.13 Social Issues >  Page 844
+</div>
+<div class="noteText">
+For additional reading, see Anderson (2008a), Baase and Henry (2017), Bernal (2018), and Schneier (2004). 
+</div>
+<div class="noteHeading">
+Note - 8.13 Social Issues >  Page 844
+</div>
+<div class="noteText">
+Would be much more useful to provide book titles (along with edition) instead of just author names which doesn't make it clear for the reader what the books are about and harder to lookup.
+
+This applies to the whole book and not just here.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.13 Social Issues >  Page 846
+</div>
+<div class="noteText">
+These new remailers, often called cypherpunk remailers, work as follows. The user produces an email message, complete with RFC 822 headers (except Fr om:, of course), encrypts it with the remailer’s public key, and sends it to the remailer.
+</div>
+<div class="noteHeading">
+Note - 8.13 Social Issues >  Page 846
+</div>
+<div class="noteText">
+Should mention that single re-mailers still have some serious issues, which are quite intuitive. For example, a compromized re-mailer that receives from the original sender directly can still save logs. This can happen either intentionally by the server owner or by a cracker who would make the server send it the logs. So both trust in the server's owner and the absence of crackers are something to be considered.
+
+For a chain of re-mailers, the same applies but more parties have to be compromized. One caveat is that only compromizing the first and last maybe sufficient. Another point, that maybe reasonable to not mention here, is that chain re-mailers can be less secure in the field since their operators may percieve the overall system to be more secure or assume incorrectly that operators of other servers' security can make up for their mistakes (diffusion of responsibility).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 8.14 Summary >  Page 854
+</div>
+<div class="noteText">
+However, if quantum cryptography can be made practical, the use of one-time pads may provide truly unbreakable cryptosystems. 
+</div>
+<div class="noteHeading">
+Note - 8.14 Summary >  Page 854
+</div>
+<div class="noteText">
+Do you mean "the only truly unbreakable cryptosystems?"
+</div>
+
+        </div>
+    </body>
+</html>

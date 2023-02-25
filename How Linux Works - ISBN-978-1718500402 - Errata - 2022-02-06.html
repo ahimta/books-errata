@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+How Linux Works, 3rd Edition
+</div>
+<div class="authors">
+Ward, Brian
+</div>
+<div class="citation">
+Citation (Chicago Style): Ward, Brian. <i>How Linux Works, 3rd Edition</i>. No Starch Press, 2021. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+Chapter 2: Basic Commands and Directory Hierarchy
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  2.1 The Bourne Shell: /bin/sh >  Page 12
+</div>
+<div class="noteText">
+and /bin/ sh is normally a link to bash on a Linux system.
+</div>
+<div class="noteHeading">
+Note -  2.1 The Bourne Shell: /bin/sh >  Page 12
+</div>
+<div class="noteText">
+Is `sh` really a link to `bash`? Is it not typically a link to an `sh` implementation (e.g: `dash`)?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  2.7 Dot Files >  Page 22
+</div>
+<div class="noteText">
+You can run into problems with globs because .* matches . and .. (the current and parent directories). You may wish to use a pattern such as .[ ^.]* or .??* to get all dot files except the current and parent directories.
+</div>
+<div class="noteHeading">
+Note -  2.7 Dot Files >  Page 22
+</div>
+<div class="noteText">
+The first one (`.[^.]*`) seems good but the second one (`.??*`) will probably miss files like `.x`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  2.15 Understanding Error Messages >  Page 32
+</div>
+<div class="noteText">
+In rare cases, it might be faulty memory hardware.
+</div>
+<div class="noteHeading">
+Note -  2.15 Understanding Error Messages >  Page 32
+</div>
+<div class="noteText">
+Using a binary built for newer system (i.e: non-matching system or broken build) is one possible reason that's even more common and is quite important.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  2.17 File Modes and Permissions >  Page 37
+</div>
+<div class="noteText">
+file permissions won’t help you anyway.
+</div>
+<div class="noteHeading">
+Note -  2.17 File Modes and Permissions >  Page 37
+</div>
+<div class="noteText">
+Could help as a mitigation/guarantees for a single application.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  2.17 File Modes and Permissions >  Page 38
+</div>
+<div class="noteText">
+a nuisance when you’re trying to track them down.
+</div>
+<div class="noteHeading">
+Note -  2.17 File Modes and Permissions >  Page 38
+</div>
+<div class="noteText">
+But useful, for example, with shared libraries.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  2.19 Linux Directory Hierarchy Essentials >  Page 43
+</div>
+<div class="noteText">
+(The reason that the root directory does not contain the complete system is primarily historic— in the past, it was to keep space requirements low for the root.)
+</div>
+<div class="noteHeading">
+Note -  2.19 Linux Directory Hierarchy Essentials >  Page 43
+</div>
+<div class="noteText">
+Probably there are other reasons like only mounting some small parts in the early boot process.
+</div>
+<div class="sectionHeading">
+Chapter 3: Devices
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  3.2 The sysfs Device Path >  Page 50
+</div>
+<div class="noteText">
+whereas the /sys/ devices path is used to view information and manage the device.
+</div>
+<div class="noteHeading">
+Note -  3.2 The sysfs Device Path >  Page 50
+</div>
+<div class="noteText">
+There's probably very useful tricks to use `sysfs` for writing to devices (e.g: serial/`libusb`) and even power-management.
+</div>
+<div class="noteHeading">
+Note -  3.6 In-Depth: SCSI and the Linux Kernel >  Page 62
+</div>
+<div class="noteText">
+Typo: than
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  3.6 In-Depth: SCSI and the Linux Kernel >  Page 62
+</div>
+<div class="noteText">
+that
+</div>
+<div class="sectionHeading">
+Chapter 7: System Configuration: Logging, System Time, Batch Jobs, and Users
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  7.6 Scheduling Recurring Tasks with cron and Timer Units >  Page 186
+</div>
+<div class="noteText">
+In this unit example, we’re using logger to send an entry to syslog and the journal. You read in Section 7.1.2 that you can view log messages by unit. However, the unit could finish up before journald has a chance to receive the message. This is a race condition, and in the case that the unit completes too quickly, journald won’t be able to look up the unit associated with the syslog message (this is done by process ID). Consequently, the message that gets written in the journal may not include a unit field, rendering a filtering command such as journalctl -f -u loggertest.service incapable of showing the syslog message. This isn’t normally a problem in longer- running services.
+</div>
+<div class="noteHeading">
+Note -  7.6 Scheduling Recurring Tasks with cron and Timer Units >  Page 187
+</div>
+<div class="noteText">
+May be a bug as ideally `journald` shouldn't rely on the sending process to still be alive. Some constraints however like authorizing the sending process can make fixing this difficult.
+</div>
+<div class="sectionHeading">
+Chapter 8: A Closer Look at Processes and Resource Utilization
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  8.4 Threads >  Page 207
+</div>
+<div class="noteText">
+This number is normally not very useful for performance measurement,
+</div>
+<div class="noteHeading">
+Note -  8.4 Threads >  Page 207
+</div>
+<div class="noteText">
+Quite the opposite, for example, it's important to know whether the slowness is a result of IO.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  8.4 Threads >  Page 208
+</div>
+<div class="noteText">
+Linux systems have only a single user, and that user doesn’t perform much real computation.
+</div>
+<div class="noteHeading">
+Note -  8.4 Threads >  Page 208
+</div>
+<div class="noteText">
+Can still be useful when running an optimized parallel build without bogging down the system.
+</div>
+<div class="sectionHeading">
+Chapter 9: Understanding Your Network and Its Configuration
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.3 Network Layers >  Page 226
+</div>
+<div class="noteText">
+Computer Networks, 5th edition (Prentice Hall, 2010).
+</div>
+<div class="noteHeading">
+Note -  9.3 Network Layers >  Page 226
+</div>
+<div class="noteText">
+Outdated edition.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.6 The Default Gateway >  Page 231
+</div>
+<div class="noteText">
+There’s one tricky detail in routing. Say the host wants to send something to 10.23.2.132, which matches both rules in a routing table, the default route and 10.23.2.0/ 24. How does the kernel know to use the second one? The order in the routing table doesn’t matter; the kernel chooses the longest destination prefix that matches. This is where CIDR notation comes in particularly handy: 10.23.2.0/ 24 matches, and its prefix is 24 bits long; 0.0.0.0/ 0 also matches, but its prefix is 0 bits long (that is, it has no prefix), so the rule for 10.23.2.0/ 24 takes priority.
+</div>
+<div class="noteHeading">
+Note -  9.6 The Default Gateway >  Page 231
+</div>
+<div class="noteText">
+What about the case where the same prefix is used for multiple devices?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.14 Network Configuration Managers >  Page 241
+</div>
+<div class="noteText">
+Ethernet interfaces:
+</div>
+<div class="noteHeading">
+Note -  9.14 Network Configuration Managers >  Page 241
+</div>
+<div class="noteText">
+Should emphasize that this is only the current/observed behavior, that it can change, and some distros/config may or may not affect it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.17 The Transport Layer: TCP, UDP, and Services >  Page 250
+</div>
+<div class="noteText">
+http:// www.iana.org/
+</div>
+<div class="noteHeading">
+Note -  9.17 The Transport Layer: TCP, UDP, and Services >  Page 250
+</div>
+<div class="noteText">
+Missing exact URL for port numbers.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.17 The Transport Layer: TCP, UDP, and Services >  Page 250
+</div>
+<div class="noteText">
+Where TCP is like having a telephone conversation, UDP is like sending a letter, telegram, or instant message
+</div>
+<div class="noteHeading">
+Note -  9.17 The Transport Layer: TCP, UDP, and Services >  Page 250
+</div>
+<div class="noteText">
+Byte-stream as opposed to message-oriented is extremely important and not emphasized enough. Although, to be fair, it's most important when programming.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.25 Firewalls >  Page 262
+</div>
+<div class="noteText">
+iptables -I INPUT 4
+</div>
+<div class="noteHeading">
+Note -  9.25 Firewalls >  Page 262
+</div>
+<div class="noteText">
+Race condition when another process is using `iptables`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.25 Firewalls >  Page 263
+</div>
+<div class="noteText">
+For example, say your machine has an SSH server on TCP port 22. There’s no reason for any random host to initiate a connection to any other port on your machine, and you shouldn’t give any such host a chance. To set that up, first set the INPUT chain policy to DROP: # iptables -P INPUT DROP To enable ICMP traffic (for ping and other utilities), use this line: # iptables -A INPUT -p icmp -j ACCEPT Make sure that you can receive packets you send to both your own network IP address and 127.0.0.1 (localhost). Assuming your host’s IP address is my_addr, do this: # iptables -A INPUT -s 127.0.0.1 -j ACCEPT # iptables -A INPUT -s my_addr -j ACCEPT
+</div>
+<div class="noteHeading">
+Note -  9.25 Firewalls >  Page 263
+</div>
+<div class="noteText">
+This seems to contradict the former behavior where blocking everything and then allowing a subset doesn't work. And so this must be noted.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.26 Ethernet, IP, ARP, and NDP >  Page 265
+</div>
+<div class="noteText">
+If one of the other hosts on the subnet knows the correct MAC address, it creates a reply packet and frame containing the address and sends it back to the origin. Often, the host that replies is the target host and is simply replying with its own MAC address.
+</div>
+<div class="noteHeading">
+Note -  9.26 Ethernet, IP, ARP, and NDP >  Page 265
+</div>
+<div class="noteText">
+Does "host" here include the router and, otherwise, what role does the router play?
+</div>
+<div class="noteHeading">
+Note -  9.27 Wireless Ethernet >  Page 267
+</div>
+<div class="noteText">
+Risk of using open (i.e: no password) networks not mentioned. `WEP` and `WPS` risks too. This should still be mentioned here even if explain later in detail.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.27 Wireless Ethernet >  Page 267
+</div>
+<div class="noteText">
+Encryption
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.27 Wireless Ethernet >  Page 267
+</div>
+<div class="noteText">
+ifconfig wlp1s0 up),
+</div>
+<div class="noteHeading">
+Note -  9.27 Wireless Ethernet >  Page 267
+</div>
+<div class="noteText">
+Why is `ifconfig` used here instead of `ip`?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  9.27 Wireless Ethernet >  Page 268
+</div>
+<div class="noteText">
+Wireless Security
+</div>
+<div class="noteHeading">
+Note -  9.27 Wireless Ethernet >  Page 268
+</div>
+<div class="noteText">
+`WPS` not mentioned. Especially that it's in many network devices.
+</div>
+<div class="sectionHeading">
+Chapter 10: Network Applications and Services
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.2 A Closer Look >  Page 272
+</div>
+<div class="noteText">
+<! doctype html >. < html >. < head >. < title > Example Domain </ title >. 0040: . < meta charset =" utf- 8" />. < meta http- equiv =" Content- type
+</div>
+<div class="noteHeading">
+Note -  10.2 A Closer Look >  Page 272
+</div>
+<div class="noteText">
+May be informative to mention that encoding should be first before `title` as, for example, clients/browsers may look for it in the first 1KiB.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.3 Network Servers >  Page 273
+</div>
+<div class="noteText">
+There are some exceptions to this model, however. Calling fork() adds a significant amount of system overhead. To avoid this, high- performance TCP servers such as the Apache web server may create a number of worker processes upon startup so they’re available to handle connections as needed.
+</div>
+<div class="noteHeading">
+Note -  10.3 Network Servers >  Page 273
+</div>
+<div class="noteText">
+Threads, non-blocking approaches, and more considerations are not mentioned to at least exist.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.3 Network Servers >  Page 273
+</div>
+<div class="noteText">
+UDP packets don’t need to fork at all, as they don’t have connections to listen for; they simply receive data and react to it.
+</div>
+<div class="noteHeading">
+Note -  10.3 Network Servers >  Page 273
+</div>
+<div class="noteText">
+Probably wrong especially depending on server processing time for each packet. Another aspect is that the server communication may, for example, use multiple packets for a single request.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.5 Diagnostic Tools >  Page 284
+</div>
+<div class="noteText">
+http:// www.insecure.org/.
+</div>
+<div class="noteHeading">
+Note -  10.5 Diagnostic Tools >  Page 284
+</div>
+<div class="noteText">
+Why not an HTTPS URL?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.5 Diagnostic Tools >  Page 284
+</div>
+<div class="noteText">
+Nmap scan from at least two points: from your own machine and from another one (possibly outside your local network).
+</div>
+<div class="noteHeading">
+Note -  10.5 Diagnostic Tools >  Page 284
+</div>
+<div class="noteText">
+Important to mention that a port may be advertized as not being open by the local firewall but can be used and an attacker can exploit this. This may include some of the ports used in some micro-processers (e.g: Intel ME).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.6 Remote Procedure Calls >  Page 284
+</div>
+<div class="noteText">
+Remote Procedure Calls
+</div>
+<div class="noteHeading">
+Note -  10.6 Remote Procedure Calls >  Page 284
+</div>
+<div class="noteText">
+RPC may be more of a technique and concept rather than a protocol and it's hard to give an accurate definition. For example, Netflix engineering may use RPC to mean non-RESTful APIs.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.7 Network Security >  Page 285
+</div>
+<div class="noteText">
+swat away
+</div>
+<div class="noteHeading">
+Note -  10.7 Network Security >  Page 285
+</div>
+<div class="noteText">
+Very funny! Does it mean here where a person would call the police and trick them into sending a SWAT team to someone's home.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.7 Network Security >  Page 285
+</div>
+<div class="noteText">
+Block as much as possible with a firewall
+</div>
+<div class="noteHeading">
+Note -  10.7 Network Security >  Page 285
+</div>
+<div class="noteText">
+Would be great to mention whitelisting here too like you did before.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.7 Network Security >  Page 286
+</div>
+<div class="noteText">
+There are three basic kinds of network attacks that can be directed at a Linux machine:
+</div>
+<div class="noteHeading">
+Note -  10.7 Network Security >  Page 286
+</div>
+<div class="noteText">
+Important to note this is a big topic of its own and this is only one rough approach to classification.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.7 Network Security >  Page 286
+</div>
+<div class="noteText">
+where a careless programmer
+</div>
+<div class="noteHeading">
+Note -  10.7 Network Security >  Page 286
+</div>
+<div class="noteText">
+Important to avoid this unrealistic negative connotation as this is a big topic that stretches into secure software design and even social aspects in teams where anyone can call out parts that are of high-risk and high likelihood of failure.
+
+Simply put, coding errors are the easiest and their root-causes are much more important.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.7 Network Security >  Page 287
+</div>
+<div class="noteText">
+(http:// www.stunnel.org/),
+</div>
+<div class="noteHeading">
+Note -  10.7 Network Security >  Page 287
+</div>
+<div class="noteText">
+Why not an HTTPS URL?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  10.9 Network Sockets >  Page 289
+</div>
+<div class="noteText">
+Volume 2 also covers interprocess communication.
+</div>
+<div class="noteHeading">
+Note -  10.9 Network Sockets >  Page 289
+</div>
+<div class="noteText">
+Accurate pinning to last edition (2nd) to save reader's time.
+</div>
+<div class="sectionHeading">
+Chapter 11: Introduction to Shell Scripts
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.1 Shell Script Basics >  Page 293
+</div>
+<div class="noteText">
+or perhaps even a compiled language like C.
+</div>
+<div class="noteHeading">
+Note -  11.1 Shell Script Basics >  Page 293
+</div>
+<div class="noteText">
+Mentioning Rust may be necessary these days especially that it is less error-prone than C and may even make it easier to build dependencies. This is especially true if the programmer isn't familiar with C and so there's less of a learning curve.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.2 Quoting and Literals >  Page 293
+</div>
+<div class="noteText">
+the shell will leave the $ 1 alone:
+</div>
+<div class="noteHeading">
+Note -  11.2 Quoting and Literals >  Page 293
+</div>
+<div class="noteText">
+A mention to `set -o nounset` (and may be even `set -o errexit` and `set -o pipefail`) can be useful and can save many people days of debugging.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.2 Quoting and Literals >  Page 294
+</div>
+<div class="noteText">
+The key to avoiding problems like this is to first recognize the characters that can get you in trouble and then apply the correct kind of quotes to protect those characters.
+</div>
+<div class="noteHeading">
+Note -  11.2 Quoting and Literals >  Page 294
+</div>
+<div class="noteText">
+Could be better to instead emphasize that quoting should be the default (esp. for scripts) and one should always treat results without quoting with a bit of skepticism. One reason is that a day's work, or even an all-nighter, can be caused by a non-quoting error that the user didn't even notice.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.2 Quoting and Literals >  Page 294
+</div>
+<div class="noteText">
+so you can turn to double quotes.
+</div>
+<div class="noteHeading">
+Note -  11.2 Quoting and Literals >  Page 294
+</div>
+<div class="noteText">
+Mentioning single quotes as a first choice is quite clever.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.3 Special Variables >  Page 296
+</div>
+<div class="noteText">
+except that you can’t change the values of certain ones.
+</div>
+<div class="noteHeading">
+Note -  11.3 Special Variables >  Page 296
+</div>
+<div class="noteText">
+You probably can!
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.3 Special Variables >  Page 298
+</div>
+<div class="noteText">
+The $? variable holds the exit code of the last command that the shell executed. Exit codes, which are critical to mastering shell scripts, are discussed next.
+</div>
+<div class="noteHeading">
+Note -  11.3 Special Variables >  Page 298
+</div>
+<div class="noteText">
+Important to note that caution must be exercised as it is easy to run an additional command and get its exit code accidentally (e.g: echo or assigning output to a variable).
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.5 Conditionals >  Page 300
+</div>
+<div class="noteText">
+two common ways:
+</div>
+<div class="noteHeading">
+Note -  11.5 Conditionals >  Page 300
+</div>
+<div class="noteText">
+More important is that `$1` may contain something that breaks the script syntax or even produce more puzzling behavior.
+</div>
+<div class="noteHeading">
+Note -  11.5 Conditionals >  Page 300
+</div>
+<div class="noteText">
+Importance of quoting: what would happen if `hi` were a command?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.5 Conditionals >  Page 300
+</div>
+<div class="noteText">
+hi
+</div>
+<div class="noteHeading">
+Note -  11.5 Conditionals >  Page 301
+</div>
+<div class="noteText">
+Would be nice to mention the `(cd <dir> && <cmd>)` trick.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.5 Conditionals >  Page 301
+</div>
+<div class="noteText">
+In
+</div>
+<div class="noteHeading">
+Note -  11.5 Conditionals >  Page 302
+</div>
+<div class="noteText">
+Importance of quoting: what would happen if `$filename` contains spaces or has special syntax/options.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.5 Conditionals >  Page 302
+</div>
+<div class="noteText">
+$ filename
+</div>
+<div class="noteHeading">
+Note -  11.5 Conditionals >  Page 304
+</div>
+<div class="noteText">
+Quoting?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.5 Conditionals >  Page 304
+</div>
+<div class="noteText">
+$ 1
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.7 Command Substitution >  Page 306
+</div>
+<div class="noteText">
+backticks (` `),
+</div>
+<div class="noteHeading">
+Note -  11.7 Command Substitution >  Page 306
+</div>
+<div class="noteText">
+Important to mention that the backtick can have strange substitution behavior.
+</div>
+<div class="noteHeading">
+Note -  11.8 Temporary File Management >  Page 307
+</div>
+<div class="noteText">
+Important to mention that `mktemp` can have many security issues.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.8 Temporary File Management >  Page 307
+</div>
+<div class="noteText">
+mktemp
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.9 Here Documents >  Page 308
+</div>
+<div class="noteText">
+The shell expands shell variables inside here documents, which is especially useful when you’re printing out reports that contain many variables.
+</div>
+<div class="noteHeading">
+Note -  11.9 Here Documents >  Page 308
+</div>
+<div class="noteText">
+Would be nice to mention that you can use a heredoc without substitution.
+</div>
+<div class="noteHeading">
+Note -  11.10 Important Shell Script Utilities >  Page 308
+</div>
+<div class="noteText">
+Would be nice to show how `basename` and `dirname` can be used together.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.10 Important Shell Script Utilities >  Page 308
+</div>
+<div class="noteText">
+basename
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.10 Important Shell Script Utilities >  Page 310
+</div>
+<div class="noteText">
+NULL character:
+</div>
+<div class="noteHeading">
+Note -  11.10 Important Shell Script Utilities >  Page 310
+</div>
+<div class="noteText">
+Does this work in all cases (e.g: UTF-8)?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.10 Important Shell Script Utilities >  Page 310
+</div>
+<div class="noteText">
+You may need to add two dashes (--) to the end of your xargs command if there’s a chance that any of the target files start with a single dash (-). The double dash (--) tells a program that any arguments that follow are filenames, not options. However, keep in mind that not all programs support the use of a double dash.
+</div>
+<div class="noteHeading">
+Note -  11.10 Important Shell Script Utilities >  Page 310
+</div>
+<div class="noteText">
+One other way is to use something like `./*`.
+</div>
+<div class="noteHeading">
+Note -  11.10 Important Shell Script Utilities >  Page 311
+</div>
+<div class="noteText">
+May be already mentioned but there's no exec syscall. It's a family of syscalls. And it may be useful to mention that there can be subtle differences (beyond just env. vars.) from calling a command directly.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.10 Important Shell Script Utilities >  Page 311
+</div>
+<div class="noteText">
+exec()
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.11 Subshells >  Page 311
+</div>
+<div class="noteText">
+(cd uglydir; uglyprogram)
+</div>
+<div class="noteHeading">
+Note -  11.11 Subshells >  Page 311
+</div>
+<div class="noteText">
+Using && instead of ; probably makes more sense in most scenarios.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.11 Subshells >  Page 312
+</div>
+<div class="noteText">
+(this is useful because it preserves ownership and permissions, and it’s generally faster than using a command such as cp -r):
+</div>
+<div class="noteHeading">
+Note -  11.11 Subshells >  Page 312
+</div>
+<div class="noteText">
+Definitely needs at least a mention if this is not the case when copying to an external SSD drive and even if this isn't the case it would future-proof the book if this changes. Another consideration is gigabit+ links where copying may be faster. There are additional considerations that are probably outside the scope of this book like when an embedded system is CPU bound as opposed to IO bound.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.11 Subshells >  Page 312
+</div>
+<div class="noteText">
+tar cf - orig | (cd target; tar xvf -)
+</div>
+<div class="noteHeading">
+Note -  11.11 Subshells >  Page 312
+</div>
+<div class="noteText">
+Could be useful to show a `cp` command that preserves permissions and friends.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.12 Including Other Files in Scripts >  Page 312
+</div>
+<div class="noteText">
+. config.sh
+</div>
+<div class="noteHeading">
+Note -  11.12 Including Other Files in Scripts >  Page 312
+</div>
+<div class="noteText">
+Could be useful to mention `source` so the reader can recognize it and `.` may be a landmine as it can't be noticed in a hurry and may even be confused with `./` or `.some-file-name`.
+</div>
+<div class="noteHeading">
+Note -  11.13 Reading User Input >  Page 312
+</div>
+<div class="noteText">
+Could be useful to mention some of its prominent limitations (e.g: can't delete already entered text), if any. And a realistic example (e.g: whether `$` is needed in variable) especially when `set -o nounset` not used.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  11.13 Reading User Input >  Page 312
+</div>
+<div class="noteText">
+read
+</div>
+<div class="sectionHeading">
+Chapter 12: Network File Transfer and Sharing
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  12.2 rsync >  Page 319
+</div>
+<div class="noteText">
+However, adding a slash (/) to the source name significantly changes the behavior:
+</div>
+<div class="noteHeading">
+Note -  12.2 rsync >  Page 319
+</div>
+<div class="noteText">
+Probably more important to mention this behavior in `cp/mv` as they are much more commonly used.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  12.2 rsync >  Page 320
+</div>
+<div class="noteText">
+If you exclude a directory or filename but find that your pattern is too restrictive, use -- include to specifically include another file or directory.
+</div>
+<div class="noteHeading">
+Note -  12.2 rsync >  Page 320
+</div>
+<div class="noteText">
+Could be useful to mention whether include/exclude are order-dependent.
+</div>
+<div class="noteHeading">
+Note -  12.2 rsync >  Page 321
+</div>
+<div class="noteText">
+Nice that long options are used because they are easier to remember and use with bash completions than short ones. Would be even better if this is the case for the whole book.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  12.2 rsync >  Page 321
+</div>
+<div class="noteText">
+handy:
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  12.2 rsync >  Page 322
+</div>
+<div class="noteText">
+the two endpoint machines can be constrained by the CPU time that it takes to compress and decompress data, so uncompressed transfer may be faster.
+</div>
+<div class="noteHeading">
+Note -  12.2 rsync >  Page 322
+</div>
+<div class="noteText">
+Should be mentioned with the earlier tar/untar file-transfer trick.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  12.2 rsync >  Page 322
+</div>
+<div class="noteText">
+rsync -a host:src_dir dest_dir
+</div>
+<div class="noteHeading">
+Note -  12.2 rsync >  Page 322
+</div>
+<div class="noteText">
+Could be useful to include at least one snippet with an actual host value so that a reader not familiar with networking doesn't spend hours trying an invalid host value. This probably applies to all commands.
+
+The best snippets are the ones that can be run locally without any changes. This would also save precious minutes of experienced readers.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  12.4 Sharing Files with Samba >  Page 324
+</div>
+<div class="noteText">
+However, you might have to hunt around to find this file, as it could also be in a lib directory, such as /usr/ local/ samba/ lib.
+</div>
+<div class="noteHeading">
+Note -  12.4 Sharing Files with Samba >  Page 324
+</div>
+<div class="noteText">
+Could be nice to mention how `find` can save a lot of time and frustration. For example, `find /etc -name smb.conf`, `find /usr -name smb.conf`, or even just `find / -name smb.conf 2>/dev/null` for most users who don't have millions of files on their filesystems.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  12.4 Sharing Files with Samba >  Page 328
+</div>
+<div class="noteText">
+Do not allow guest access to a read- write share.
+</div>
+<div class="noteHeading">
+Note -  12.4 Sharing Files with Samba >  Page 328
+</div>
+<div class="noteText">
+Could be useful to mention that read can in some cases (e.g: IP) be more dangerous than write.
+</div>
+<div class="sectionHeading">
+Chapter 13: User Environments
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  13.3 Shell Startup File Elements >  Page 337
+</div>
+<div class="noteText">
+The Command Path
+</div>
+<div class="noteHeading">
+Note -  13.3 Shell Startup File Elements >  Page 337
+</div>
+<div class="noteText">
+$PATH:<extension> never mentioned.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  13.4 Startup File Order and Examples >  Page 340
+</div>
+<div class="noteText">
+.bashrc file accompanied by a .bash_profile symbolic link pointing to .bashrc
+</div>
+<div class="noteHeading">
+Note -  13.4 Startup File Order and Examples >  Page 340
+</div>
+<div class="noteText">
+Wouldn't some of these depend on the system (distribution, version)?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  13.4 Startup File Order and Examples >  Page 340
+</div>
+<div class="noteText">
+-, the shell’s a login shell.
+</div>
+<div class="noteHeading">
+Note -  13.4 Startup File Order and Examples >  Page 340
+</div>
+<div class="noteText">
+Is this documented to be very unlikely to change or does it just happen to be the case right now?
+</div>
+<div class="noteHeading">
+Note -  13.4 Startup File Order and Examples >  Page 341
+</div>
+<div class="noteText">
+Sourcing these files may be mentioned here instead of painfully setting vars. manually which can also be error-prone. Or even sourcing `.bashrc` in these files.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  13.4 Startup File Order and Examples >  Page 341
+</div>
+<div class="noteText">
+However,
+</div>
+<div class="noteHeading">
+Note -  13.4 Startup File Order and Examples >  Page 341
+</div>
+<div class="noteText">
+Setting an explicit path may need  value that depends on the installation.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  13.4 Startup File Order and Examples >  Page 341
+</div>
+<div class="noteText">
+PATH =/
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  13.4 Startup File Order and Examples >  Page 342
+</div>
+<div class="noteText">
+checks the shell’s $- variable for an i character:
+</div>
+<div class="noteHeading">
+Note -  13.4 Startup File Order and Examples >  Page 342
+</div>
+<div class="noteText">
+How reliable/portable is this?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  13.5 Default User Settings >  Page 343
+</div>
+<div class="noteText">
+Shell Defaults
+</div>
+<div class="noteHeading">
+Note -  13.5 Default User Settings >  Page 343
+</div>
+<div class="noteText">
+Global system shell templates not mentioned. Even if they aren't in /etc and can't be configured.
+</div>
+<div class="noteHeading">
+Note -  13.5 Default User Settings >  Page 344
+</div>
+<div class="noteText">
+Would be nice to mention that `zsh` is the new default for macOS which makes it much more than another fancy shell.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  13.5 Default User Settings >  Page 344
+</div>
+<div class="noteText">
+zsh
+</div>
+<div class="sectionHeading">
+Chapter 14: A Brief Survey of the Linux Desktop and Printing
+</div>
+<div class="noteHeading">
+Note -  14.1 Desktop Components >  Page 350
+</div>
+<div class="noteText">
+Important to note that toolkits are much more. For example, they include convenience APIs for IPC, concurrency, files, etc...
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  14.1 Desktop Components >  Page 350
+</div>
+<div class="noteText">
+Toolkits
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  14.4 A Closer Look at the X Window System >  Page 356
+</div>
+<div class="noteText">
+x- and y- coordinates
+</div>
+<div class="noteHeading">
+Note -  14.4 A Closer Look at the X Window System >  Page 356
+</div>
+<div class="noteText">
+May be useful to mention that the y coordinate starts from the top as opposed to the bottom as in math.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  14.5 D-Bus >  Page 359
+</div>
+<div class="noteText">
+14.5 D- Bus
+</div>
+<div class="noteHeading">
+Note -  14.5 D-Bus >  Page 359
+</div>
+<div class="noteText">
+May be mention that it was created to unify GNOME and KDE IPCs.
+</div>
+<div class="sectionHeading">
+Chapter 15: Development Tools
+</div>
+<div class="noteHeading">
+Note -  15.1 The C Compiler >  Page 364
+</div>
+<div class="noteText">
+This is probably a pointer of a sort to the default compiler and not specific to gcc.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.1 The C Compiler >  Page 364
+</div>
+<div class="noteText">
+cc),
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.1 The C Compiler >  Page 365
+</div>
+<div class="noteText">
+and compilers sometimes even have trouble processing large files.
+</div>
+<div class="noteHeading">
+Note -  15.1 The C Compiler >  Page 365
+</div>
+<div class="noteText">
+This isn't really a concern in almost all practical cases. Humans can't process small files by compiler standards and are the bottlenick.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.1 The C Compiler >  Page 369
+</div>
+<div class="noteText">
+How ld.so Finds Shared Libraries
+</div>
+<div class="noteHeading">
+Note -  15.1 The C Compiler >  Page 369
+</div>
+<div class="noteText">
+At least `LD_DEBUG=libs` should be mentioned.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.1 The C Compiler >  Page 370
+</div>
+<div class="noteText">
+How to Avoid Problems with Shared Libraries
+</div>
+<div class="noteHeading">
+Note -  15.1 The C Compiler >  Page 370
+</div>
+<div class="noteText">
+Trying to use compiled code to run on a newer system not mentioned. And neither fixed strings (e.g: installation prefix) but this may be considered more advanced.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.1 The C Compiler >  Page 371
+</div>
+<div class="noteText">
+Include File Problems
+</div>
+<div class="noteHeading">
+Note -  15.1 The C Compiler >  Page 371
+</div>
+<div class="noteText">
+Using non-matching includes to built code should be mentioned as they may fail mysteriously at runtime or silently cause security issues.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.2 make >  Page 375
+</div>
+<div class="noteText">
+One last make fundamental concept to know is that, in general, the goal is to bring targets up to date with their dependencies. Furthermore, it’s designed to take only the minimum steps necessary to do that, which can lead to considerable time savings. If you type make twice in a row for the preceding example, the first command builds myprog, but the second yields this output:
+</div>
+<div class="noteHeading">
+Note -  15.2 make >  Page 375
+</div>
+<div class="noteText">
+Double-edged sword as it can hide compiler warnings and other errors that can only be fixed by a new build. It's probably best to use a clean build if it it takes less than 30s for this and many other reasons.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.2 make >  Page 376
+</div>
+<div class="noteText">
+You can also define a macro on the command line. For example, to use the clang compiler, try: $ make CC = clang
+</div>
+<div class="noteHeading">
+Note -  15.2 make >  Page 376
+</div>
+<div class="noteText">
+How is this a macro?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.2 make >  Page 377
+</div>
+<div class="noteText">
+blah.o, this expands to blah.
+</div>
+<div class="noteHeading">
+Note -  15.2 make >  Page 377
+</div>
+<div class="noteText">
+It may be more accurate that the filename including the extension is the basename.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.5 Java >  Page 382
+</div>
+<div class="noteText">
+native compilers for producing machine code for your system (like a C compiler)
+</div>
+<div class="noteHeading">
+Note -  15.5 Java >  Page 382
+</div>
+<div class="noteText">
+How accurate is this in typical cases (not using LLVM to compile Java or JVM to native code)?
+</div>
+<div class="noteHeading">
+Note -  15.5 Java >  Page 382
+</div>
+<div class="noteText">
+Most java CLI commands probably require that file extension not be included.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  15.5 Java >  Page 382
+</div>
+<div class="noteText">
+use:
+</div>
+<div class="sectionHeading">
+Chapter 16: Introduction to Compiling Software from C Source Code
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  16.3 GNU Autoconf >  Page 388
+</div>
+<div class="noteText">
+build- essential
+</div>
+<div class="noteHeading">
+Note -  16.3 GNU Autoconf >  Page 388
+</div>
+<div class="noteText">
+Would be convenient to include full commands for both fedora and debian.
+</div>
+<div class="noteHeading">
+Note -  16.6 Troubleshooting Compiles and Installations >  Page 399
+</div>
+<div class="noteText">
+You probably need to use `dnf`.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  16.6 Troubleshooting Compiles and Installations >  Page 399
+</div>
+<div class="noteText">
+yum
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  16.7 Looking Forward >  Page 399
+</div>
+<div class="noteText">
+16.7 Looking Forward
+</div>
+<div class="noteHeading">
+Note -  16.7 Looking Forward >  Page 399
+</div>
+<div class="noteText">
+Should mention transitive dependencies especially when distribution doesn't have them or have older versions.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  16.7 Looking Forward >  Page 399
+</div>
+<div class="noteText">
+However, you should be careful when doing so; make sure that you always keep your old kernel handy in case you can’t boot with a new one.
+</div>
+<div class="noteHeading">
+Note -  16.7 Looking Forward >  Page 399
+</div>
+<div class="noteText">
+Should recommend virtualization.
+</div>
+<div class="sectionHeading">
+Chapter 17: Virtualization
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  17.2 Containers >  Page 413
+</div>
+<div class="noteText">
+consume a significant amount of storage space on your system.
+</div>
+<div class="noteHeading">
+Note -  17.2 Containers >  Page 413
+</div>
+<div class="noteText">
+Pruning not mentioned.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  17.2 Containers >  Page 415
+</div>
+<div class="noteText">
+Google’s Kubernetes has become dominant. Perhaps one of the largest contributing factors for this is its ability to run Docker container images.
+</div>
+<div class="noteHeading">
+Note -  17.2 Containers >  Page 415
+</div>
+<div class="noteText">
+Could be useful to mention it will be almost deprecated.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  17.3 Runtime-Based Virtualization >  Page 417
+</div>
+<div class="noteText">
+17.3 Runtime- Based Virtualization
+</div>
+<div class="noteHeading">
+Note -  17.3 Runtime-Based Virtualization >  Page 417
+</div>
+<div class="noteText">
+Missing conclusion for the book.
+</div>
+
+        </div>
+    </body>
+</html>
