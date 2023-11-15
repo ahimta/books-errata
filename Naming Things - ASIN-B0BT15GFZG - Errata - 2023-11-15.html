@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Naming Things: The Hardest Problem in Software Engineering
+</div>
+<div class="authors">
+Benner, Tom
+</div>
+<div class="citation">
+Citation (Chicago Style): Benner, Tom. <i>Naming Things: The Hardest Problem in Software Engineering</i>. , 2023. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+I. Introduction
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 3. Why is naming hard? >  Page 15
+</div>
+<div class="noteText">
+depending on the object.” [15]
+</div>
+<div class="noteHeading">
+Note - 3. Why is naming hard? >  Page 15
+</div>
+<div class="noteText">
+Footnotes/references should use links.
+</div>
+<div class="sectionHeading">
+II. Principles
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. Understandability >  Page 24
+</div>
+<div class="noteText">
+Finding the best problem- domain term for a given concept is a large topic will multiple strategies.
+</div>
+<div class="noteHeading">
+Note - 6. Understandability >  Page 24
+</div>
+<div class="noteText">
+Typo: "will multiple strategies."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. Understandability >  Page 29
+</div>
+<div class="noteText">
+The use of i and j for loop indices, p and q for pointers, and s and t for strings is so frequent that there is little profit and perhaps some loss in longer names”. [4]
+</div>
+<div class="noteHeading">
+Note - 6. Understandability >  Page 29
+</div>
+<div class="noteText">
+The single-letter names for pointers and strings maybe a relic of the past.
+
+Right now compilers have excellent diagnostics that can protect against handling types incorrectly.
+
+So nowadays it probably makes much more sense to use descriptive names for pointers and strings.
+
+Except in some special cases like when they're only used locally and only in a handful of lines. In this case trying to give them names may force other important variables (e.g., parameters) to have more complex names.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 6. Understandability >  Page 30
+</div>
+<div class="noteText">
+# Good for user in users: print( user.full_name)
+</div>
+<div class="noteHeading">
+Note - 6. Understandability >  Page 30
+</div>
+<div class="noteText">
+Not sure if this is mentioned in the book but `user` and `users` are too close to each other and one can be confused for the other.
+
+This is mostly a non-issue for statically-typed languages but probably a major one for non statically-typed ones.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7. Conciseness >  Page 40
+</div>
+<div class="noteText">
+Thus, a ladder of abstraction can be used to consider multiple names and then chose the name at the rung in the ladder that gives the reader the most relevant information about the concept without describing its implementation.
+</div>
+<div class="noteHeading">
+Note - 7. Conciseness >  Page 40
+</div>
+<div class="noteText">
+Typo: "and then chose."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7. Conciseness >  Page 41
+</div>
+<div class="noteText">
+In many cases, the metadata about an identifier (e.g., its type, its intended scope) can be understood without reading its name, so including information about the type within the name is redundant and adds unnecessary length and noise. Identifier metadata should not be included in names.
+</div>
+<div class="noteHeading">
+Note - 7. Conciseness >  Page 42
+</div>
+<div class="noteText">
+The metadata in the name also has the negative effect of duplication which can cause other issues.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 7. Conciseness >  Page 45
+</div>
+<div class="noteText">
+Names of booleans are sometimes prefixed with “not” (e.g., not_prepared) or a negative prefix (e.g., invalid), which has two undesirable effects: it 1) increases the length of the name without adding any meaning and 2) creates the opportunity for confusing double negatives within conditionals. Boolean names should always be stated in the positive to avoid these issues. # Bad if !user.is_invalid(): user.save # Good if user.is_valid(): user.save
+</div>
+<div class="noteHeading">
+Note - 7. Conciseness >  Page 46
+</div>
+<div class="noteText">
+A case could be made that one factor is how the logic is built.
+
+For example, if there's always a guard for the invalid case then it'd be better to use the negative form and avoid having to negate the positive form everywhere.
+</div>
+<div class="sectionHeading">
+III. Application
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 15. Renaming >  Page 80
+</div>
+<div class="noteText">
+15.2. Principal and interest
+</div>
+<div class="noteHeading">
+Note - 15. Renaming >  Page 80
+</div>
+<div class="noteText">
+The "Principal" naming implies the current cost of not renaming.
+</div>
+<div class="sectionHeading">
+IV. Appendix
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 18. Common antonyms >  Page 93
+</div>
+<div class="noteText">
+indent dedent
+</div>
+<div class="noteHeading">
+Note - 18. Common antonyms >  Page 93
+</div>
+<div class="noteText">
+"dendent" very weird and "deindent" maybe more readable/understandable.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 20. Rejected principles >  Page 96
+</div>
+<div class="noteText">
+20. Rejected principles
+</div>
+<div class="noteHeading">
+Note - 20. Rejected principles >  Page 96
+</div>
+<div class="noteText">
+This should be part of the main content and not in appenices.
+</div>
+<div class="sectionHeading">
+References
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 20. Rejected principles >  Page 101
+</div>
+<div class="noteText">
+[23] International Organization for StandardizationMilking machine installations - Vocabulary (Standard). (2007) (Vol. 2007). Geneva, CH.
+</div>
+<div class="noteHeading">
+Note - 20. Rejected principles >  Page 101
+</div>
+<div class="noteText">
+Typo: "StandardizationMilking."
+</div>
+
+        </div>
+    </body>
+</html>
