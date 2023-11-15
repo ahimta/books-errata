@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/TR/1999/REC-html-in-xml" xml:lang="en"
+	lang="en">
+	<head>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+                <!-- HTML5 -->
+                <meta charset="UTF-8"/>
+		<style type="text/css">
+                    .bodyContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.notebookFor {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin: 24px 0px 0px;
+    padding: 0px;
+}
+
+.bookTitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    padding: 0px;
+}
+
+.authors {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    margin-top: 22px;
+    margin-bottom: 24px; 
+    padding: 0px;
+}
+
+.citation {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #333333;
+    margin-top: 22px;
+    margin-bottom: 24px;
+    padding: 0px;
+}
+
+.sectionHeading {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.noteHeading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    color: #333333;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.noteText {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+    margin: 2px 0px 0px;
+    padding: 0px;
+}
+
+.highlight_blue {
+    color: rgb(178, 205, 251);
+}
+
+.highlight_orange {
+    color: #ffd7ae;
+}
+
+.highlight_pink {
+    color: rgb(255, 191, 206);
+}
+
+.highlight_yellow {
+    color: rgb(247, 206, 0);
+}
+
+.notebookGraphic {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.notebookGraphic img {
+    -o-box-shadow:      0px 0px 5px #888;
+    -icab-box-shadow:   0px 0px 5px #888;
+    -khtml-box-shadow:  0px 0px 5px #888;
+    -moz-box-shadow:    0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow:         0px 0px 5px #888; 
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 0px none;
+    height: 1px;
+    background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+
+		</style>
+		<script type="text/javascript">
+		    
+		</script>
+		<title></title>
+	</head>
+    <body>
+        <div class="bodyContainer">
+            <div class="notebookFor">
+Notebook for
+</div>
+<div class="bookTitle">
+Understanding Distributed Systems, Second Edition: What every developer should know about large distributed applications
+</div>
+<div class="authors">
+Vitillo, Roberto
+</div>
+<div class="citation">
+Citation (Chicago Style): Vitillo, Roberto. <i>Understanding Distributed Systems, Second Edition: What every developer should know about large distributed applications</i>. , 2022. Kindle edition.
+</div>
+<hr />
+
+            <div class="sectionHeading">
+Preface
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 6
+</div>
+<div class="noteText">
+Although you can build applications without knowing much of that, you will end up spending hours debugging and re- architecting them, learning hard lessons that you could have acquired in a much faster and less painful way.
+</div>
+<div class="noteHeading">
+Note -  Page 6
+</div>
+<div class="noteText">
+Probably several orders of magnitude more than hours.
+</div>
+<div class="sectionHeading">
+(PART) Communication
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 19
+</div>
+<div class="noteText">
+(PART) Communication
+</div>
+<div class="noteHeading">
+Note -  Page 19
+</div>
+<div class="noteText">
+What part? Usually parts are numbered.
+</div>
+<div class="sectionHeading">
+5 APIs
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) -  Page 47
+</div>
+<div class="noteText">
+Typically, internal APIs used for server- to- server communications within an organization are implemented with a high- performance RPC framework like gRPC. In contrast, external APIs available to the public tend to be based on HTTP, since web browsers can easily make HTTP requests via JavaScript code.
+</div>
+<div class="noteHeading">
+Note -  Page 47
+</div>
+<div class="noteText">
+Programmers have always had unhealthy obsession with performance.
+
+This is one example where binary/textual isn't as important as it seems. Amazon uses almost exclusively textual protocols internally and most companies are almost certain to be orders of magnitude less performance-sensitive.
+
+I think typically the biggest advantage to binary protocols is things like versioning and schema evolution.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.1 HTTP >  Page 50
+</div>
+<div class="noteText">
+HTTP 28 was designed from the ground up to address the main limitations of HTTP 1.1. It uses a binary protocol rather than a textual one, allowing it to multiplex multiple concurrent request- response transactions (streams) on the same connection.
+</div>
+<div class="noteHeading">
+Note - 5.1 HTTP >  Page 50
+</div>
+<div class="noteText">
+The wording implies multiplexing only possible due to the protocol being binary. But being binary/textual is orthagonal to multiplexing.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.3 Request methods >  Page 53
+</div>
+<div class="noteText">
+Request methods can be categorized based on whether they are safe and whether they are idempotent. A safe method should not have any visible side effects and can safely be cached. An idempotent method can be executed multiple times, and the end result should be the same as if it was executed just a single time. Idempotency is a crucial aspect of APIs, and we will talk more about it later in section 5.7.
+</div>
+<div class="noteHeading">
+Note - 5.3 Request methods >  Page 53
+</div>
+<div class="noteText">
+Important to note that these properties can change for an endpoint overtime.
+
+For example, an endpoint that's idempotent and using PUT may become non-idempotent. And this is how reality can be different from theory.
+
+One time a company using Rails started noticing issues in production and it was traced back to an HTTP library retrying PUT requests automatically assuming they're always idempotent.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 54
+</div>
+<div class="noteText">
+After the server has received a request, it needs to process it and send a response back to the client. The HTTP response contains a status code12 to communicate to the client whether the request succeeded or not. Different status code ranges have different meanings.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 54
+</div>
+<div class="noteText">
+The following categorization is a gross simplification and this must be noted.
+
+For example, 314 is for caching and some libraries even change it to 200. And some 5xx response for unsupported operation which maybe really a client error.
+</div>
+<div class="sectionHeading">
+6 System models
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 72
+</div>
+<div class="noteText">
+The arbitrary- fault model assumes that a process can deviate from its algorithm in arbitrary ways, leading to crashes or unexpected behaviors caused by bugs or malicious activity. For historical reasons, this model is also referred to as the “Byzantine” model. More interestingly, it can be theoretically proven that a system using this model can tolerate up to ￼ of faulty processes1 and still operate correctly.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 72
+</div>
+<div class="noteText">
+I think the Byzantine model is concerned more with other components doing what they should to their best ability rather than their handling of any failure.
+
+So from a human perspective, it's about trusting other persons will do their part and not about doing their part perfectly.
+
+And the 1/3 no. seems to be arbitrary and unlikely to apply to all configurations/cases.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 72
+</div>
+<div class="noteText">
+The crash- stop model assumes that a process doesn’t deviate from its algorithm but doesn’t come back online if it crashes. Although this seems unrealistic for software crashes, it models unrecoverable hardware faults and generally makes the algorithms simpler.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 72
+</div>
+<div class="noteText">
+This should apply to software systems as many of them may not restart in all failure scenarios.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 72
+</div>
+<div class="noteText">
+The arbitrary- fault model is typically used to model safety- critical systems like airplane engines, nuclear power plants, and systems where a single entity doesn’t fully control all the processes (e.g., digital cryptocurrencies such as Bitcoin). These use cases are outside the book’s scope, and the algorithms presented here will generally assume a crash- recovery model.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 72
+</div>
+<div class="noteText">
+Many safety-critical systems aren't byzantine-tolerant and assume components are honest in executing a design that's proven to be correct.
+
+A blockchain is an excellent example of a byzantine-tolerant system where clients that do the majority of the work aren't assumed to be honest.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 72
+</div>
+<div class="noteText">
+Finally, we can also model timing assumptions: The synchronous model assumes that sending a message or executing an operation never takes more than a certain amount of time. This is not very realistic for the type of systems we care about, where we know that sending messages over the network can potentially take a very long time, and processes can be slowed down by, e.g., garbage collection cycles or page faults. The asynchronous model assumes that sending a message or executing an operation on a process can take an unbounded amount of time. Unfortunately, many problems can’t be solved under this assumption; if sending messages can take an infinite amount of time, algorithms can get stuck and not make any progress at all. Nevertheless, this model is useful because it’s simpler than models that make timing assumptions, and therefore algorithms based on it are also easier to implement2. The partially synchronous model assumes that the system behaves synchronously most of the time. This model is typically representative enough of real- world systems.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 73
+</div>
+<div class="noteText">
+Only asynchronous messaging description includes more details and the details are misleading.
+
+For example, it's easier to implement is too broad of a statement for a more subtle point like that it can be harder to implement when some often needed coordination/orchestration/choreography is needed.
+</div>
+<div class="sectionHeading">
+7 Failure detection
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 76
+</div>
+<div class="noteText">
+Pings and heartbeats are generally used for processes that interact with each other frequently, in situations where an action needs to be taken as soon as one of them is no longer reachable. In other circumstances, detecting failures just at communication time is good enough.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 76
+</div>
+<div class="noteText">
+Should briefly explain the difference between pings and heartbeats and contrast between them to make it easier for the reader to understand them and use them correctly.
+</div>
+<div class="sectionHeading">
+8 Time
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 77
+</div>
+<div class="noteText">
+The flow of execution of a single- threaded application is simple to understand because every operation executes sequentially in time, one after the other. But in a distributed system, there is no shared global clock that all processes agree on that can be used to order operations. And, to make matters worse, processes can run concurrently.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 77
+</div>
+<div class="noteText">
+Most points explained here about single-threaded applications apply to multi-threaded applications on the same node/machine.
+
+And so using single-threaded here can make it harder to understand that this is much more complex and transcends even multi-threaded applications (which is very complex in its own right).
+</div>
+<div class="sectionHeading">
+10 Replication
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 93
+</div>
+<div class="noteText">
+Arguably, the most popular protocol that offers this guarantee is Paxos2, but we will discuss Raft as it’s more understandable.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 93
+</div>
+<div class="noteText">
+Too many important details missing.
+
+One is that Paxos is notoriously complex and hard to implement correctly.
+
+And that Raft is increasing more popular for new systems. I think Kafka recently replaced Zookeeper with Raft due to its simplicity.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 5.4 Response status codes >  Page 94
+</div>
+<div class="noteText">
+State machine replication is a very powerful tool to make a service fault- tolerant as long it can be modeled as a state machine.
+</div>
+<div class="noteHeading">
+Note - 5.4 Response status codes >  Page 94
+</div>
+<div class="noteText">
+Typo: "as long it can be."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 10.2 Consensus >  Page 99
+</div>
+<div class="noteText">
+While it’s important to understand what consensus is and how it can be solved, you will likely never need to implement it from scratch8. Instead, you can use one of the many off- the- shelf solutions available.
+</div>
+<div class="noteHeading">
+Note - 10.2 Consensus >  Page 99
+</div>
+<div class="noteText">
+But Paxos may not be a good representative for concensus complexity and one reason might be because it's relatively old.
+
+Raft might be a better representetative.
+
+I think there's also a new kid on the block called Calvin or something similar. As I remember, a startup called Fauna Labs uses it.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 10.2 Consensus >  Page 100
+</div>
+<div class="noteText">
+A coordination service exposes a hierarchical, key- value store through its API, and also allows clients to watch for changes to keys. So, for example, acquiring a lease can be implemented by having a client attempt to create a key with a specific TTL. If the key already exists, the operation fails guaranteeing that only one client can acquire the lease.
+</div>
+<div class="noteHeading">
+Note - 10.2 Consensus >  Page 100
+</div>
+<div class="noteText">
+What you're taking about is probably only one possible API/solution.
+
+And others maybe developed, if not already, in the future.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 10.3 Consistency models >  Page 104
+</div>
+<div class="noteText">
+On top of that, the leader needs to contact a majority of followers to handle a read, which increases the time it takes to process a request.
+</div>
+<div class="noteHeading">
+Note - 10.3 Consistency models >  Page 104
+</div>
+<div class="noteText">
+Is this really the case that the leader needs the followers for reads?
+
+I think this is only needed for writes and the leader can serve reads alone.
+
+The issue with using the leader for reads is that it's already busy with writes and, as you mentioned earlier, reads aren't disteibuted to multiple nodes.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 10.3 Consistency models >  Page 106
+</div>
+<div class="noteText">
+Although we managed to increase the read throughput, we had to pin clients to followers— if a follower becomes unavailable, the client loses access to the store. We could increase the availability by allowing the client to query any follower. But this comes at a steep price in terms of consistency. For example, say there are two followers, 1 and 2, where follower 2 lags behind follower 1. If a client queries follower 1 and then follower 2, it will see an earlier state, which can be very confusing.
+</div>
+<div class="noteHeading">
+Note - 10.3 Consistency models >  Page 106
+</div>
+<div class="noteText">
+Why focused on pinning a client to a single follower?
+
+The client should be able to read from multiple followers. And this is one reason why replication is used: load-balancing.
+
+This also can easily maintain sequential consistency by providing the logical version/time with requests.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 10.4 Chain replication >  Page 112
+</div>
+<div class="noteText">
+That said, chain replication allows write requests to be pipelined, which can significantly improve throughput.
+</div>
+<div class="noteHeading">
+Note - 10.4 Chain replication >  Page 112
+</div>
+<div class="noteText">
+This point isn't explained.
+</div>
+<div class="sectionHeading">
+11 Coordination avoidance
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 11.2 Conflict-free replicated data types >  Page 122
+</div>
+<div class="noteText">
+(strongly eventual) consistent,
+</div>
+<div class="noteHeading">
+Note - 11.2 Conflict-free replicated data types >  Page 122
+</div>
+<div class="noteText">
+Strange wording.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 11.2 Conflict-free replicated data types >  Page 124
+</div>
+<div class="noteText">
+For example, a register is a memory cell storing some opaque sequence of bytes that supports an assignment operation to overwrite its state.
+</div>
+<div class="noteHeading">
+Note - 11.2 Conflict-free replicated data types >  Page 124
+</div>
+<div class="noteText">
+Overwrite status wording may only make sense to readers who already know how registers work.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 11.6 Practical considerations >  Page 136
+</div>
+<div class="noteText">
+Consensus is harder to solve than implementing a linearizable read/ write register, which is what the CAP theorem uses to define consistency. ↩︎
+</div>
+<div class="noteHeading">
+Note - 11.6 Practical considerations >  Page 136
+</div>
+<div class="noteText">
+This should probably be in the main text rather than being a footnote.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 11.6 Practical considerations >  Page 137
+</div>
+<div class="noteText">
+In practice, version vectors are used to compare the state of different replicas that only keep track of events that change the state of replicas, see “Detection of Mutual Inconsistency in Distributed Systems,” https:// pages.cs.wisc.edu/ ~ remzi/ Classes/ 739/ Fall2017/ Papers/ parker83detection.pdf. ↩︎
+</div>
+<div class="noteHeading">
+Note - 11.6 Practical considerations >  Page 137
+</div>
+<div class="noteText">
+This footnote, except for the reference, should probably be in the main text.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 11.6 Practical considerations >  Page 138
+</div>
+<div class="noteText">
+COPS can track causal relationships between partitions (and therefore nodes), unlike simpler approaches using version vectors, which limit causality tracking to the set of keys that a single node can store (see “Session Guarantees for Weakly Consistent Replicated Data,” https:// www.cs.utexas.edu/ users/ dahlin/ Classes/ GradOS/ papers/ SessionGuaranteesPDIS.pdf). ↩︎
+</div>
+<div class="noteHeading">
+Note - 11.6 Practical considerations >  Page 138
+</div>
+<div class="noteText">
+I think many footnotes in the book include parts that should be part of the main text.
+</div>
+<div class="sectionHeading">
+12 Transactions
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 12.2 Isolation >  Page 148
+</div>
+<div class="noteText">
+the transaction manager gives it an unique commit timestamp
+</div>
+<div class="noteHeading">
+Note - 12.2 Isolation >  Page 148
+</div>
+<div class="noteText">
+Typo: "an unique."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 12.4 NewSQL >  Page 156
+</div>
+<div class="noteText">
+“When is” ACID” ACID? Rarely.” http:// www.bailis.org/ blog/ when- is- acid- acid- rarely/ ↩︎
+</div>
+<div class="noteHeading">
+Note - 12.4 NewSQL >  Page 156
+</div>
+<div class="noteText">
+An internal opening quote is incorrectly using a closing quote.
+</div>
+<div class="sectionHeading">
+13 Asynchronous transactions
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 12.4 NewSQL >  Page 159
+</div>
+<div class="noteText">
+if the coordinator or any of the participants is slow or not not available,
+</div>
+<div class="noteHeading">
+Note - 12.4 NewSQL >  Page 159
+</div>
+<div class="noteText">
+Typo: "not not available."
+</div>
+<div class="sectionHeading">
+Introduction
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 12.4 NewSQL >  Page 174
+</div>
+<div class="noteText">
+and replicating functionality or data across nodes, also known as horizontal scaling (replication).
+</div>
+<div class="noteHeading">
+Note - 12.4 NewSQL >  Page 174
+</div>
+<div class="noteText">
+Strange that replication refers to horizontal scaling as, in a sense, horizental scaling (as opposed to vertical scaling) probably can refer to both partitioning/sharding and replication.
+</div>
+<div class="sectionHeading">
+14 HTTP caching
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 12.4 NewSQL >  Page 181
+</div>
+<div class="noteText">
+Another way of thinking about HTTP caching is that we treat the read path (GET) differently from the write path (POST, PUT, DELETE) because we expect the number of reads to be several orders of magnitude higher than the number of writes. This is a common pattern referred to as the Command Query Responsibility Segregation3 (CQRS) pattern. 4
+</div>
+<div class="noteHeading">
+Note - 12.4 NewSQL >  Page 181
+</div>
+<div class="noteText">
+The wording seems to imply that CQRS is focused on optimizing reads which probably is inaccurate.
+</div>
+<div class="sectionHeading">
+16 Partitioning
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 16.1 Range partitioning >  Page 192
+</div>
+<div class="noteText">
+There are ways around that, like adding a random prefix to the partition keys, but there is a price to pay in terms of increased complexity.
+</div>
+<div class="noteHeading">
+Note - 16.1 Range partitioning >  Page 192
+</div>
+<div class="noteText">
+There are probably other more important disadvantages like possibly needing more partitions/shards for some operations.
+</div>
+<div class="sectionHeading">
+18 Network load balancing
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 16.1 Range partitioning >  Page 209
+</div>
+<div class="noteText">
+In this case, we could force a severely degraded server to restart. That way, we don’t have to develop complex recovery logic when a server gets into a rare and unexpected degraded mode. Moreover, restarting the server allows the system to self- heal, giving its operators time to identify the root cause.
+</div>
+<div class="noteHeading">
+Note - 16.1 Range partitioning >  Page 209
+</div>
+<div class="noteText">
+This is mostly a known technique in safety-critical systems called "Rejuvenation" and it's often used periodically (e.g., monthly) so that the system doesn't get in many scenarios in the first place.
+
+One reason is that such systems typically run for years and even extremely well-designed ones may start failing after a couple of years.
+
+This is discussed more in-depth in the book "Embedded Software Development for Safety Critical Systems, 2nd Edition."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 18.1 DNS load balancing >  Page 210
+</div>
+<div class="noteText">
+18.1 DNS load balancing
+</div>
+<div class="noteHeading">
+Note - 18.1 DNS load balancing >  Page 210
+</div>
+<div class="noteText">
+Just noticed many titles only have the first letter capitalized. Is this intentional?
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 18.3 Application layer load balancing >  Page 216
+</div>
+<div class="noteText">
+As of this writing, popular sidecar proxy load balancers are NGINX, HAProxy, and Envoy.
+</div>
+<div class="noteHeading">
+Note - 18.3 Application layer load balancing >  Page 216
+</div>
+<div class="noteText">
+Didn't know that NGINX and HAProxy offer a side-car option.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 18.3 Application layer load balancing >  Page 217
+</div>
+<div class="noteText">
+layer 4 is the transport layer in the OSI model ↩︎
+</div>
+<div class="noteHeading">
+Note - 18.3 Application layer load balancing >  Page 217
+</div>
+<div class="noteText">
+Why first letter not capitalized in the first word "layer."
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 18.3 Application layer load balancing >  Page 217
+</div>
+<div class="noteText">
+“SREcon19 Americas - Keeping the Balance: Internet- Scale Loadbalancing Demystified,” https:// www.youtube.com/ watch? v = woaGu3kJ- xk ↩︎
+</div>
+<div class="noteHeading">
+Note - 18.3 Application layer load balancing >  Page 217
+</div>
+<div class="noteText">
+Strange that "loadbalancing" used here as a single word.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 18.3 Application layer load balancing >  Page 218
+</div>
+<div class="noteText">
+layer 7 is the application layer in the OSI model ↩︎
+</div>
+<div class="noteHeading">
+Note - 18.3 Application layer load balancing >  Page 218
+</div>
+<div class="noteText">
+Why first letter in sentence not capitalized.
+</div>
+<div class="sectionHeading">
+19 Data storage
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 19.3 NoSQL >  Page 226
+</div>
+<div class="noteText">
+See what we just did? We have structured the table based on the access patterns so that queries won’t require any joins. Now think for a moment about how you would model the same data in normalized form in a relational database. You would probably have one table for orders and another for customers. And, to perform the same query, a join would be required at query time, which would be slower and harder to scale.
+</div>
+<div class="noteHeading">
+Note - 19.3 NoSQL >  Page 227
+</div>
+<div class="noteText">
+I don't understand the obsession with joins.
+
+In most cases, it's sufficient to do an extra query instead of each join.
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 19.3 NoSQL >  Page 229
+</div>
+<div class="noteText">
+On the other hand, while we certainly can find ways to scale a relational database, what works on day 1 might not work on day 10 or 100. ↩︎
+</div>
+<div class="noteHeading">
+Note - 19.3 NoSQL >  Page 229
+</div>
+<div class="noteText">
+Seems many footnotes belong more to the main text.
+</div>
+<div class="sectionHeading">
+Summary
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 19.3 NoSQL >  Page 272
+</div>
+<div class="noteText">
+You should be familiar with some way to run your application instances in the cloud (e.g., EC2) and load- balance traffic to them (e.g., ELB).
+</div>
+<div class="noteHeading">
+Note - 19.3 NoSQL >  Page 272
+</div>
+<div class="noteText">
+I think nowadays using EC2 should be discouraged as more managed alternatives like ECS exist.
+
+The same applies to ELB if it refers to the L4 network load-balance as ALB is probably sufficient and much simpler.
+</div>
+<div class="sectionHeading">
+25 Redundancy
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 19.3 NoSQL >  Page 291
+</div>
+<div class="noteText">
+if there are ten servers in the pool and one is unresponsive for some reason, then 10% of requests will fail, causing the availability to drop.
+</div>
+<div class="noteHeading">
+Note - 19.3 NoSQL >  Page 291
+</div>
+<div class="noteText">
+Should make it clear that the 10% is mostly an approximation/guess and the real no. maybe very different.
+</div>
+<div class="sectionHeading">
+27 Downstream resiliency
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 27.1 Timeout >  Page 303
+</div>
+<div class="noteText">
+relieving our process ofthis responsibility.
+</div>
+<div class="noteHeading">
+Note - 27.1 Timeout >  Page 303
+</div>
+<div class="noteText">
+Typo: "ofthis."
+</div>
+<div class="sectionHeading">
+28 Upstream resiliency
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 28.3 Rate-limiting >  Page 315
+</div>
+<div class="noteText">
+Load shedding rejects traffic based on the local state of a process, like the number of requests concurrently processed by it; rate- limiting instead sheds traffic based on the global state of the system, like the total number of requests concurrently processed for a specific API key across all service instances.
+</div>
+<div class="noteHeading">
+Note - 28.3 Rate-limiting >  Page 315
+</div>
+<div class="noteText">
+The difference highlighted seem more of a technique or an implementation detail.
+
+I see no reason why load-shedding can't be implemented with a global state.
+
+And rate-limiting can also be based solely on load or on factors other than an API key or similar input.
+
+TBH, I may not be able to find a significant difference between the two. Or only a minor one.
+</div>
+<div class="sectionHeading">
+32 Observability
+</div>
+<div class="noteHeading">
+Highlight (<span class="highlight_yellow">yellow</span>) - 32.1 Logs >  Page 375
+</div>
+<div class="noteText">
+every network call performed within the work unit needs to be instrumented and log, e.g., its response time and status code.
+</div>
+<div class="noteHeading">
+Note - 32.1 Logs >  Page 375
+</div>
+<div class="noteText">
+Typo: "instrumented and log."
+</div>
+
+        </div>
+    </body>
+</html>
